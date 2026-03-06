@@ -3,12 +3,12 @@ import React from "react";
 import ServicesServer from "@components/ServicesServer";
 import Link from "next/link";
 import FadeIn from "@components/MotionWrapper";
-import { TrendingUp, Search, Palette } from "lucide-react";
+import { TrendingUp, Search, Palette, BarChart3, Globe2 } from "lucide-react";
 
 export const metadata = {
   title: "BizGrow Digital | Expert Digital Marketing Services UK", // Ye layout wale template ki wajah se "About Us | BizGrow Digital" ban jayega
   description:
-    "BizGrow Digital provides professional digital marketing services in the UK to boost visibility, engagement, and business growth.",
+    "BizGrow Digital’s UK digital marketing agency helps businesses grow with SEO, social media, web development, and lead generation strategies.",
   alternates: {
     canonical: "https://bizgrow-digital.co.uk/",
   },
@@ -32,17 +32,15 @@ const HomePage = () => {
         />
         <div className="absolute inset-0 w-full bg-black/60 flex flex-col items-center justify-center text-center px-4">
           <FadeIn direction="up" delay={0.2}>
-            <h1 className="text-white text-3xl md:text-5xl mt-20   md:mx-20 font-bold md:leading-[4rem]">
-              Smart Digital Solutions <br /> Designed for Sustainable Business
-              Growth
+            <h1 className="text-white text-3xl md:text-5xl mt-20   md:mx-28 font-bold md:leading-[4rem]">
+              Smart Digital Marketing Solutions for UK Business Growth
             </h1>
           </FadeIn>
           <FadeIn direction="up" delay={0.4}>
             <p className="mt-6 text-white max-w-4xl mx-auto text-sm md:text-lg">
-              We support businesses in strengthening their online presence,
-              generating qualified leads, and achieving scalable growth through
-              expert web development, SEO, and data-driven digital marketing
-              strategies.
+              We help UK businesses increase online visibility, attract
+              qualified leads, and grow faster through SEO, web development, and
+              data-driven digital marketing strategies.
             </p>
           </FadeIn>
           <FadeIn direction="up" delay={0.6}>
@@ -87,20 +85,21 @@ const HomePage = () => {
               <FadeIn direction="up" delay={0.2}>
                 <div className="space-y-6">
                   <p className="text-black dark:text-gray-300 text-lg leading-relaxed font-medium">
-                    Ready to attract more clients, increase traffic, and grow
-                    your online presence? BizGrow Digital provides{" "}
+                    Ready to attract more clients, increase website traffic, and
+                    generate qualified leads? BizGrow Digital delivers{" "}
                     <span className="text-[#B54118] dark:text-orange-500 font-bold underline">
                       <Link href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/ ">
                         results-driven digital marketing
                       </Link>
                     </span>{" "}
-                    that enables your business to grow with confidence.
+                    helping brands grow with confidence.
                   </p>
 
                   <p className="text-black dark:text-gray-400 text-base leading-relaxed border-l-4 border-[#B54118] pl-6 italic">
-                    Our team develops fast, high-performing websites, improves
-                    visibility in local searches, and delivers social media
-                    marketing to connect with the right audience.
+                    Our team builds high-performing websites, improves Google
+                    rankings through SEO, and creates targeted social media
+                    marketing strategies that connect your business with the
+                    right audience.
                   </p>
                 </div>
               </FadeIn>
@@ -170,102 +169,147 @@ const HomePage = () => {
         <ServicesServer />
       </section>
 
-      {/*Why Choose BizGrow Digital */}
+      {/* 🚀 NEW SECTION: Industries We Help Grow */}
+      <section className="py-24 bg-white dark:bg-[#000B25] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <FadeIn direction="up">
+              <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tighter">
+                Industries <span className="text-[#B54118]">We Work With</span>
+              </h2>
+              <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-400 text-lg font-medium">
+                While we love to work with all of our clients, there is no doubt
+                our portfolio is extensive. We have extreme command over
+                multiple sectors helping them achieve sustainable digital
+                growth.
+              </p>
+            </FadeIn>
+          </div>
+
+          {/* Industries Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
+            {[
+              { name: "E-commerce", img: "/ecommerce-h.jpg" },
+              { name: "Construction", img: "/Construction-h.jpg" },
+              { name: "Real Estate", img: "/Real Estate-h.jpg" },
+              { name: "Healthcare", img: "/healthcare-h.jpg" },
+              { name: "Hospitality", img: "/HOSPITALITY.jpg" },
+              { name: "Education ", img: "/education-h.jpg" },
+            ].map((industry, idx) => (
+              <FadeIn key={idx} direction="up" delay={idx * 0.1}>
+                <div className="group relative flex flex-col items-center">
+                  {/* Image Container */}
+                  <div className="relative w-full aspect-square overflow-hidden rounded-[2rem] mb-4 shadow-lg border border-gray-100 dark:border-[#B54118]">
+                    <Image
+                      src={industry.img}
+                      alt={industry.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110 "
+                    />
+                    {/* Overlay on Hover */}
+                    <div className="absolute inset-0 bg-[#B54118]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                  {/* Industry Name */}
+                  <h3 className="text-sm md:text-lg font-black uppercase tracking-widest text-slate-800 dark:text-white group-hover:text-[#B54118] transition-colors">
+                    {industry.name}
+                  </h3>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          {/* CTA Line for Industries */}
+          <FadeIn direction="up" delay={0.6}>
+            <div className="mt-20 p-10 bg-gray-50 dark:bg-[#001235]/50 rounded-[2.5rem] border  border-[#B54118] text-center">
+              <h4 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6">
+                Start Your{" "}
+                <span className="text-[#B54118]">UK Digital Growth</span> Today
+              </h4>
+              <Link href="/contact-us">
+                <button className="px-10 py-4 bg-[#B54118] text-white font-black uppercase tracking-widest text-xs rounded-xl hover:shadow-[0_15px_30px_rgba(181,65,24,0.4)] transition-all">
+                  Get a Free Strategy Call
+                </button>
+              </Link>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 🚀 SECTION: Why Businesses Trust BizGrow Digital */}
       <section className="py-24 bg-gray-50 dark:bg-black text-center px-6 relative overflow-hidden">
         {/* Background Decoration */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#B54118] to-transparent opacity-30" />
 
         <div className="max-w-7xl mx-auto">
           <FadeIn direction="up" delay={0.2}>
-            <h2 className="text-4xl md:text-6xl font-black text-[#B54118] mb-6 uppercase tracking-tighter">
-              Why Choose{" "}
-              <span className="text-slate-900 dark:text-white">BizGrow</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#B54118] mb-6 uppercase tracking-tighter">
+              <span className="text-slate-900 dark:text-white">
+                Why Businesses Trust{" "}
+              </span>
+              BizGrow Digital?{" "}
             </h2>
           </FadeIn>
 
           <FadeIn direction="up" delay={0.4}>
             <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-400 mb-16 text-lg md:text-xl leading-relaxed font-medium">
-              BizGrow Digital is a results-driven digital marketing agency
-              helping businesses improve online visibility and achieve
-              measurable growth.
+              BizGrow Digital is a trusted digital marketing agency helping UK
+              businesses improve online visibility, generate qualified leads,
+              and achieve measurable growth through innovative digital
+              strategies.
             </p>
           </FadeIn>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
-  {[
-    {
-      icon: <TrendingUp size={40} strokeWidth={2} />,
-      title: "Strategy-First Approach",
-      desc: "Every digital campaign is planned using market research, data insights, and clear business goals to maximise ROI.",
-      dir: "left",
-    },
-    {
-      icon: <Search size={40} strokeWidth={2} />,
-      title: "Performance SEO",
-      // Yahan humne SEO-optimised websites par link lagaya hai
-      desc: (
-        <>
-          <Link 
-            href="https://bizgrow-digital.co.uk/why-on-page-seo-matters-for-small-businesses-and-how-to-do-it-right/"
-            target="_blank"
-            className="text-[#B54118] font-bold underline font-bold"
-          >
-            SEO-optimised websites
-          </Link>{" "}
-          built for speed, user experience, and higher search engine rankings that attract the right audience.
-        </>
-      ),
-      dir: "up",
-    },
-    {
-      icon: <Palette size={40} strokeWidth={2} />,
-      title: "Creative Brand Design",
-      // Yahan web design par link lagaya hai
-      desc: (
-        <>
-          Professional graphic and{" "}
-          <Link 
-            href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
-            target="_blank"
-            className="text-[#B54118] font-bold underline"
-          >
-            web design
-          </Link>{" "}
-          that strengthens brand identity, improves engagement, and communicates value.
-        </>
-      ),
-      dir: "right",
-    },
-  ].map((item, index) => (
-    <FadeIn
-      key={index}
-      direction={item.dir}
-      delay={0.2 * (index + 1)}
-      className="h-full"
-    >
-      <div className="group relative h-full bg-white dark:bg-[#001235]/50 backdrop-blur-sm border-2 border-transparent dark:border-white/5 p-10 rounded-[2rem] shadow-xl hover:shadow-[#B54118]/20 hover:border-[#B54118]/50 transition-all duration-500 flex flex-col items-center text-center overflow-hidden">
-        {/* ... (Baaki code wahi rahega jo aapka pehle tha) ... */}
-        
-        {/* Icon Box */}
-        <div className="relative z-10 mb-8 p-5 rounded-2xl bg-orange-50 dark:bg-[#B54118]/10 text-[#B54118] group-hover:bg-[#B54118] group-hover:text-white transition-all duration-500 transform group-hover:-rotate-12 shadow-md">
-          {item.icon}
-        </div>
 
-        {/* Content */}
-        <h3 className="relative z-10 text-2xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
-          {item.title}
-        </h3>
-        {/* Yahan item.desc ab automatic links ke saath render hoga */}
-        <p className="relative z-10 text-gray-600 dark:text-gray-300 text-base leading-relaxed flex-grow">
-          {item.desc}
-        </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+            {/* 🔹 Braces yahan shuru ho rahi hain JS mapping ke liye */}
+            {[
+              {
+                icon: <TrendingUp size={40} strokeWidth={2} />,
+                title: "Results-Driven Marketing",
+                desc: "Our focus is simple: delivering measurable outcomes such as increased traffic, higher search rankings, and more qualified leads.",
+                dir: "left",
+              },
+              {
+                icon: <Globe2 size={40} strokeWidth={2} />,
+                title: "UK Market Understanding",
+                desc: "We understand the UK digital landscape and create strategies that connect businesses with the right local and national audiences.",
+                dir: "up",
+              },
+              {
+                icon: <BarChart3 size={40} strokeWidth={2} />,
+                title: "Transparent Performance Reporting",
+                desc: "Clear analytics and regular reporting keep you informed about the performance of your digital marketing activities.",
+                dir: "right",
+              },
+            ].map((item, index) => (
+              <FadeIn
+                key={index}
+                direction={item.dir}
+                delay={0.2 * (index + 1)}
+                className="h-full"
+              >
+                <div className="group relative h-full bg-white dark:bg-[#001235]/50 backdrop-blur-sm border-2 border-transparent dark:border-white/5 p-10 rounded-[2rem] shadow-xl hover:shadow-[#B54118]/20 hover:border-[#B54118]/50 transition-all duration-500 flex flex-col items-center text-center overflow-hidden">
+                  {/* Icon Box */}
+                  <div className="relative z-10 mb-8 p-5 rounded-2xl bg-orange-50 dark:bg-[#B54118]/10 text-[#B54118] group-hover:bg-[#B54118] group-hover:text-white transition-all duration-500 transform group-hover:-rotate-12 shadow-md">
+                    {item.icon}
+                  </div>
 
-        {/* Bottom Accent Line & Floating Glow (Same as your code) */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1.5 bg-[#B54118] group-hover:w-full transition-all duration-700" />
-        <div className="absolute -top-10 -right-10 w-24 h-24 bg-[#B54118]/10 blur-3xl rounded-full group-hover:bg-[#B54118]/20 transition-all" />
-      </div>
-    </FadeIn>
-  ))}
-</div>
+                  {/* Content */}
+                  <h3 className="relative z-10 text-2xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
+                    {item.title}
+                  </h3>
+
+                  <p className="relative z-10 text-gray-600 dark:text-gray-300 text-base leading-relaxed flex-grow">
+                    {item.desc}
+                  </p>
+
+                  {/* Bottom Accent Line & Floating Glow */}
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1.5 bg-[#B54118] group-hover:w-full transition-all duration-700" />
+                  <div className="absolute -top-10 -right-10 w-24 h-24 bg-[#B54118]/10 blur-3xl rounded-full group-hover:bg-[#B54118]/20 transition-all" />
+                </div>
+              </FadeIn>
+            ))}
+            {/* 🔹 Braces yahan khatam ho rahi hain */}
+          </div>
         </div>
       </section>
 
@@ -296,7 +340,7 @@ const HomePage = () => {
                 </div>
 
                 <h2 className="text-4xl md:text-6xl font-black mb-8 leading-[1.1] tracking-tighter">
-                  Trusted by Top Brands:
+                  Trusted by Top UK GROWING BUSINESSES:
                   <br />
                   <span className="text-[#B54118]">
                     Let's Build Your Success.
@@ -305,10 +349,10 @@ const HomePage = () => {
               </FadeIn>
 
               <FadeIn direction="up" delay={0.2}>
-                <p className="mb-12 text-lg md:text-2xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed italic">
-                  "BizGrow Digital is all about helping your business thrive
-                  online. We create awesome websites, boost your SEO, and handle
-                  marketing that works."
+                <p className="mb-12 text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed italic">
+                  “BizGrow Digital helps your UK business grow online. We build
+                  high-performing websites, improve your SEO, and deliver
+                  marketing strategies that generate real results.”
                 </p>
               </FadeIn>
 
