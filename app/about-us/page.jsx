@@ -16,10 +16,10 @@ export const metadata = {
   title: "About BizGrow Digital | UK Experts in Digital Growth",
   description:
     "BizGrow Digital delivers expert digital marketing solutions across the UK, helping businesses grow, engage, and succeed online.",
-   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/about-us/", 
+  alternates: {
+    canonical: "https://bizgrow-digital.co.uk/about-us/",
   },
-  };
+};
 
 export default function AboutPage() {
   return (
@@ -49,9 +49,9 @@ export default function AboutPage() {
           <FadeIn direction="up" delay={0.4}>
             {/* 🔹 FIX: 'mx-auto' add kiya taake max-width ke sath text center mein hi rahe */}
             <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
-              We are committed to helping businesses grow online with innovative
-              digital solutions, creative design, and data-driven marketing
-              strategies.
+              We are committed to helping businesses grow online in the UK with
+              innovative digital solutions, creative design, and data-driven
+              marketing strategies.
             </p>
           </FadeIn>
 
@@ -84,19 +84,27 @@ export default function AboutPage() {
             <FadeIn direction="right" delay={0.4}>
               <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
                 At BizGrow Digital, we’re not your average agency; we are your
-                <strong> business’s growth partners</strong>. We combine
-                creative thinking with data-driven strategies to unleash your
-                full potential.
+                <strong> business’s growth partners in the UK</strong>. We
+                combine creative thinking with data-driven strategies to unleash
+                your full potential.
               </p>
             </FadeIn>
 
             {/* Bullet Points for better Scannability */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {[
-               <Link href="https://bizgrow-digital.co.uk/search-engine-optimisation/">Advanced SEO Experts</Link> ,
-                <Link href="https://bizgrow-digital.co.uk/what-are-the-top-7-types-of-digital-marketing-you-must-know/ ">Results-Driven Marketing</Link>,
-                <Link href="https://bizgrow-digital.co.uk/web-development/">Custom Web Development</Link>,
-                <Link href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/">Lead Generation Focus</Link>,
+                <Link href="https://bizgrow-digital.co.uk/search-engine-optimisation/">
+                  Advanced SEO Experts
+                </Link>,
+                <Link href="https://bizgrow-digital.co.uk/what-are-the-top-7-types-of-digital-marketing-you-must-know/ ">
+                  Results-Driven Marketing
+                </Link>,
+                <Link href="https://bizgrow-digital.co.uk/web-development/">
+                  Custom Web Development
+                </Link>,
+                <Link href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/">
+                  Lead Generation Focus
+                </Link>,
               ].map((item, i) => (
                 <FadeIn key={i} direction="up" delay={0.5 + i * 0.1}>
                   <div className="flex items-center gap-3">
@@ -297,9 +305,13 @@ export default function AboutPage() {
               </div>
 
               <p className="text-2xl md:text-2xl font-bold text-slate-800 dark:text-white italic leading-tight relative z-10">
-                "At <Link href="/" className="text-[#B54118] font-bold underline">BizGrow Digital</Link> , we don’t just develop websites; we build
-                powerful digital solutions that turn visitors into clients and
-                position your brand as a{" "}
+                "At{" "}
+                <Link href="/" className="text-[#B54118] font-bold underline">
+                  BizGrow Digital
+                </Link>{" "}
+                , we don’t just develop websites; we build powerful digital
+                solutions that turn visitors into clients and position your
+                brand as a{" "}
                 <span className="text-[#B54118]">trusted leader</span>."
               </p>
 
@@ -319,13 +331,11 @@ export default function AboutPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-64 bg-[#B54118]/5 skew-y-3 -z-10" />
 
         <div className="max-w-7xl mx-auto px-6">
-         <FadeIn direction="up">
+          <FadeIn direction="up">
             <div className="flex flex-col items-center mb-20">
               <h2 className="text-4xl md:text-6xl font-black text-center text-[#B54118] uppercase tracking-tighter">
-                Our Core {" "}
-                <span className="text-slate-900 dark:text-white">
-                  Values
-                </span>
+                Our Core{" "}
+                <span className="text-slate-900 dark:text-white">Values</span>
               </h2>
               <div className="w-24 h-2 bg-[#B54118] mt-4 rounded-full" />
             </div>
@@ -440,7 +450,7 @@ export default function AboutPage() {
                   We work closely with each client to understand what they need.
                   Our solutions are simple, flexible, and designed to get real
                   results. By working together, we make sure every project helps
-                  your business grow and succeed.
+                  your business grow and succeed in the UK.
                 </p>
               </FadeIn>
 
