@@ -20,7 +20,7 @@ export const metadata = {
   alternates: {
     canonical: "https://bizgrow-digital.co.uk/lead-generation-solutions/",
   },
-  };
+};
 
 const LeadGenerationPage = () => {
   const leadServices = [
@@ -82,8 +82,10 @@ const LeadGenerationPage = () => {
           <FadeIn direction="up" delay={0.4} className="w-full">
             <div className="w-full flex justify-center">
               <h1 className="text-white text-3xl md:text-6xl text-center font-black max-w-5xl leading-tiet tracking-normal">
-                Fuel Your Sales Pipeline with 
-                <span className="text-orange-500"> Qualified Leads</span>
+                Boost sales with UK
+                <span className="text-orange-500">
+                  Lead Generation Services{" "}
+                </span>
               </h1>
             </div>
           </FadeIn>
@@ -128,9 +130,16 @@ const LeadGenerationPage = () => {
             >
               <div className="flex justify-center">
                 <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg md:text-lg max-w-3xl leading-relaxed font-medium">
-                  At <Link href="https://bizgrow-digital.co.uk/about-us/" className="text-[#B54118] font-bold underline">BizGrow Digital,</Link> we prioritise quality over quantity. With
-                  UK-focused strategies, we deliver measurable results that
-                  optimise your sales pipeline efficiently.
+                  At{" "}
+                  <Link
+                    href="https://bizgrow-digital.co.uk/about-us/"
+                    className="text-[#B54118] font-bold underline"
+                  >
+                    BizGrow Digital,
+                  </Link>{" "}
+                  we prioritise quality over quantity. With UK-focused
+                  strategies, we deliver measurable results that optimise your
+                  sales pipeline efficiently.
                 </p>
               </div>
             </FadeIn>
@@ -174,22 +183,217 @@ const LeadGenerationPage = () => {
           </div>
         </div>
       </section>
+      {/* 🚀 NEW SECTION: LEAD GENERATION PROCESS (Horizontal Steps) */}
+      <section className="py-32 bg-gray-50 dark:bg-black relative overflow-hidden">
+        {/* Subtle Background Text for Design Depth */}
+        <div className="absolute top-10 left-10 text-slate-200/50 dark:text-white/[0.02] font-black text-9xl pointer-events-none uppercase tracking-tighter">
+          Process
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
+            <div className="max-w-3xl">
+              <FadeIn direction="up">
+                <span className="text-[#B54118] font-black uppercase tracking-[0.3em] text-xs mb-4 block">
+                  How We Drive Results
+                </span>
+                <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white leading-none uppercase tracking-tighter">
+                  Our Lead <br />
+                  <span className="text-[#B54118]">Generation Process</span>
+                </h2>
+                <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium italic border-l-4 border-[#B54118] pl-6">
+                  At BizGrow Digital, we follow a structured and results-driven
+                  process designed to generate qualified leads and real sales
+                  opportunities for UK businesses.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+
+          {/* Process Steps Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[
+              {
+                step: "01",
+                title: "Onboarding",
+                desc: "Understanding your UK business goals and target audience to build a tailored strategy.",
+              },
+              {
+                step: "02",
+                title: "Organic Growth",
+                desc: "SEO and content optimisation to attract high-intent UK prospects organically.",
+              },
+              {
+                step: "03",
+                title: "Email Marketing",
+                desc: "Targeted outreach campaigns to connect and nurture valuable client relationships.",
+              },
+              {
+                step: "04",
+                title: "Lead Activation",
+                desc: "Activating lead capture channels to generate qualified enquiries for your business.",
+              },
+              {
+                step: "05",
+                title: "Review & Refine",
+                desc: "Continuous tracking and optimisation to improve lead quality and long-term results.",
+              },
+            ].map((item, i) => (
+              <FadeIn
+                key={i}
+                direction="up"
+                delay={0.1 * i}
+                className="group relative"
+              >
+                <div className="h-full bg-white dark:bg-[#001235]/40 backdrop-blur-md p-8 rounded-[2.5rem] border border-slate-200 dark:border-white/5 hover:bg-[#B54118] transition-all duration-500 group">
+                  {/* Step Number */}
+                  <div className="text-5xl font-black text-slate-100 dark:text-white/5 group-hover:text-white/20 transition-colors duration-500 mb-6">
+                    {item.step}
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-lg font-black text-slate-900 dark:text-white group-hover:text-white uppercase tracking-tight mb-4 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-500 dark:text-gray-400 group-hover:text-white/80 text-xs leading-relaxed font-medium transition-colors">
+                    {item.desc}
+                  </p>
+
+                  {/* Connecting Arrow (Only on Desktop) */}
+                  {i < 4 && (
+                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
+                      <Zap
+                        className="text-[#B54118] group-hover:text-white opacity-20 group-hover:opacity-100 transition-all"
+                        size={20}
+                      />
+                    </div>
+                  )}
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* 🎯 NEW SECTION: TYPES OF LEADS WE GENERATE */}
+      <section className="py-24 bg-white dark:bg-black overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side: Content */}
+            <div className="max-w-xl">
+              <FadeIn direction="right">
+                <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white leading-[1.1] uppercase tracking-tighter">
+                  Types of Leads <br />
+                  <span className="text-orange-500">We Generate</span>
+                </h2>
+                <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium">
+                  BizGrow Digital helps UK businesses generate different types
+                  of high-quality leads tailored to their industry and growth
+                  objectives. We focus on intent, not just traffic.
+                </p>
+
+                {/* Visual Accent */}
+                <div className="mt-10 p-6 bg-orange-50 dark:bg-orange-900/10 rounded-2xl border-l-4 border-orange-500">
+                  <p className="text-sm font-bold text-slate-800 dark:text-gray-200 uppercase tracking-widest leading-relaxed">
+                    "Quality over quantity: Every lead is a potential long-term
+                    partner."
+                  </p>
+                </div>
+              </FadeIn>
+            </div>
+
+            {/* Right Side: Interactive Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                {
+                  title: "B2B Lead Generation",
+                  desc: "Connecting businesses with decision-makers and qualified prospects seeking professional services.",
+                  icon: <Globe className="w-6 h-6" />,
+                  style: "bg-slate-50 dark:bg-[#001235]/40",
+                },
+                {
+                  title: "Inbound Leads",
+                  desc: "Attracting customers who are actively searching for your services through SEO and digital channels.",
+                  icon: <Zap className="w-6 h-6" />,
+                  style:
+                    "bg-white border-2 border-slate-100 dark:bg-transparent dark:border-orange-500/30",
+                },
+                {
+                  title: "Local Business Leads",
+                  desc: "Generating enquiries from customers in your local UK areas through targeted digital marketing.",
+                  icon: <Target className="w-6 h-6" />,
+                  style:
+                    "bg-white border-2 border-slate-100 dark:bg-transparent dark:border-orange-500/30",
+                },
+                {
+                  title: "Sales-Ready Leads",
+                  desc: "Delivering prospects who are genuinely interested and ready to move forward with your business.",
+                  icon: <CheckCircle2 className="w-6 h-6" />,
+                  style: "bg-orange-500 text-white",
+                },
+              ].map((item, i) => (
+                <FadeIn key={i} direction="up" delay={0.1 * i}>
+                  <div
+                    className={`p-8 rounded-[2.5rem] h-full flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${item.style}`}
+                  >
+                    <div>
+                      <div
+                        className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${
+                          i === 3
+                            ? "bg-white/20"
+                            : "bg-orange-500/10 text-orange-500"
+                        }`}
+                      >
+                        {item.icon}
+                      </div>
+                      <h3
+                        className={`text-lg font-black uppercase tracking-tight mb-4 ${
+                          i === 3
+                            ? "text-white"
+                            : "text-slate-900 dark:text-white"
+                        }`}
+                      >
+                        {item.title}
+                      </h3>
+                      <p
+                        className={`text-sm leading-relaxed font-medium ${
+                          i === 3
+                            ? "text-orange-50/80"
+                            : "text-gray-500 dark:text-gray-400"
+                        }`}
+                      >
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       {/* --- DATA SECTION (Lead Gen Focus) --- */}
       <section className="py-24 bg-white dark:bg-black dark:border-t-2 dark:border-orange-700 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <FadeIn direction="right" delay={0.2}>
               <h2 className="text-4xl md:text-5xl font-black dark:text-white leading-tight">
-                PRECISION LEAD GENERATION  
+                PRECISION LEAD GENERATION
                 <span className="text-orange-500 ml-1">
-                    & TARGETED SALES INSIGHTS
+                  & TARGETED SALES INSIGHTS
                 </span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 pt-8 text-lg">
                 Stop wasting time on unqualified traffic. BizGrow Digital
-                delivers <Link href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/ " className="text-[#B54118] font-bold underline">high-quality leads </Link>through smart analytics, predictive
-                targeting, and UK-focused strategies. Connect with prospects
-                ready to engage and convert, growing your business efficiently.
+                delivers{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/ "
+                  className="text-[#B54118] font-bold underline"
+                >
+                  high-quality leads{" "}
+                </Link>
+                through smart analytics, predictive targeting, and UK-focused
+                strategies. Connect with prospects ready to engage and convert,
+                growing your business efficiently.
               </p>
             </FadeIn>
 
@@ -247,10 +451,10 @@ const LeadGenerationPage = () => {
                   BOOST YOUR SALES PIPELINE
                 </span>
 
-                <h2 className="text-4xl md:text-7xl mt-6 font-black mb-8 leading-[1.1] tracking-tighter uppercase">
+                <h2 className="text-4xl md:text-6xl mt-6 font-black mb-8 leading-[1.1] tracking-tighter uppercase">
                   Connect with <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B54118] to-orange-400">
-                    Ready-to-Buy Leads
+                    HIGH-INTENT BUSINESS LEADS
                   </span>
                 </h2>
               </FadeIn>
@@ -261,10 +465,9 @@ const LeadGenerationPage = () => {
                 className="flex flex-col items-center"
               >
                 <p className="mx-auto mb-14 text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
-                  Don’t wait for prospects to discover your business. BizGrow
-                  Digital identifies and connects you with high-intent leads,
-                  ensuring a steady flow of opportunities that turn into
-                  measurable growth every day.
+                  Stop waiting for customers to find you. BizGrow Digital helps
+                  UK businesses attract and connect with qualified prospects
+                  actively searching for their services.
                 </p>
               </FadeIn>
 
@@ -280,7 +483,7 @@ const LeadGenerationPage = () => {
                     <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
 
                     <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
-                      Get Your Free Audit →
+                      Get Your Free LEAD  Audit →
                     </span>
                   </button>
                 </Link>
