@@ -83,8 +83,8 @@ const LeadGenerationPage = () => {
             <div className="w-full flex justify-center">
               <h1 className="text-white text-3xl md:text-6xl text-center font-black max-w-5xl leading-tiet tracking-normal">
                 Boost sales with UK
-                <span className="text-orange-500">
-                  Lead Generation Services{" "}
+                <span className="text-orange-500 ml-5">
+                   Lead Generation Services{" "}
                 </span>
               </h1>
             </div>
