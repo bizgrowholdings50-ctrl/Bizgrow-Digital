@@ -166,12 +166,19 @@ const SocialMediaMarketingPage = () => {
               Organic-First <br />
               <span className="text-orange-500">Social Media Strategy</span>
             </h2>
-            <h3 className="text-xl font-bold mb-6 text-blue-200">Built for Long-Term Growth, Not Temporary Spikes</h3>
+            <h3 className="text-xl font-bold mb-6 text-blue-200">
+              Built for Long-Term Growth, Not Temporary Spikes
+            </h3>
             <p className="text-blue-100/70 text-lg mb-6 leading-relaxed">
-              At BizGrow Digital, we believe sustainable digital growth comes from building real audience trust and consistent brand visibility.
+              At BizGrow Digital, we believe sustainable digital growth comes
+              from building real audience trust and consistent brand visibility.
             </p>
             <p className="text-blue-100/60 mb-10 leading-relaxed">
-              While paid advertising can deliver quick results, those results often disappear once the campaign stops. That’s why our primary focus is on organic social media growth strategies designed to create long-lasting brand presence and meaningful audience engagement.
+              While paid advertising can deliver quick results, those results
+              often disappear once the campaign stops. That’s why our primary
+              focus is on organic social media growth strategies designed to
+              create long-lasting brand presence and meaningful audience
+              engagement.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
@@ -209,7 +216,8 @@ const SocialMediaMarketingPage = () => {
               Our <span className="text-orange-500">Marketing Approach</span>
             </h2>
             <p className="text-gray-500 mt-4 max-w-3xl mx-auto">
-              We focus on building strategic social media systems that deliver long-term growth and consistent brand visibility.
+              We focus on building strategic social media systems that deliver
+              long-term growth and consistent brand visibility.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -260,62 +268,183 @@ const SocialMediaMarketingPage = () => {
           <div className="bg-[#000B25] rounded-[3.5rem] p-12 md:p-20 text-[#B54118] flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
-                Content That Builds <span className="text-white">Authority.</span>
+                Content That Builds{" "}
+                <span className="text-white">Authority.</span>
               </h2>
               <p className="text-white/90 text-lg mb-8 font-medium">
-                Social media is no longer just about posting; it’s about positioning your brand as a trusted voice within your industry.
+                Social media is no longer just about posting; it’s about
+                positioning your brand as a trusted voice within your industry.
               </p>
               <p className="text-white/80 mb-10 leading-relaxed">
-                BizGrow Digital develops strategic content that reflects your expertise, communicates your value, and strengthens your authority in the market.
+                BizGrow Digital develops strategic content that reflects your
+                expertise, communicates your value, and strengthens your
+                authority in the market.
               </p>
               <div className="grid grid-cols-2 gap-4">
-                {["Brand Credibility", "Audience Trust", "Industry Visibility", "Digital Presence"].map((tag, i) => (
+                {[
+                  "Brand Credibility",
+                  "Audience Trust",
+                  "Industry Visibility",
+                  "Digital Presence",
+                ].map((tag, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-black/40" />
-                    <span className="text-xs font-black uppercase tracking-widest">{tag}</span>
+                    <span className="text-xs font-black uppercase tracking-widest">
+                      {tag}
+                    </span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="lg:w-1/2 relative w-full aspect-square md:aspect-video lg:aspect-square">
-               <Image src="/Content Creation.jpg" alt="Build Authority" fill className="object-cover rounded-[2.5rem]" />
+              <Image
+                src="/Content Creation.jpg"
+                alt="Build Authority"
+                fill
+                className="object-cover rounded-[2.5rem]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 🔹 NEW SECTION: HOW WE TURN ENGAGEMENT INTO MEASURABLE RESULTS */}
+      <section className="py-24 bg-white dark:bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            {/* Left Side: Image Card with Rounded Corners (As per Screenshot) */}
+            <div className="w-full lg:w-1/2">
+              <div className="relative aspect-square md:aspect-[4/3] lg:aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+                <Image
+                  src="/smm-strategy.jpg" // Image path updated to match your screenshot visual
+                  alt="Engagement into Results"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Side: Content & Points */}
+            <div className="w-full lg:w-1/2">
+              <h2 className="text-[#000B25] dark:text-white text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter mb-6">
+                How We Turn <br />
+                <span className="text-orange-500 italic">
+                  Engagement Into{" "}
+                </span>{" "}
+                <br />
+                Measurable Results
+              </h2>
+              <p className="text-zinc-500 dark:text-zinc-400 text-lg mb-8 leading-relaxed">
+                At BizGrow Digital, we use strategic research and content
+                planning to help UK businesses turn social engagement into
+                meaningful opportunities.
+              </p>
+
+              {/* List Points */}
+              <div className="space-y-6">
+                {[
+                  {
+                    t: "Strategic UK Audience Research",
+                    d: "We analyse your target audience, market behaviour, and competitors to understand what content drives real engagement.",
+                  },
+                  {
+                    t: "High-Value Content Strategy",
+                    d: "Our team develops content designed to capture attention, encourage interaction, and strengthen your brand presence.",
+                  },
+                  {
+                    t: "Market & Competitor Analysis",
+                    d: "We identify opportunities within your industry to position your business ahead of competitors.",
+                  },
+                  {
+                    t: "Consistent Multi-Platform Brand Presence",
+                    d: "We ensure your brand message stays consistent across Facebook, Instagram, LinkedIn, and TikTok.",
+                  },
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-4 group">
+                    <div className="mt-1">
+                      <CheckCircle2 className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform" />
+                    </div>
+                    <div>
+                      <h4 className="font-black text-[#000B25] dark:text-white uppercase text-xs tracking-tight mb-1">
+                        {item.t}
+                      </h4>
+                      <p className="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed">
+                        {item.d}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* 🔹 6. FINAL CTA */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 md:px-10">
           <div
-            className="relative py-32 rounded-[3.5rem] overflow-hidden text-center text-white"
+            className="relative py-24 md:py-32 rounded-[3.5rem] overflow-hidden text-white text-center shadow-[0_30px_70px_rgba(0,0,0,0.5)] group"
             style={{
               backgroundImage: "url('/smm-cta.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundAttachment: "fixed",
+              backgroundAttachment: "fixed", // Parallax Effect
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/85 to-[#B54118]/20" />
-            <div className="relative z-10 px-6">
-              <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-10">
-                Ready to Lead the <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B54118] to-orange-400">
-                  News Feed?
+            {/* 🔹 Depth Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/80 to-[#B54118]/20 z-0"></div>
+
+            {/* 🔹 Glass Border Identity */}
+            <div className="absolute inset-0 border-2 border-white/10 rounded-[3.5rem] z-10 pointer-events-none group-hover:border-[#B54118]/30 transition-all duration-500"></div>
+
+            <div className="relative z-20 max-w-5xl mx-auto px-6 flex flex-col items-center">
+              {/* Top Growth Badge */}
+              <FadeIn direction="up" className="flex flex-col items-center">
+                <span className="px-6 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 border-l-[#B54118] border-l-4 text-white text-xs md:text-sm font-black tracking-[0.3em] uppercase">
+                  SOCIAL INFLUENCE
                 </span>
-              </h2>
-              <p className="max-w-2xl mx-auto text-gray-300 italic mb-12 text-xl">
-                “Don’t just participate in the conversation, lead it.”
-              </p>
-              <Link href="/contact-us">
-                <button className="relative px-12 py-6 bg-[#B54118] text-white font-black rounded-2xl group overflow-hidden transition-all hover:scale-110">
-                  <div className="absolute top-0 -inset-full h-full w-1/2 transform -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shine" />
-                  <span className="relative z-10 uppercase tracking-widest">
-                    Build Your Social Presence →
+
+                <h2 className="text-4xl mt-4 md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter uppercase">
+                  READY TO STAND OUT IN THE
+                  <span className="text-transparent ml-2 bg-clip-text bg-gradient-to-r from-[#B54118] to-orange-400">
+                    NEWS FEED?
                   </span>
-                </button>
-              </Link>
+                </h2>
+              </FadeIn>
+
+              <FadeIn
+                direction="up"
+                delay={0.2}
+                className="flex flex-col items-center"
+              >
+                <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
+                  "At BizGrow Digital, we create strategic social media
+                  marketing that helps UK businesses increase visibility, build
+                  trust, and turn engagement into real growth."
+                </p>
+              </FadeIn>
+
+              <FadeIn
+                direction="up"
+                delay={0.4}
+                className="flex flex-col items-center"
+              >
+                <Link href="/contact-us">
+                  {/* 🎯 FIXED PREMIUM BUTTON WITH SHINE */}
+                  <button className="relative px-8 py-4 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-110 hover:shadow-[0_0_50px_rgba(181,65,24,0.6)]">
+                    {/* Shine Animation */}
+                    <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
+                    <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
+                      START GROWING YOUR SOCIAL PRESENCE  →
+                    </span>
+                  </button>
+                </Link>
+              </FadeIn>
             </div>
+
+            {/* Glowing Accents */}
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#B54118]/10 blur-[130px] rounded-full -z-10"></div>
           </div>
         </div>
       </section>
