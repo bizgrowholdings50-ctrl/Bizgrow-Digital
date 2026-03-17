@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import React from "react";
 import {
@@ -12,10 +11,6 @@ import {
 } from "lucide-react";
 import FadeIn from "@components/MotionWrapper";
 import Link from "next/link";
-
-
-
-
 
 const GraphicDesignPage = () => {
   return (
@@ -34,26 +29,110 @@ const GraphicDesignPage = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col items-center text-center">
           <FadeIn direction="up">
-            <span className="text-orange-500 font-bold tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block">
+            <span className="text-orange-500 font-bold mt-10 tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block">
               Premium Graphic Design Services
             </span>
-            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black leading-none mb-6">
+            <h1 className="text-white text-4xl sm:text-5xl md:text-5xl lg:text-8xl font-black leading-none mb-6">
               DESIGN THAT BUILDS{" "}
               <span className="text-orange-500">TRUST IN SECONDS</span>
             </h1>
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
-              Our graphic design focuses on clarity, structure, and visual
-              authority, helping businesses stand out immediately while
-              maintaining a professional and trustworthy brand image.
+              BizGrow Digital creates high-quality, professional designs that
+              help UK businesses stand out, build credibility, and convert more
+              customers from social media graphics to a complete brand identity.
             </p>
             <Link href="/contact-us">
               <button className="bg-[#B54118] text-white px-10 py-5 rounded-full font-bold hover:scale-105 transition-all uppercase tracking-widest shadow-2xl">
-                Start Creating
+                Get Your Free Design Consultation
               </button>
             </Link>
           </FadeIn>
         </div>
       </div>
+
+{/* 🔹 REFINED EDITORIAL SECTION: CLEAN & CENTERED */}
+      <section className="py-24 bg-white dark:bg-[#020817] font-sans border-y border-slate-100 dark:border-slate-900">
+        <div className="max-w-6xl mx-auto px-6">
+          
+          {/* 1. Centered Header Section */}
+          <div className="text-center mb-24">
+            <FadeIn direction="up">
+              <span className="text-[#B54118] font-black uppercase tracking-[0.3em] text-[10px] mb-4 block">
+                Expertise & Specializations
+              </span>
+              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight dark:text-white mb-6 italic">
+                What Our Graphic Design <br />
+                <span className="text-[#B54118]">Services Include?</span>
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto italic">
+                Our services are tailored to help UK businesses build a strong, professional, and consistent brand presence. We design visuals that attract attention and drive real results.
+              </p>
+            </FadeIn>
+          </div>
+
+          {/* 2. Refined Compact List */}
+          <div className="space-y-0 border-t border-slate-100 dark:border-slate-800">
+            {[
+              {
+                num: "01",
+                title: "Social Media Design",
+                desc: "We create engaging and scroll-stopping designs for Facebook, Instagram, LinkedIn, and more. Built to increase engagement and generate leads."
+              },
+              {
+                num: "02",
+                title: "Logo & Branding Design",
+                desc: "Professional identities that reflect your business values. Our UK branding solutions ensure your business looks consistent and credible."
+              },
+              {
+                num: "03",
+                title: "Marketing Materials Design",
+                desc: "High-quality flyers, brochures, and banners that clearly communicate your message and enhance your brand image both online and offline."
+              },
+              {
+                num: "04",
+                title: "Website & UI Graphics",
+                desc: "Clean and user-friendly visuals optimized to convert visitors into customers. Aligned with your brand and optimized for performance."
+              },
+              {
+                num: "05",
+                title: "Custom Creative Content",
+                desc: "Tailored design solutions for your specific goals. Whether you need unique visuals or branded content, we deliver designs that stand out."
+              }
+            ].map((service, i) => (
+              <div 
+                key={i} 
+                className="group border-b border-slate-100 dark:border-slate-800 py-10 transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] px-4"
+              >
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-16">
+                  
+                  {/* Small ID & Title */}
+                  <div className="flex items-center gap-6 md:w-[40%]">
+                    <span className="text-sm font-bold text-[#B54118] opacity-50">
+                      {service.num}
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-black uppercase italic tracking-tighter text-slate-900 dark:text-white group-hover:text-[#B54118] transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                  </div>
+
+                  {/* Refined Description */}
+                  <div className="md:w-[55%]">
+                    <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base font-medium leading-relaxed italic">
+                      {service.desc}
+                    </p>
+                  </div>
+
+                  {/* Minimal Arrow */}
+                  <div className="hidden md:block md:w-[5%] text-right">
+                    <MoveUpRight className="w-5 h-5 text-slate-300 group-hover:text-[#B54118] transition-all transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
 
       {/* --- UNIQUE SERVICE "BENTO" GRID: Artistic Middle Section --- */}
       <section className="w-full dark:bg-black dark:border-t-2 dark:border-orange-700">
@@ -62,9 +141,9 @@ const GraphicDesignPage = () => {
             <div className="max-w-4xl mx-auto text-center mb-20 space-y-6">
               {/* Main Heading */}
               <h2 className="text-4xl md:text-6xl font-black dark:text-white text-slate-900 uppercase tracking-tighter leading-[0.9]">
-                Our Graphic Design <br />
-                <span className="text-[#B54118] relative inline-block">
-                  Capabilities
+                Why is Professional Graphic Design Essential for
+                <span className="text-[#B54118] ml-3 relative inline-block">
+                  Business Growth?
                   {/* Animated Underline */}
                   <span className="absolute bottom-2 left-0 w-full h-2 bg-[#B54118]/20 -z-10"></span>
                 </span>
@@ -72,9 +151,10 @@ const GraphicDesignPage = () => {
 
               {/* Sub-description (Jo aapne mangi thi) */}
               <p className="text-gray-500 dark:text-gray-400 text-md md:text-xl font-medium leading-relaxed max-w-2xl mx-auto tracking-tight">
-                Strategic design services crafted to strengthen brand identity,
-                improve user experience, and support <Link href="https://bizgrow-digital.co.uk/how-can-expert-seo-techniques-boost-your-business-visibility/" className="text-[#B54118] font-bold underline">business growth</Link>  across
-                digital platforms.
+                Your design is often the first impression your UK business
+                makes. Poor design can lose customers instantly, while
+                professional design builds trust, attracts attention, and drives
+                conversions.
               </p>
             </div>
           </FadeIn>
@@ -122,7 +202,7 @@ const GraphicDesignPage = () => {
               </div>
               <p className="text-white/80 text-sm font-medium leading-relaxed mt-4 max-w-[250px]">
                 Professional logo design, brand guidelines, and visual systems
-                that create a consistent and recognisable brand presence.
+                that create a consistent and recognisable brand presence in Uk.
               </p>
             </div>
 
@@ -135,8 +215,15 @@ const GraphicDesignPage = () => {
                 </h3>
               </div>
               <p className="text-slate-500 dark:text-gray-400 text-sm font-medium leading-relaxed mt-4 max-w-[250px]">
-                High-impact social media  <Link href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/ " className="text-[#B54118] font-bold underline">graphics designed</Link> to increase
-                visibility, interaction, and brand recall across platforms.
+                High-impact social media{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/ "
+                  className="text-[#B54118] font-bold underline"
+                >
+                  graphics designed
+                </Link>{" "}
+                to increase visibility, interaction, and brand recall across Uk
+                platforms.
               </p>
             </div>
 
@@ -158,21 +245,22 @@ const GraphicDesignPage = () => {
         </div>
       </section>
 
+
       {/* --- CONTENT SECTION: Unique Visual Philosophy --- */}
       <div className="py-14 bg-white dark:bg-[#020817] dark:border-t-2 dark:border-orange-700">
         <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row-reverse gap-20 items-center">
           <div className="w-full lg:w-1/2 space-y-8">
             <h2 className="text-5xl md:text-6xl font-black dark:text-white leading-none uppercase">
-              VISUALS THAT MAKE PEOPLE <br />{" "}
-              <span className="text-orange-500">TRUST </span> YOU FAST
+              Design That Gets You <br />{" "}
+              <span className="text-orange-500">Noticed </span> and Chosen
             </h2>
             <div className="space-y-6">
               {[
-                "Brand Consistency",
-                "Clean Typography",
-                "Premium Layouts",
-                "Clear Messaging",
-                "Conversion UI",
+                "Built for First Impressions",
+                "Clean. Sharp. Professional.",
+                "Designed to Capture Attention",
+                "Clarity That Converts",
+                "Focused on Real Results",
               ].map((text, i) => (
                 <div
                   key={i}
@@ -196,6 +284,80 @@ const GraphicDesignPage = () => {
           </div>
         </div>
       </div>
+
+      {/* 🔹 THE THINKING BEHIND EVERY DESIGN: STRATEGIC PROCESS */}
+      <section className="py-24 bg-slate-50 dark:bg-[#020817] relative overflow-hidden font-sans">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          {/* Section Header */}
+          <div className="max-w-4xl mb-20">
+            <FadeIn direction="right">
+              <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-xs mb-4 block">
+                Our Workflow
+              </span>
+              <h2 className="text-slate-900 dark:text-white text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8 italic">
+                The Thinking <br />
+                <span className="text-orange-500">Behind Every Design.</span>
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-lg md:text-xl font-medium leading-relaxed border-l-4 border-orange-500 pl-8 max-w-3xl">
+                We follow a structured and strategic approach to ensure every
+                design we deliver is aligned with your brand, engages your
+                audience, and drives real results.
+              </p>
+            </FadeIn>
+          </div>
+
+          {/* Process Steps Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                id: "01",
+                title: "Understanding Your Brand",
+                desc: "We begin by gaining a clear understanding of your business, goals, and target audience. This allows us to create designs that truly reflect your brand identity and speak directly to your customers.",
+              },
+              {
+                id: "02",
+                title: "Strategy & Concept Development",
+                desc: "Based on our insights, we develop creative concepts and design directions that align with your objectives. Every idea is built with purpose, not just aesthetics.",
+              },
+              {
+                id: "03",
+                title: "Design & Refinement",
+                desc: "We bring concepts to life through high-quality design, focusing on clarity, consistency, and visual impact. Your feedback is incorporated to refine and perfect every detail.",
+              },
+              {
+                id: "04",
+                title: "Final Delivery & Implementation",
+                desc: "Once approved, we deliver your designs in the required formats, ready for use across all platforms, ensuring a smooth and professional rollout.",
+              },
+            ].map((step, i) => (
+              <FadeIn key={i} direction="up" delay={i * 0.1}>
+                <div className="group relative h-full p-8 rounded-[2.5rem] bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-orange-500/30 transition-all duration-500 hover:shadow-2xl">
+                  {/* Step Number */}
+                  <div className="text-6xl font-black text-slate-100 dark:text-slate-800 group-hover:text-orange-500/60 transition-colors mb-6">
+                    {step.id}
+                  </div>
+
+                  <h3 className="text-[#12066a] dark:text-white text-2xl font-black uppercase tracking-tighter mb-4 italic leading-tight">
+                    {step.title}
+                  </h3>
+
+                  <p className="text-gray-500 dark:text-gray-400 text-sm font-medium leading-relaxed">
+                    {step.desc}
+                  </p>
+
+                  {/* Decorative Line */}
+                  <div className="absolute bottom-8 left-8 right-8 h-1 bg-slate-50 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div className="h-full w-0 bg-orange-500 group-hover:w-full transition-all duration-700" />
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+
+        {/* Background Decorative Element */}
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-orange-500/5 blur-[120px] rounded-full -z-0" />
+      </section>
 
       {/* 🚀 FINAL CTA: Graphic Design (Signature Style) */}
       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
@@ -242,7 +404,7 @@ const GraphicDesignPage = () => {
               >
                 <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
                   Designed to support growth, not trends. We create refined
-                  visual identities that help businesses appear credible,
+                  visual identities that help UK businesses appear credible,
                   established, and ready to scale, without unnecessary
                   complexity.
                 </p>
@@ -259,7 +421,7 @@ const GraphicDesignPage = () => {
                     {/* Shine Animation */}
                     <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
                     <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
-                    Get Started Today →
+                      Get Started Today →
                     </span>
                   </button>
                 </Link>
