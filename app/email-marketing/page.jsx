@@ -22,36 +22,57 @@ export const metadata = {
   alternates: {
     canonical: "https://bizgrow-digital.co.uk/email-marketing/",
   },
-
-
-  };
+};
 
 const EmailMarketingPage = () => {
   const emailServices = [
     {
-      title: "Campaign Strategy",
-      desc: <>We design <Link href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/" className="text-[#B54118] font-bold underline">data-driven email</Link> roadmaps that target your audience segments with precision and purpose.</>,
+      title: "Email Growth Strategy",
+      desc: (
+        <>
+          We design{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/"
+            className="text-[#B54118] font-bold underline"
+          >
+            data-driven email marketing strategy
+          </Link>{" "}
+          tailored to UK audiences, targeting the right segments with precision
+          and purpose.
+        </>
+      ),
       icon: <Workflow className="w-8 h-8" />,
       bgColor: "bg-blue-100",
       hoverBg: "group-hover:bg-[#B54118]",
     },
     {
       title: "Email Automation",
-      desc: <>Set your growth on autopilot with advanced triggers and drip sequences that <Link href="https://bizgrow-digital.co.uk/lead-generation-solutions/" className="text-[#B54118] font-bold underline">nurture leads </Link> 24/7.</>,
+      desc: (
+        <>
+          Set your growth on autopilot with advanced triggers and drip sequences
+          that{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/lead-generation-solutions/"
+            className="text-[#B54118] font-bold underline"
+          >
+            nurture leads and build long-term customer relationships{" "}
+          </Link>{" "}
+        </>
+      ),
       icon: <Zap className="w-8 h-8" />,
       bgColor: "bg-orange-100",
       hoverBg: "group-hover:bg-[#B54118]",
     },
     {
       title: "Creative Copywriting",
-      desc: "High-converting subject lines and body copy that bypasses spam filters and lands straight in the heart.",
+      desc: "High-converting subject lines and body copy designed to increase open rates, avoid spam filters, and drive real engagement.",
       icon: <Mail className="w-8 h-8" />,
       bgColor: "bg-purple-100",
       hoverBg: "group-hover:bg-[#B54118]",
     },
     {
       title: "Testing & Analytics",
-      desc: "Constant optimisation through split testing and deep performance tracking to maximise your ROI.",
+      desc: "Continuous optimisation through split testing and performance tracking to improve email engagement and maximise ROI.",
       icon: <BarChart3 className="w-8 h-8" />,
       bgColor: "bg-green-100",
       hoverBg: "group-hover:bg-[#B54118]",
@@ -63,7 +84,7 @@ const EmailMarketingPage = () => {
       {/* --- HERO SECTION --- */}
       <div className="relative h-[80vh] md:h-screen w-full">
         <Image
-          src="/test2.jpg" // Ensure this image exists in public folder
+          src="/email.jpg" // Ensure this image exists in public folder
           alt="Email Marketing Services"
           fill
           priority
@@ -75,7 +96,7 @@ const EmailMarketingPage = () => {
           <FadeIn direction="up" delay={0.2}>
             <div className="w-full flex justify-center">
               <span className="text-orange-500 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mb-4 block text-center">
-                Direct-to-Consumer Growth
+                Email Marketing Services UK
               </span>
             </div>
           </FadeIn>
@@ -83,7 +104,7 @@ const EmailMarketingPage = () => {
           {/* Row 2: Heading */}
           <FadeIn direction="up" delay={0.4}>
             <div className="w-full flex justify-center">
-              <h1 className="text-white text-4xl md:text-7xl text-center font-black max-w-5xl leading-tight">
+              <h1 className="text-white text-4xl md:text-6xl text-center font-black max-w-5xl leading-tight">
                 Turn Your Inbox Into A <br />
                 <span className="text-orange-500">Revenue Engine</span>
               </h1>
@@ -93,9 +114,11 @@ const EmailMarketingPage = () => {
           {/* Row 3: Paragraph */}
           <FadeIn direction="up" delay={0.6}>
             <div className="w-full flex justify-center">
-              <p className="text-gray-300 text-xl md:text-2xl text-center max-w-2xl mt-8">
-                Don't just send emails. Build relationships and drive sales with
-                highly personalised, automated email marketing campaigns.
+              <p className="text-gray-300 text-xl md:text-xl text-center max-w-3xl mt-8">
+                Stop sending emails that get ignored. We help UK businesses grow
+                with data-driven, automated email marketing that builds strong
+                customer relationships, increases engagement, and drives
+                consistent sales..
               </p>
             </div>
           </FadeIn>
@@ -133,8 +156,8 @@ const EmailMarketingPage = () => {
               <div className="flex justify-center">
                 <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed font-medium">
                   We bridge the gap between your brand and your customers
-                  through targeted messaging that actually gets opened and
-                  clicked.
+                  through targeted, data-driven email marketing in the UK that
+                  gets opened, engaged with, and converted.
                 </p>
               </div>
             </FadeIn>
@@ -177,6 +200,117 @@ const EmailMarketingPage = () => {
         </div>
       </section>
 
+      {/* --- NEW SECTION: OUR EMAIL MARKETING PROCESS --- */}
+      <section className="py-24 bg-gray-50 dark:bg-black relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <FadeIn direction="up" className="flex flex-col items-center">
+              <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white leading-tight uppercase">
+                Our Email{" "}
+                <span className="text-[#B54118]">Marketing Process</span>
+              </h2>
+              <div className="w-44 h-1.5 mx-auto bg-[#B54118] mt-6 rounded-full" />
+            </FadeIn>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                num: "01",
+                title: "Audience Research & Segmentation",
+                desc: "We understand your audience behaviour and segment your email list to ensure relevant and personalised communication.",
+              },
+              {
+                num: "02",
+                title: "Email Strategy Planning",
+                desc: "We create a structured plan focused on engagement, retention, and long-term customer relationships.",
+              },
+              {
+                num: "03",
+                title: "Content & Email Design",
+                desc: "We craft compelling subject lines and engaging email content that encourage opens, clicks, and interaction.",
+              },
+              {
+                num: "04",
+                title: "Automation Setup",
+                desc: "We implement smart email sequences like welcome emails, follow-ups, and nurturing flows to build trust over time.",
+              },
+              {
+                num: "05",
+                title: "Performance Optimisation",
+                desc: "We continuously analyse and improve email performance to increase engagement and maximise results organically.",
+              },
+            ].map((process, i) => (
+              <FadeIn key={i} direction="up" delay={0.1 * i}>
+                <div className="p-10 bg-white dark:bg-[#001235]/20 rounded-[2.5rem] border border-slate-100 dark:border-white/5 h-full hover:border-[#B54118] transition-all duration-500 group">
+                  <span className="text-5xl font-black text-slate-200 dark:text-white/10 group-hover:text-[#B54118]/50 transition-colors">
+                    {process.num}
+                  </span>
+                  <h3 className="text-2xl font-black text-slate-900 dark:text-white mt-4 mb-4">
+                    {process.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium leading-relaxed text-sm">
+                    {process.desc}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- BENEFITS SECTION WITH PARALLAX --- */}
+      <section className="py-24 bg-white dark:bg-black overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 md:px-10">
+          <div
+            className="relative py-20 md:py-32 rounded-[3.5rem] overflow-hidden text-white shadow-2xl group"
+            style={{
+              backgroundImage: "url('/benefits-bg.jpg')", // Aap apni image ka path yahan dein
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "fixed", // Yeh parallax create karega
+            }}
+          >
+            {/* 🔹 Dark Gradient Overlay: Text readability ke liye zaroori hai */}
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-[#B54118]/60 to-black/90 z-0 group-hover:opacity-90 transition-opacity duration-700"></div>
+
+            {/* Decorative Glow */}
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/5 blur-[120px] rounded-full z-10" />
+
+            <div className="relative z-20 px-6 md:px-20">
+              <FadeIn direction="up">
+                <h2 className="text-4xl md:text-6xl font-black text-white mb-16 text-center md:text-left leading-tight uppercase tracking-tighter">
+                  Benefits of Email Marketing <br className="hidden md:block" />
+                  For Your <span className="text-orange-400">Business</span>
+                </h2>
+              </FadeIn>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-12">
+                {[
+                  "Direct communication with your audience",
+                  "Personalised messaging that builds trust",
+                  "Cost-effective marketing with high ROI",
+                  "Strong customer retention and repeat business",
+                  "Consistent and scalable organic growth",
+                  "Increased engagement without relying on ads",
+                ].map((benefit, i) => (
+                  <FadeIn key={i} direction="up" delay={0.05 * i}>
+                    <div className="flex items-start gap-5 group/item">
+                      <div className="bg-white/10 backdrop-blur-md p-3 rounded-2xl mt-1 border border-white/20 group-hover/item:bg-[#B54118] group-hover/item:border-[#B54118] transition-all duration-300">
+                        <CheckCircle2 className="text-white w-6 h-6" />
+                      </div>
+                      <p className="text-white text-xl font-bold leading-tight tracking-tight">
+                        {benefit}
+                      </p>
+                    </div>
+                  </FadeIn>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* --- PROCESS/WHY US SECTION --- */}
       <section className="py-24 bg-white dark:bg-black dark:border-y-2 dark:border-orange-700 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -202,9 +336,13 @@ const EmailMarketingPage = () => {
 
           <div className="space-y-10 order-1 lg:order-2">
             <FadeIn direction="up" delay={0.2}>
-              <h2 className="text-4xl md:text-5xl font-black dark:text-white leading-tight">
-                Why Email is Still the <br />
-                <span className="text-orange-500">King of Marketing</span>
+              <h2 className="text-4xl md:text-4xl font-black dark:text-white leading-tight">
+                Why Email Marketing is Still the
+                <span className="text-orange-500">
+                  {" "}
+                  King of Digital Marketing
+                </span>{" "}
+                in the UK
               </h2>
             </FadeIn>
 
@@ -223,7 +361,7 @@ const EmailMarketingPage = () => {
                   icon: <CheckCircle2 className="text-orange-500" />,
                 },
                 {
-                  label: "Automated Sales Funnels",
+                  label: "Automated  Customer Journeys",
                   icon: <Zap className="text-orange-500" />,
                 },
               ].map((item, i) => (
@@ -266,8 +404,8 @@ const EmailMarketingPage = () => {
             <div className="relative z-20 max-w-5xl mx-auto px-6">
               <FadeIn direction="up" className="flex flex-col items-center">
                 {/* Top Status Badge */}
-              <div className="flex justify-center mb-8">
-                 <span className="px-6 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 border-l-[#B54118] border-l-4 text-white text-xs md:text-sm font-black tracking-[0.3em] uppercase">
+                <div className="flex justify-center mb-8">
+                  <span className="px-6 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 border-l-[#B54118] border-l-4 text-white text-xs md:text-sm font-black tracking-[0.3em] uppercase">
                     Revenue Focused
                   </span>
                 </div>
@@ -286,8 +424,9 @@ const EmailMarketingPage = () => {
                 className="flex flex-col items-center"
               >
                 <p className="mx-auto mb-14 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
-                  "Let us build an email marketing system that consistently
-                  brings back customers and scales your business revenue."
+                  "Let us build a email marketing system for your UK business
+                  that consistently brings back customers, increases engagement,
+                  and helps grow your revenue organically."
                 </p>
               </FadeIn>
 
@@ -297,11 +436,11 @@ const EmailMarketingPage = () => {
                 className="flex flex-col items-center"
               >
                 <Link href="/contact-us">
-                  <button className="relative px-8 py-4 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-110 hover:shadow-[0_0_50px_rgba(181,65,24,0.6)]">
+                  <button className="relative px-8 py-6 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-110 hover:shadow-[0_0_50px_rgba(181,65,24,0.6)]">
                     {/* Shine Animation Effect */}
                     <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
-                    <span className="relative z-10 text-xl uppercase tracking-widest">
-                      Launch Your Campaign →
+                    <span className="relative z-10 text-md uppercase tracking-widest">
+                      Launch Your Email Growth Strategy →
                     </span>
                   </button>
                 </Link>
