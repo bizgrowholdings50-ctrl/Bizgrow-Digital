@@ -27,7 +27,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[85vh] md:h-screen w-full">
         <Image
-          src="/about-hero.webp"
+          src="/about-hr.jpg"
           fill
           className="object-cover"
           alt="About BizGrow Digital"

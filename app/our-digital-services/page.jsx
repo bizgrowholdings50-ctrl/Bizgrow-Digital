@@ -89,7 +89,7 @@ const page = () => {
       <div className="relative  h-[95vh] md:h-screen w-full">
         {/* Background Image */}
         <Image
-          src="/services-hero.jpg"
+          src="/services-hr.jpg"
           alt="UK Digital Services by BizGrow Digital"
           fill
           priority
