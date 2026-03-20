@@ -65,7 +65,7 @@ const CreativeContentPage = () => {
       {/* --- HERO SECTION --- */}
       <div className="relative  h-[85vh] md:h-screen w-full">
         <Image
-          src="/creative-content-hero.jpg"
+          src="/creative.jpg"
           alt="Creative Content Services - BizGrow Digital"
           fill
           fetchPriority="high"

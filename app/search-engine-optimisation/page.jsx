@@ -402,73 +402,7 @@ const SEOPage = () => {
           </div>
         </div>
       </section>
-       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
-              <div className="max-w-7xl mx-auto px-4 md:px-10">
-                <div
-                  className="relative py-24 md:py-32 rounded-[3.5rem] overflow-hidden text-white text-center shadow-[0_30px_70px_rgba(0,0,0,0.5)] group"
-                  style={{
-                    backgroundImage: "url('/seo-cta.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundAttachment: "fixed", // Parallax Effect
-                  }}
-                >
-                  {/* 🔹 Depth Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/80 to-[#B54118]/20 z-0"></div>
       
-                  {/* 🔹 Glass Border Identity */}
-                  <div className="absolute inset-0 border-2 border-white/10 rounded-[3.5rem] z-10 pointer-events-none group-hover:border-[#B54118]/30 transition-all duration-500"></div>
-      
-                  <div className="relative z-20 max-w-5xl mx-auto px-6 flex flex-col items-center">
-                    {/* Top Growth Badge */}
-                    <FadeIn direction="up" className="flex flex-col items-center">
-                      <span className="px-6 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 border-l-[#B54118] border-l-4 text-white text-xs md:text-sm font-black tracking-[0.3em] uppercase">
-                        Marketing Excellence
-                      </span>
-      
-                      <h2 className="text-4xl mt-4 md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter uppercase">
-                        Start Growing Your <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B54118] to-orange-400">
-                          Online Business in the UK Today!
-                        </span>
-                      </h2>
-                    </FadeIn>
-      
-                    <FadeIn
-                      direction="up"
-                      delay={0.2}
-                      className="flex flex-col items-center"
-                    >
-                      <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
-                        "To obtain effective digital marketing services in the UK that
-                        increase your online visibility and create measurable growth
-                        opportunities, contact BizGrow Digital today."
-                      </p>
-                    </FadeIn>
-      
-                    <FadeIn
-                      direction="up"
-                      delay={0.4}
-                      className="flex flex-col items-center"
-                    >
-                      <Link href="/contact-us">
-                        {/* 🎯 FIXED PREMIUM BUTTON WITH SHINE */}
-                        <button className="relative px-8 py-4 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-110 hover:shadow-[0_0_50px_rgba(181,65,24,0.6)]">
-                          {/* Shine Animation */}
-                          <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
-                          <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
-                            Get My Strategy Call →
-                          </span>
-                        </button>
-                      </Link>
-                    </FadeIn>
-                  </div>
-      
-                  {/* Glowing Accents */}
-                  <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#B54118]/10 blur-[130px] rounded-full -z-10"></div>
-                </div>
-              </div>
-            </section>
     </section>
   );
 };

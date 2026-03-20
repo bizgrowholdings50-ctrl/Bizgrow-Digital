@@ -35,7 +35,7 @@ const WordPressPage = () => {
         />
 
         {/* Overlay ko 'to-r' se hata kar radial ya simple black overlay karein taake center text nazar aaye */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
 
         {/* Yahan 'text-center' aur 'items-center' add kiya gaya hai */}
         <div className="relative z-10 max-w-7xl mx-auto md:pt-10 px-6 w-full flex flex-col items-center text-center">
