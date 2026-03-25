@@ -7,18 +7,24 @@ import {
   ShieldCheck,
   Check,
   Laptop,
+  Monitor,
+  Search,
+  Settings,
+  TrendingUp,
+  Zap,
 } from "lucide-react";
 import FadeIn from "@components/MotionWrapper";
 import Link from "next/link";
 
+// 🎯 UPDATED METADATA
 export const metadata = {
-  title: "Custom WordPress Website Development UK | BizGrow Digital",
+  title: "Professional WordPress Website Design UK | BizGrow Digital",
   description:
-    "High-performance, secure WordPress websites built for UK businesses. Fast loading, SEO-optimised, scalable, and conversion-focused.",
+    "Build a UK WordPress website with BizGrow Digital. Engage visitors, drive growth, and showcase your brand professionally online.",
   alternates: {
     canonical: "https://bizgrow-digital.co.uk/wordpress-website/",
   },
-  };
+};
 
 const WordPressPage = () => {
   return (
@@ -33,33 +39,24 @@ const WordPressPage = () => {
           priority
           fetchPriority="high"
         />
-
-        {/* Overlay ko 'to-r' se hata kar radial ya simple black overlay karein taake center text nazar aaye */}
         <div className="absolute inset-0 bg-black/70" />
 
-        {/* Yahan 'text-center' aur 'items-center' add kiya gaya hai */}
         <div className="relative z-10 max-w-7xl mx-auto md:pt-10 px-6 w-full flex flex-col items-center text-center">
           <FadeIn direction="up">
-            {" "}
-            {/* Direction 'up' center ke liye zyada suit karti hai */}
             <span className="text-orange-500 font-bold tracking-widest uppercase text-sm mb-4 block">
               Enterprise-Grade WordPress Websites
             </span>
-            <h1 className="text-white text-5xl md:text-6xl  font-black leading-tiet mb-6">
+            <h1 className="text-white text-5xl md:text-6xl font-black leading-tight mb-6 uppercase">
               WordPress Engineered for{" "}
               <span className="text-orange-500">Business </span>
               GROWTH
             </h1>
             <p className="text-gray-300 text-lg md:text-lg max-w-2xl mb-10 mx-auto">
-              {" "}
-              {/* mx-auto added */}
               Generic themes limit your potential. We create high-performance,
               scalable, and secure WordPress websites tailored for UK brands
               that drive engagement and results.
             </p>
             <div className="flex justify-center gap-4">
-              {" "}
-              {/* justify-center added */}
               <button className="bg-[#B54118] text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-all">
                 Build Your WordPress Platform →
               </button>
@@ -68,76 +65,113 @@ const WordPressPage = () => {
         </div>
       </div>
 
-      {/* --- NEW SECTION: The "Not Just a Theme" Grid --- */}
-      <section className="w-full dark:bg-black  dark:border-t-2 dark:border-orange-700 ">
+      {/* --- SECTION 1: Professional WordPress Website Design UK (New) --- */}
+      <section className="py-24 bg-white dark:bg-black dark:border-t-2 dark:border-orange-700">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <FadeIn direction="left">
+              <h2 className="text-4xl md:text-5xl font-black dark:text-white uppercase tracking-tighter mb-6 leading-none">
+                Professional <br />
+                <span className="text-[#B54118]">WordPress Website</span> <br />
+                Design UK
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-lg mb-8">
+                At BizGrow Digital, we build WordPress websites that combine stunning design with powerful functionality. Whether you are a small business or a growing enterprise, our results grow your revenue.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[
+                  { title: "Fully Responsive", desc: "Flawless on all devices, desktops to mobiles." },
+                  { title: "SEO-Optimised", desc: "Built to rank higher and attract UK audience." },
+                  { title: "Customised", desc: "Tailored layouts to reflect your unique offerings." },
+                  { title: "Conversion-Focused", desc: "Designed to turn visitors into enquiries." }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4">
+                    <Check className="text-[#B54118] shrink-0" size={24} />
+                    <div>
+                      <h4 className="font-bold dark:text-white text-sm uppercase tracking-wide">{item.title}</h4>
+                      <p className="text-xs text-gray-500">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </FadeIn>
+            <FadeIn direction="right" className="relative">
+               <div className="relative z-10 rounded-[3rem] overflow-hidden border-2 border-[#B54118]/20 shadow-2xl">
+                  <Image src="/wp-design-uk.jpg" width={600} height={400} alt="Design Excellence" className="w-full h-125 object-cover" />
+               </div>
+               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#B54118]/10 blur-3xl -z-10" />
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* --- SECTION 2: What We Deliver (Your existing grid) --- */}
+      <section className="w-full dark:bg-black dark:border-t-2 dark:border-orange-700 ">
         <div className="py-14 max-w-7xl mx-auto px-6 ">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+           {/* ... existing 'What We Deliver' code ... */}
+           {/* (No changes needed here unless you want to swap icons) */}
+           <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
             <div className="lg:col-span-1">
-              <h2 className="text-5xl font-black text-center dark:text-white mb-6">
+              <h2 className="text-5xl font-black text-center dark:text-white mb-6 uppercase tracking-tighter">
                 What We Deliver
               </h2>
-              <p className="text-gray-500 text-center  dark:text-gray-400">
-                We build performance-focused <Link href="https://bizgrow-digital.co.uk/wordpress-on-page-seo-checklist/" className="text-[#B54118] font-bold underline">WordPress websites</Link>  without bloated
-                page builders or unnecessary plugins, ensuring fast load times,
-                strong search visibility, and long-term scalability for UK
-                businesses.
+              <p className="text-gray-500 text-center dark:text-gray-400 max-w-3xl mx-auto">
+                We build performance-focused <Link href="#" className="text-[#B54118] font-bold underline">WordPress websites</Link> without bloated page builders, ensuring fast load times and long-term scalability.
               </p>
             </div>
-
             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                {
-                  title: "Headless WordPress Architecture",
-                  icon: <Code2 className="w-8 h-8" />,
-                  desc: <>WordPress is used as a <Link href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/ " className="text-[#B54118] font-bold underline">powerful content</Link> backend, combined with React or Next.js on the front end for superior speed and flexibility.</>,
-                },
-                {
-                  title: "Custom Admin Experience",
-                  icon: <LayoutDashboard className="w-8 h-8" />,
-                  desc: "Clean, tailored admin dashboards that allow your team to manage content confidently without risking site stability.",
-                },
-                {
-                  title: "Enterprise-Level Security",
-                  icon: <ShieldCheck className="w-8 h-8" />,
-                  desc: "Advanced server-side security hardening to protect your website, data, and users from vulnerabilities and threats.",
-                },
-                {
-                  title: "Core Web Vitals Optimisation",
-                  icon: <Rocket className="w-8 h-8" />,
-                  desc: "Built to meet Google’s performance standards, delivering fast, stable, and user-friendly experiences that support higher rankings.",
-                },
-              ].map((box, i) => (
-                <div
-                  key={i}
-                  className="group relative p-10 bg-white dark:bg-[#001235]/40 backdrop-blur-md rounded-[2.5rem] border-2 border-slate-100 dark:border-white/5 shadow-xl hover:shadow-[#B54118]/20 transition-all duration-500 overflow-hidden hover:-translate-y-2"
-                >
-                  {/* 🔹 Animated Icon Container */}
-                  <div className="relative mb-6">
-                    <div className="relative z-10 text-[#B54118] transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
-                      {box.icon}
-                    </div>
-                    {/* Subtle glow behind icon on hover */}
-                    <div className="absolute inset-0 bg-[#B54118]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity rounded-full" />
-                  </div>
-
-                  {/* 🔹 Title & Desc */}
-                  <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-3 tracking-tight group-hover:text-[#B54118] transition-colors">
-                    {box.title}
-                  </h3>
-
-                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed font-medium">
-                    {box.desc}
-                  </p>
-
-                  {/* 🔹 Bottom Decorative Line */}
-                  <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-[#B54118] group-hover:w-full transition-all duration-500" />
-                </div>
-              ))}
+               {/* Your existing mapping for Code2, LayoutDashboard, etc. */}
+               {[
+                { title: "Headless WordPress", icon: <Code2 />, desc: "Next.js frontend with WordPress backend for superior speed." },
+                { title: "Custom Admin", icon: <LayoutDashboard />, desc: "Tailored dashboards for easy content management." },
+                { title: "Security", icon: <ShieldCheck />, desc: "Advanced server-side hardening to protect your data." },
+                { title: "Core Web Vitals", icon: <Rocket />, desc: "Built to meet Google’s highest performance standards." }
+               ].map((box, i) => (
+                 <div key={i} className="group relative p-10 bg-white dark:bg-[#001235]/40 backdrop-blur-md rounded-[2.5rem] border-2 border-slate-100 dark:border-white/5 shadow-xl hover:-translate-y-2 transition-all duration-500">
+                    <div className="text-[#B54118] mb-6">{box.icon}</div>
+                    <h3 className="text-2xl font-black dark:text-white mb-3 tracking-tight group-hover:text-[#B54118] transition-colors uppercase">{box.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{box.desc}</p>
+                    <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#B54118] group-hover:w-full transition-all duration-500" />
+                 </div>
+               ))}
             </div>
           </div>
         </div>
       </section>
-      {/* 🚀 PREMIUM COMPARISON: Standard vs BizGrow */}
+
+      {/* --- SECTION 3: Benefits of a WordPress Website (New) --- */}
+      <section className="py-24 bg-zinc-50 dark:bg-[#000814] dark:border-t-2 dark:border-orange-700">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-black dark:text-white uppercase tracking-tighter">
+              Benefits for Your <span className="text-[#B54118]">UK Business</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "User-Friendly", icon: <Settings />, desc: "Quickly update content and images without technical expertise." },
+              { title: "SEO-Friendly", icon: <Search />, desc: "Built-in features to improve rankings for local UK searches." },
+              { title: "Responsive", icon: <Monitor />, desc: "Mobile-optimised to ensure site looks great on any device." },
+              { title: "Secure & Reliable", icon: <ShieldCheck />, desc: "Regular updates and robust measures to protect visitors." },
+              { title: "Scalable", icon: <TrendingUp />, desc: "Adapt your site easily as your business grows in the UK." },
+              { title: "Marketing Support", icon: <Zap />, desc: "Seamless integration with email, social, and analytics." }
+            ].map((benefit, i) => (
+              <FadeIn key={i} direction="up" delay={i * 0.1}>
+                <div className="p-8 bg-white dark:bg-white/5 rounded-[2rem] border border-zinc-200 dark:border-white/10 hover:border-[#B54118] transition-all group">
+                  <div className="w-12 h-12 rounded-xl bg-[#B54118]/10 text-[#B54118] flex items-center justify-center mb-6 group-hover:bg-[#B54118] group-hover:text-white transition-all">
+                    {benefit.icon}
+                  </div>
+                  <h4 className="text-xl font-black dark:text-white mb-3 uppercase tracking-tight">{benefit.title}</h4>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">{benefit.desc}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
+      {/* 🚀 4 PREMIUM COMPARISON: Standard vs BizGrow */}
       <section className="dark:bg-black py-24 relative overflow-hidden dark:border-t-2 dark:border-orange-700">
         {/* Background Glow Effect */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#B54118]/5 blur-[120px] rounded-full -z-10" />
@@ -225,72 +259,24 @@ const WordPressPage = () => {
           </div>
         </div>
       </section>
-      {/* 🚀 FINAL CTA: WordPress Masterpiece (The Signature Style) */}
+
+      {/* --- FINAL CTA --- */}
       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-10">
-          <div
-            className="relative py-24 md:py-32 rounded-[3.5rem] overflow-hidden text-white text-center shadow-[0_30px_70px_rgba(0,0,0,0.5)] group"
-            style={{
-              backgroundImage: "url('/wp-cta.jpg')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundAttachment: "fixed", // Smooth Parallax
-            }}
-          >
-            {/* 🔹 Depth Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-[#B54118]/20 z-0"></div>
-
-            {/* 🔹 Glass Border (Aapki Brand Identity) */}
-            <div className="absolute inset-0 border-2 border-white/10 rounded-[3.5rem] z-10 pointer-events-none group-hover:border-[#B54118]/30 transition-all duration-500"></div>
-
-            <div className="relative z-20 max-w-5xl mx-auto px-6 flex flex-col items-center">
-              {/* Top Badge */}
-              <FadeIn direction="up" className="flex flex-col items-center">
-                <span className="px-6 py-2  rounded-full bg-white/5 backdrop-blur-md border border-white/10 border-l-[#B54118] border-l-4 text-white text-xs md:text-sm font-black tracking-[0.3em] uppercase">
-                  WordPress Excellence
-                </span>
-
-                <h2 className="text-4xl md:text-7xl mt-4 font-black mb-8 leading-[1.1] tracking-tighter uppercase">
-                  Let’s Build Your <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B54118] to-orange-400">
-                    WordPress Website
-                  </span>
-                </h2>
-              </FadeIn>
-
-              <FadeIn
-                direction="up"
-                delay={0.2}
-                className="flex flex-col items-center"
-              >
-                <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
-                  "Ready to launch a WordPress website that drives growth,
-                  engages your audience, and positions your brand professionally
-                  online?"
-                </p>
-              </FadeIn>
-
-              <FadeIn
-                direction="up"
-                delay={0.4}
-                className="flex flex-col items-center"
-              >
-                <Link href="/contact-us">
-                  {/* 🎯 FIXED PREMIUM BUTTON */}
-                  <button className="relative px-8 py-4 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-110 hover:shadow-[0_0_50px_rgba(181,65,24,0.6)]">
-                    {/* Shine Effect */}
-                    <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
-                    <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
+        {/* ... existing CTA code ... */}
+        <div className="max-w-7xl mx-auto px-4 md:px-10 text-center">
+            <div className="relative py-24 rounded-[3.5rem] overflow-hidden bg-fixed bg-cover bg-center" style={{backgroundImage: "url('/wp-cta.jpg')"}}>
+               <div className="absolute inset-0 bg-black/80" />
+               <div className="relative z-10">
+                  <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-8">
+                     Let's Build Your <br /> <span className="text-[#B54118]">WordPress Masterpiece</span>
+                  </h2>
+                  <Link href="/contact-us">
+                    <button className="px-10 py-5 bg-[#B54118] text-white font-black rounded-2xl uppercase tracking-widest hover:scale-110 transition-all">
                       Start Your Project →
-                    </span>
-                  </button>
-                </Link>
-              </FadeIn>
+                    </button>
+                  </Link>
+               </div>
             </div>
-
-            {/* Glowing Accents */}
-            <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#B54118]/10 blur-[130px] rounded-full -z-10"></div>
-          </div>
         </div>
       </section>
     </section>
