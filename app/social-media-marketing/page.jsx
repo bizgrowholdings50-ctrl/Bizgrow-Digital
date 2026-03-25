@@ -250,9 +250,9 @@ const SocialMediaMarketingPage = () => {
                 <div className="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all">
                   {item.icon}
                 </div>
-                <h4 className="font-black dark:text-white uppercase text-xs mb-3 tracking-tight">
+                <h3 className="font-black dark:text-white uppercase text-xs mb-3 tracking-tight">
                   {item.t}
-                </h4>
+                </h3>
                 <p className="text-gray-500 text-[11px] leading-relaxed">
                   {item.d}
                 </p>
@@ -365,9 +365,9 @@ const SocialMediaMarketingPage = () => {
                       <CheckCircle2 className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform" />
                     </div>
                     <div>
-                      <h4 className="font-black text-[#000B25] dark:text-white uppercase text-xs tracking-tight mb-1">
+                      <h3 className="font-black text-[#000B25] dark:text-white uppercase text-xs tracking-tight mb-1">
                         {item.t}
-                      </h4>
+                      </h3>
                       <p className="text-zinc-500 dark:text-zinc-400 text-xs leading-relaxed">
                         {item.d}
                       </p>
