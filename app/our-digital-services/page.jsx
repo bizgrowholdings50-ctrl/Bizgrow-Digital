@@ -7,12 +7,16 @@ import {
   Megaphone,
   Fingerprint,
   PenTool,
+  Facebook,
+  Users,
+  MailCheck,
 } from "lucide-react";
 import HorizontalProcess from "@components/HorizontalProcess";
 import ShapeChangeSection from "@components/test";
 import VShapeTransition from "@components/test2";
 import Link from "next/link";
 import FadeIn from "@components/MotionWrapper";
+import { FaWordpress } from "@node_modules/react-icons/fa";
 
 export const metadata = {
   title: "BizGrow Digital | Expert UK Digital Services",
@@ -21,66 +25,101 @@ export const metadata = {
   alternates: {
     canonical: "https://bizgrow-digital.co.uk/our-digital-services/",
   },
-  };
+};
 
 const page = () => {
   const services = [
-    {
-      title: "Web Development",
-      path: "/web-development", // Folder name in your app directory
-      desc: "Designing high-performance, secure, and SEO-optimised websites using Next.js, React, and custom WordPress solutions built for scalability and conversions.",
-      icon: <Globe className="w-8 h-8" />,
-      bgColor: "bg-orange-100",
-      hoverIcon: "group-hover:text-white",
-      hoverBg: "group-hover:bg-[#B54118]",
-    },
-    {
-      title: "Graphic Design",
-      path: "/graphic-design-services",
-      desc: "Creating visually compelling, user-focused designs that enhance user experience, strengthen brand identity, and engage your target audience.",
-      icon: <Palette className="w-8 h-8" />,
-      bgColor: "bg-blue-100",
-      hoverIcon: "group-hover:text-white",
-      hoverBg: "group-hover:bg-[#B54118]",
-    },
-    {
-      title: "SEO",
-      path: "/search-engine-optimisation",
-      desc: "Improving search engine visibility and driving high-quality organic traffic through strategic, results-focused Google ranking optimisation.",
-      icon: <TrendingUp className="w-8 h-8" />,
-      bgColor: "bg-green-100",
-      hoverIcon: "group-hover:text-white",
-      hoverBg: "group-hover:bg-[#B54118]",
-    },
-    {
-      title: "Digital Marketing",
-      path: "/digital-marketing-services",
-      desc: "Driving brand growth by connecting with the right audience through strategic social media management and search engine-led growth strategies.",
-      icon: <Megaphone className="w-8 h-8" />,
-      bgColor: "bg-purple-100",
-      hoverIcon: "group-hover:text-white",
-      hoverBg: "group-hover:bg-[#B54118]",
-    },
-    {
-      title: "Social Media Marketing",
-      desc: "Building brand awareness and meaningful engagement through strategic content, platform-focused management, and data-led social growth.",
-      path: "/social-media-marketing",
-      icon: <Fingerprint className="w-8 h-8" />,
-      bgColor: "bg-red-100",
-      hoverIcon: "group-hover:text-white",
-      hoverBg: "group-hover:bg-[#B54118]",
-    },
-
-    {
-      title: "Creative Content",
-      desc: "Crafting high-quality, audience-focused content that strengthens brand messaging, builds trust, and drives meaningful engagement.",
-      path: "/creative-content",
-      icon: <PenTool className="w-8 h-8" />,
-      bgColor: "bg-yellow-100",
-      hoverIcon: "group-hover:text-white",
-      hoverBg: "group-hover:bg-[#B54118]",
-    },
-  ];
+  {
+    title: "Web Development",
+    path: "/web-development",
+    desc: "Designing high-performance, secure, and SEO-optimised websites using Next.js, React, and custom WordPress solutions built for scalability and conversions.",
+    icon: <Globe className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10", // 10% Opacity of your brand color
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "Graphic Design",
+    path: "/graphic-design-services",
+    desc: "Creating visually compelling, user-focused designs that enhance user experience, strengthen brand identity, and engage your target audience.",
+    icon: <Palette className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "SEO",
+    path: "/search-engine-optimisation",
+    desc: "Improving search engine visibility and driving high-quality organic traffic through strategic, results-focused Google ranking optimisation.",
+    icon: <TrendingUp className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "Digital Marketing",
+    path: "/digital-marketing-services",
+    desc: "Driving brand growth by connecting with the right audience through strategic social media management and search engine-led growth strategies.",
+    icon: <Megaphone className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "Social Media Marketing",
+    desc: "Building brand awareness and meaningful engagement through strategic content, platform-focused management, and data-led social growth.",
+    path: "/social-media-marketing",
+    icon: <Fingerprint className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "Creative Content",
+    desc: "Crafting high-quality, audience-focused content that strengthens brand messaging, builds trust, and drives meaningful engagement.",
+    path: "/creative-content",
+    icon: <PenTool className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "FACEBOOK MARKETING",
+    desc: "Grow your brand organically on Facebook with content that connects, engages, and builds trust with UK audiences while driving meaningful interactions.",
+    path: "/facebook-marketing-services",
+    icon: <Facebook className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "WORDPRESS DEVELOPMENT",
+    desc: "Create fast, secure, and SEO-friendly WordPress websites tailored for UK businesses, providing a seamless experience for visitors and customers.",
+    path: "/wordpress-website",
+    icon: <FaWordpress className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "LEAD GENERATION",
+    desc: "Attract and convert high-quality UK leads through smart, data-driven strategies that turn interested prospects into loyal customers.",
+    path: "/lead-generation-solutions",
+    icon: <Users className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+  {
+    title: "E-MAIL MARKETING",
+    desc: "Engage your UK audience with personalised, relevant emails that build relationships, encourage clicks, and boost your business growth naturally.",
+    path: "/email-marketing",
+    icon: <MailCheck className="w-8 h-8" />,
+    bgColor: "bg-[#B54118]/10",
+    hoverIcon: "group-hover:text-white",
+    hoverBg: "group-hover:bg-[#B54118]",
+  },
+];
 
   return (
     // Main Section: Isay py-20 ki zarurat Hero mein nahi hoti agar aap h-screen use kar rahe hain
@@ -116,7 +155,7 @@ const page = () => {
 
           <FadeIn direction="up" delay={0.4} className="w-full">
             <p className="text-white text-md mx-auto md:text-xl text-center max-w-2xl px-4">
-              We deliver end-to-end digital services that empower brands to
+              We deliver end-to-end digital services that empower UK brands to
               increase visibility, attract qualified leads, and outperform their
               competition.
             </p>
@@ -209,7 +248,7 @@ const page = () => {
       <HorizontalProcess />
       <ShapeChangeSection />
       <VShapeTransition />
-    
+
       {/* 🚀 PREMIUM CTA SECTION: Services Page */}
       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-10">
@@ -246,7 +285,7 @@ const page = () => {
               <FadeIn direction="up" delay={0.2}>
                 <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-2xl italic">
                   "We design and optimise digital solutions that convert
-                  visitors into customers, helping your business achieve
+                  visitors into customers, helping your UK business achieve
                   measurable growth."
                 </p>
               </FadeIn>
