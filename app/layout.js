@@ -7,6 +7,7 @@ import SmoothScroll from "@components/SmoothScroll";
 import ChatBot from "@components/ChatBot";
 import { Analytics } from '@vercel/analytics/next';
 import Script from "next/script"; // 1. Ye import add kiya
+import CustomCursor from "@components/Cursor";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-body bg-[#FDFCF9] text-[#1f2937] antialiased overflow-x-clip">
         <Providers>
+        <CustomCursor />
           <Navbar />
           <SmoothScroll>
             <main>
