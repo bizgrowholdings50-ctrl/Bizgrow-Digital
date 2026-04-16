@@ -39,9 +39,9 @@ const HomePage = () => {
           <FadeIn direction="up" delay={0.4}>
             <p className="mt-6 text-white max-w-4xl mx-auto text-sm md:text-lg">
               We help UK businesses increase online visibility, attract
-              qualified leads, and grow faster through SEO, web development, and
-              data-driven digital marketing strategies.
-            </p>
+              qualified leads, and grow faster through <Link href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/" className="text-[#B54118] font-bold">SEO</Link>, <Link href="https://bizgrow-digital.co.uk/what-is-b2b-web-development-in-the-uk/" className="text-[#B54118] font-bold">web development</Link>, and
+              data-driven <Link href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"  className="text-[#B54118] font-bold">digital marketing</Link> strategies.
+            </p> 
           </FadeIn>
           <FadeIn direction="up" delay={0.6}>
             <Link href="/our-digital-services">
@@ -88,7 +88,7 @@ const HomePage = () => {
                     Ready to attract more clients, increase website traffic, and
                     generate qualified leads? BizGrow Digital delivers{" "}
                     <span className="text-[#B54118] dark:text-orange-500 font-bold underline">
-                      <Link href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/ ">
+                      <Link href="https://bizgrow-digital.co.uk/digital-marketing-services/ ">
                         results-driven digital marketing UK businesses
                       </Link>
                     </span>{" "}
@@ -97,8 +97,8 @@ const HomePage = () => {
 
                   <p className="text-black dark:text-gray-400 text-base leading-relaxed border-l-4 border-[#B54118] pl-6 italic">
                     Our team builds high-performing websites, improves Google
-                    rankings through SEO, and creates targeted social media
-                    marketing strategies that connect your business with the
+                    rankings through SEO, and creates targeted <Link href="https://bizgrow-digital.co.uk/social-media-marketing/" className="text-[#B54118] font-bold">social media
+                    marketing</Link> strategies that connect your business with the
                     right audience.
                   </p>
                 </div>
@@ -129,7 +129,7 @@ const HomePage = () => {
                   <div className="relative aspect-[4/5] md:aspect-square overflow-hidden rounded-[2.5rem] shadow-2xl">
                     <Image
                       src="/boost.jpg"
-                      alt="Boost Online Presence"
+                      alt="Boost Your Online Presence with BizGrow Digital"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       priority
@@ -189,12 +189,12 @@ const HomePage = () => {
           {/* Industries Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
             {[
-              { name: "E-commerce", img: "/ecommerce-h.jpg" },
-              { name: "Construction", img: "/Construction-h.jpg" },
-              { name: "Real Estate", img: "/Real Estate-h.jpg" },
-              { name: "Healthcare", img: "/healthcare-h.jpg" },
-              { name: "Hospitality", img: "/HOSPITALITY (1).jpg" },
-              { name: "Education ", img: "/education-h.jpg" },
+              { name: "E-commerce", img: "/ecommerce-h.jpg" ,alt:"BizGrow Digital e-commerce marketing services UK" },
+              { name: "Construction", img: "/Construction-h.jpg" ,alt:"BizGrow Digital construction digital solutions UK"},
+              { name: "Real Estate", img: "/Real Estate-h.jpg" ,alt:"BizGrow Digital real estate marketing services UK"},
+              { name: "Healthcare", img: "/healthcare-h.jpg",alt:"BizGrow Digital healthcare marketing services UK" },
+              { name: "Hospitality", img: "/HOSPITALITY (1).jpg" ,alt:"BizGrow Digital hospitality industry services UK"},
+              { name: "Education ", img: "/education-h.jpg" ,alt:"BizGrow Digital education sector digital services UK"},
             ].map((industry, idx) => (
               <FadeIn key={idx} direction="up" delay={idx * 0.1}>
                 <div className="group relative flex flex-col items-center">
@@ -202,7 +202,7 @@ const HomePage = () => {
                   <div className="relative w-full aspect-square overflow-hidden rounded-[2rem] mb-4 shadow-lg border border-gray-100 dark:border-[#B54118]">
                     <Image
                       src={industry.img}
-                      alt={industry.name}
+                      alt={industry.alt}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110 "
                     />
@@ -265,7 +265,7 @@ const HomePage = () => {
               {
                 icon: <TrendingUp size={40} strokeWidth={2} />,
                 title: "Results-Driven Marketing",
-                desc: "Our focus is simple: delivering measurable outcomes such as increased traffic, higher search rankings, and more qualified leads.",
+                desc: <>Our focus is simple: delivering measurable outcomes such as increased traffic, higher search rankings, and more qualified <Link href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/" className="text-[#B54118] font-bold">leads</Link>.</>,
                 dir: "left",
               },
               {
@@ -277,7 +277,7 @@ const HomePage = () => {
               {
                 icon: <BarChart3 size={40} strokeWidth={2} />,
                 title: "Transparent Performance Reporting",
-                desc: "Clear analytics and regular reporting keep you informed about the performance of your digital marketing activities.",
+                desc: <>Clear analytics and regular reporting keep you informed about the performance of your <Link href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/" className="text-[#B54118] font-bold">digital marketing</Link> activities.</>,
                 dir: "right",
               },
             ].map((item, index) => (
