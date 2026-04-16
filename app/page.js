@@ -87,11 +87,14 @@ const HomePage = () => {
                   <p className="text-black dark:text-gray-300 text-lg leading-relaxed font-medium">
                     Ready to attract more clients, increase website traffic, and
                     generate qualified leads? BizGrow Digital delivers{" "}
+                      results-driven
                     <span className="text-[#B54118] dark:text-orange-500 font-bold underline">
-                      <Link href="https://bizgrow-digital.co.uk/digital-marketing-services/ ">
-                        results-driven digital marketing UK businesses
+                    
+                      <Link href="https://bizgrow-digital.co.uk/digital-marketing-services/ " className="ml-1">
+                         digital marketing 
                       </Link>
-                    </span>{" "}
+                      
+                    </span>{" "}UK businesses
                     helping brands grow with confidence.
                   </p>
 
