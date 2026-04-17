@@ -45,8 +45,9 @@ const HomePage = () => {
           </FadeIn>
           <FadeIn direction="up" delay={0.6}>
             <Link href="/our-digital-services">
-              <button className="mt-8 px-8 py-4 bg-[#B54118] text-white font-semibold rounded-xl hover:scale-105 transition">
-                Explore Our Services →
+              <button className="relative z-15 overflow-hidden group/btn mt-8 px-8 py-4 bg-[#B54118] text-white font-semibold rounded-xl hover:scale-105 transition">
+                <span className="relative z-10 group-hover/btn:text-[#B54118]">Explore Our Services →</span>
+                <div className="absolute inset-0 bg-white z-5 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500 "></div>
               </button>
             </Link>
           </FadeIn>

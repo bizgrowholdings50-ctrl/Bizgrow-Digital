@@ -29,97 +29,194 @@ export const metadata = {
 
 const page = () => {
   const services = [
-  {
-    title: "Web Development",
-    path: "/web-development",
-    desc: "Designing high-performance, secure, and SEO-optimised websites using Next.js, React, and custom WordPress solutions built for scalability and conversions.",
-    icon: <Globe className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10", // 10% Opacity of your brand color
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "Graphic Design",
-    path: "/graphic-design-services",
-    desc: "Creating visually compelling, user-focused designs that enhance user experience, strengthen brand identity, and engage your target audience.",
-    icon: <Palette className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "SEO",
-    path: "/search-engine-optimisation",
-    desc: "Improving search engine visibility and driving high-quality organic traffic through strategic, results-focused Google ranking optimisation.",
-    icon: <TrendingUp className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "Digital Marketing",
-    path: "/digital-marketing-services",
-    desc: "Driving brand growth by connecting with the right audience through strategic social media management and search engine-led growth strategies.",
-    icon: <Megaphone className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "Social Media Marketing",
-    desc: "Building brand awareness and meaningful engagement through strategic content, platform-focused management, and data-led social growth.",
-    path: "/social-media-marketing",
-    icon: <Fingerprint className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "Creative Content",
-    desc: "Crafting high-quality, audience-focused content that strengthens brand messaging, builds trust, and drives meaningful engagement.",
-    path: "/creative-content",
-    icon: <PenTool className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "FACEBOOK MARKETING",
-    desc: "Grow your brand organically on Facebook with content that connects, engages, and builds trust with UK audiences while driving meaningful interactions.",
-    path: "/facebook-marketing-services",
-    icon: <Facebook className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "WORDPRESS DEVELOPMENT",
-    desc: "Create fast, secure, and SEO-friendly WordPress websites tailored for UK businesses, providing a seamless experience for visitors and customers.",
-    path: "/wordpress-website",
-    icon: <FaWordpress className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "LEAD GENERATION",
-    desc: "Attract and convert high-quality UK leads through smart, data-driven strategies that turn interested prospects into loyal customers.",
-    path: "/lead-generation-solutions",
-    icon: <Users className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-  {
-    title: "E-MAIL MARKETING",
-    desc: "Engage your UK audience with personalised, relevant emails that build relationships, encourage clicks, and boost your business growth naturally.",
-    path: "/email-marketing",
-    icon: <MailCheck className="w-8 h-8" />,
-    bgColor: "bg-[#B54118]/10",
-    hoverIcon: "group-hover:text-white",
-    hoverBg: "group-hover:bg-[#B54118]",
-  },
-];
+    {
+      title: "Web Development",
+      path: "/web-development",
+      desc: (
+        <>
+          Designing high-performance, secure, and{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/how-to-write-an-seo-optimised-blog-in-2026/"
+            className="text-[#B54118] font-bold"
+          >
+            SEO-optimised
+          </Link>{" "}
+          websites using Next.js, React, and custom WordPress solutions built
+          for scalability and conversions.
+        </>
+      ),
+      icon: <Globe className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10", // 10% Opacity of your brand color
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "Graphic Design",
+      path: "/graphic-design-services",
+      desc: (
+        <>
+          Creating visually compelling, user-focused{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/"
+            className="text-[#B54118] font-bold"
+          >
+            designs
+          </Link>{" "}
+          that enhance user experience, strengthen brand identity, and engage
+          your target audience.
+        </>
+      ),
+      icon: <Palette className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "SEO",
+      path: "/search-engine-optimisation",
+      desc: "Improving search engine visibility and driving high-quality organic traffic through strategic, results-focused Google ranking optimisation.",
+      icon: <TrendingUp className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "Digital Marketing",
+      path: "/digital-marketing-services",
+      desc: (
+        <>
+          Driving brand growth by connecting with the right audience through
+          strategic Driving brand growth by connecting with the right audience
+          through strategic social media management and search engine-led growth
+          strategies.
+          <Link
+            href="https://bizgrow-digital.co.uk/social-media-for-uk-consultants/"
+            className="text-[#B54118] font-bold"
+          >
+            social media
+          </Link>{" "}
+          management and search engine-led growth strategies.
+        </>
+      ),
+      icon: <Megaphone className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "Social Media Marketing",
+      desc: (
+        <>
+          Building brand awareness and meaningful engagement through strategic{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/10-creative-content-techniques-to-improve-seo-results/"
+            className="text-[#B54118] font-bold"
+          >
+            content
+          </Link>
+          , platform-focused management, and data-led social growth.
+        </>
+      ),
+      path: "/social-media-marketing",
+      icon: <Fingerprint className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "Creative Content",
+      desc: "Crafting high-quality, audience-focused content that strengthens brand messaging, builds trust, and drives meaningful engagement.",
+      path: "/creative-content",
+      icon: <PenTool className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "FACEBOOK MARKETING",
+      desc: (
+        <>
+          Grow your brand organically on{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/facebook-marketing-services/"
+            className="text-[#B54118] font-bold"
+          >
+            Facebook
+          </Link>{" "}
+          with content that connects, engages, and builds trust with UK
+          audiences while driving meaningful interactions.
+        </>
+      ),
+      path: "/facebook-marketing-services",
+      icon: <Facebook className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "WORDPRESS DEVELOPMENT",
+      desc: (
+        <>
+          Create fast, secure, and SEO-friendly{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/custom-wordpress-development-services-in-the-uk/"
+            className="text-[#B54118] font-bold"
+          >
+            WordPress websites
+          </Link>{" "}
+          tailored for UK businesses, providing a seamless experience for
+          visitors and customers.
+        </>
+      ),
+      path: "/wordpress-website",
+      icon: <FaWordpress className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "LEAD GENERATION",
+      desc: (
+        <>
+          Attract and convert high-quality UK{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/"
+            className="text-[#B54118] font-bold"
+          >
+            leads
+          </Link>{" "}
+          through smart, data-driven strategies that turn interested prospects
+          into loyal customers.
+        </>
+      ),
+      path: "/lead-generation-solutions",
+      icon: <Users className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+    {
+      title: "E-MAIL MARKETING",
+      desc: (
+        <>
+          Engage your UK audience with personalised, relevant{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/"
+            className="text-[#B54118] font-bold"
+          >
+            emails
+          </Link>{" "}
+          that build relationships, encourage clicks, and boost your business
+          growth naturally.
+        </>
+      ),
+      path: "/email-marketing",
+      icon: <MailCheck className="w-8 h-8" />,
+      bgColor: "bg-[#B54118]/10",
+      hoverIcon: "group-hover:text-white",
+      hoverBg: "group-hover:bg-[#B54118]",
+    },
+  ];
 
   return (
     // Main Section: Isay py-20 ki zarurat Hero mein nahi hoti agar aap h-screen use kar rahe hain
@@ -156,8 +253,14 @@ const page = () => {
           <FadeIn direction="up" delay={0.4} className="w-full">
             <p className="text-white text-md mx-auto md:text-xl text-center max-w-2xl px-4">
               We deliver end-to-end digital services that empower UK brands to
-              increase visibility, attract qualified leads, and outperform their
-              competition.
+              increase visibility, attract qualified{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                className="text-[#B54118] font-bold"
+              >
+                leads
+              </Link>
+              , and outperform their competition.
             </p>
           </FadeIn>
 

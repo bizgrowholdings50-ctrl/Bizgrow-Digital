@@ -87,8 +87,9 @@ export default function ServicesSection() {
         {/* --- Footer Button: Always Visible --- */}
         <div className="mt-8 md:mt-12 z-20 w-full px-4 flex justify-center">
           <Link href="/our-digital-services" className="group" aria-label="View all of our digital services"> 
-            <button className="px-8 py-4 md:px-14 md:py-4 my-4 bg-[#B54118] text-white text-base md:text-lg font-black rounded-2xl hover:scale-110 active:scale-95 transition-all duration-500 shadow-[0_20px_50px_rgba(181,65,24,0.3)] uppercase tracking-widest">
-              Explore All Services →
+            <button className="relative z-30 group/btn overflow-hidden px-8 py-4 md:px-14 md:py-4 my-4 bg-[#B54118] text-white text-base md:text-lg font-black rounded-2xl hover:scale-110 active:scale-95 transition-all duration-500 shadow-[0_20px_50px_rgba(181,65,24,0.3)] uppercase tracking-widest">
+              <span className="relative z-20 group-hover/btn:text-[#B54118]">Explore All Services →</span>
+           <div className="absolute inset-0 bg-white z-10 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500"></div>
             </button>
           </Link>
         </div>
