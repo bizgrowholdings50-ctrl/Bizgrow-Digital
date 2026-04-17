@@ -14,7 +14,7 @@ import Link from "next/link";
 import FadeIn from "@components/MotionWrapper";
 
 export const metadata = {
-  title: "Lead Generation Services to Grow Your UK Business",
+  title: "Lead Generation Services | BizGrow Digital UK",
   description:
     "Maximise engagement and qualified leads with BizGrow Digital’s professional lead generation solutions for UK businesses.",
   alternates: {
@@ -40,7 +40,18 @@ const LeadGenerationPage = () => {
     },
     {
       title: "Conversion Funnels",
-      desc: "Designing multi-step funnels that turn cold traffic into high-quality leads, optimising every stage for maximum conversions.",
+      desc: (
+        <>
+          Designing multi-step funnels that turn cold traffic into{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+            className="text-[#B54118] font-bold"
+          >
+            high-quality leads
+          </Link>
+          , optimising every stage for maximum conversions.
+        </>
+      ),
       icon: <Filter className="w-8 h-8" />,
       bgColor: "bg-purple-100",
       hoverBg: "group-hover:bg-[#B54118]",
@@ -56,7 +67,7 @@ const LeadGenerationPage = () => {
 
   return (
     <section className="relative w-full">
-      {/* --- HERO SECTION --- */}
+      {/* ---1 HERO SECTION --- */}
       <div className="relative  h-screen w-full">
         <Image
           src="/lead-hero.jpg" // Hero image suggestion: High-end corporate building or data visualization
@@ -84,7 +95,7 @@ const LeadGenerationPage = () => {
               <h1 className="text-white text-3xl md:text-6xl text-center font-black max-w-5xl leading-tiet tracking-normal">
                 Boost sales with UK
                 <span className="text-orange-500 ml-5">
-                   Lead Generation Services{" "}
+                  Lead Generation Services{" "}
                 </span>
               </h1>
             </div>
@@ -93,16 +104,25 @@ const LeadGenerationPage = () => {
           <FadeIn direction="up" delay={0.6} className="w-full">
             <div className="w-full flex justify-center">
               <p className="text-gray-300 text-lg md:text-lg text-center max-w-3xl mt-8">
-                BizGrow Digital provides advanced lead generation solutions that
-                connect your sales team with high-quality prospects ready to
-                engage. Drive measurable growth and strengthen your business
-                presence in the UK.
+                <Link href="/" className="text-[#B54118] font-bold">
+                  BizGrow Digital
+                </Link>{" "}
+                provides advanced{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                  className="text-[#B54118] font-bold"
+                >
+                  lead generation
+                </Link>{" "}
+                solutions that connect your sales team with high-quality
+                prospects ready to engage. Drive measurable growth and
+                strengthen your business presence in the UK.
               </p>
             </div>
           </FadeIn>
         </div>
       </div>
-      {/* 🚀 SERVICE GRID: Results-First Approach */}
+      {/* 🚀 2 SERVICE GRID: Results-First Approach */}
       <section className="py-24 bg-gray-50 dark:bg-black relative overflow-hidden">
         {/* Subtle Branding Blur */}
         <div className="absolute top-1/2 left-0 w-72 h-72 bg-[#B54118]/5 blur-[120px] rounded-full -z-10" />
@@ -183,7 +203,7 @@ const LeadGenerationPage = () => {
           </div>
         </div>
       </section>
-      {/* 🚀 NEW SECTION: LEAD GENERATION PROCESS (Horizontal Steps) */}
+      {/* 🚀 3 NEW SECTION: LEAD GENERATION PROCESS (Horizontal Steps) */}
       <section className="py-32 bg-gray-50 dark:bg-black relative overflow-hidden">
         {/* Subtle Background Text for Design Depth */}
         <div className="absolute top-10 left-10 text-slate-200/50 dark:text-white/[0.02] font-black text-9xl pointer-events-none uppercase tracking-tighter">
@@ -221,7 +241,25 @@ const LeadGenerationPage = () => {
               {
                 step: "02",
                 title: "Organic Growth",
-                desc: "SEO and content optimisation to attract high-intent UK prospects organically.",
+                desc: (
+                  <>
+                    <Link
+                      href="https://bizgrow-digital.co.uk/how-can-expert-seo-techniques-boost-your-business-visibility/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      SEO
+                    </Link>{" "}
+                    and{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      content
+                    </Link>{" "}
+                    optimisation to attract high-intent UK prospects
+                    organically.
+                  </>
+                ),
               },
               {
                 step: "03",
@@ -274,7 +312,7 @@ const LeadGenerationPage = () => {
           </div>
         </div>
       </section>
-      {/* 🎯 NEW SECTION: TYPES OF LEADS WE GENERATE */}
+      {/* 🎯 4 NEW SECTION: TYPES OF LEADS WE GENERATE */}
       <section className="py-24 bg-white dark:bg-black overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -286,9 +324,15 @@ const LeadGenerationPage = () => {
                   <span className="text-orange-500">We Generate</span>
                 </h2>
                 <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium">
-                  BizGrow Digital helps UK businesses generate different types
-                  of high-quality leads tailored to their industry and growth
-                  objectives. We focus on intent, not just traffic.
+                  <Link
+                    href="https://bizgrow-digital.co.uk/our-digital-services/"
+                    className="text-[#B54118] font-bold"
+                  >
+                    BizGrow Digital
+                  </Link>{" "}
+                  helps UK businesses generate different types of high-quality
+                  leads tailored to their industry and growth objectives. We
+                  focus on intent, not just traffic.
                 </p>
 
                 {/* Visual Accent */}
@@ -312,14 +356,38 @@ const LeadGenerationPage = () => {
                 },
                 {
                   title: "Inbound Leads",
-                  desc: "Attracting customers who are actively searching for your services through SEO and digital channels.",
+                  desc: (
+                    <>
+                      Attracting customers who are actively searching for your
+                      services through{" "}
+                      <Link
+                        href="https://bizgrow-digital.co.uk/affordable-seo-services-uk/"
+                        className="text-[#B54118] font-bold"
+                      >
+                        SEO
+                      </Link>{" "}
+                      and digital channels.
+                    </>
+                  ),
                   icon: <Zap className="w-6 h-6" />,
                   style:
                     "bg-white border-2 border-slate-100 dark:bg-transparent dark:border-orange-500/30",
                 },
                 {
                   title: "Local Business Leads",
-                  desc: "Generating enquiries from customers in your local UK areas through targeted digital marketing.",
+                  desc: (
+                    <>
+                      Generating enquiries from customers in your local UK areas
+                      through targeted{" "}
+                      <Link
+                        href="https://bizgrow-digital.co.uk/digital-marketing-services/"
+                        className="text-[#B54118] font-bold"
+                      >
+                        digital marketing
+                      </Link>
+                      .
+                    </>
+                  ),
                   icon: <Target className="w-6 h-6" />,
                   style:
                     "bg-white border-2 border-slate-100 dark:bg-transparent dark:border-orange-500/30",
@@ -371,7 +439,7 @@ const LeadGenerationPage = () => {
           </div>
         </div>
       </section>
-      {/* --- DATA SECTION (Lead Gen Focus) --- */}
+      {/* --- 5 DATA SECTION (Lead Gen Focus) --- */}
       <section className="py-24 bg-white dark:bg-black dark:border-t-2 dark:border-orange-700 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
@@ -418,7 +486,7 @@ const LeadGenerationPage = () => {
             <div className="relative h-[500px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-gray-100 dark:border-orange-800">
               <Image
                 src="/lead-generation.jpg" // Suggestion: Screenshot of a lead dashboard or growth chart
-                alt="Smart Lead Generation UK"
+                alt="Smart lead generation uk - BizGrow Digital"
                 fill
                 className="object-cover"
               />
@@ -426,7 +494,7 @@ const LeadGenerationPage = () => {
           </FadeIn>
         </div>
       </section>
-      {/* 🚀 FINAL PREMIUM CTA: Sales Pipeline */}
+      {/* 🚀 6 FINAL PREMIUM CTA: Sales Pipeline */}
       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-10">
           <div
@@ -483,7 +551,7 @@ const LeadGenerationPage = () => {
                     <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
 
                     <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
-                      Get Your Free LEAD  Audit →
+                      Get Your Free LEAD Audit →
                     </span>
                   </button>
                 </Link>

@@ -1,6 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import { PenTool, Video, Layers, Target, CheckCircle2, Globe, LineChart, Zap } from "lucide-react";
+import {
+  PenTool,
+  Video,
+  Layers,
+  Target,
+  CheckCircle2,
+  Globe,
+  LineChart,
+  Zap,
+} from "lucide-react";
 import HorizontalProcess from "@components/HorizontalProcess";
 import ShapeChangeSection from "@components/test";
 import VShapeTransition from "@components/test2";
@@ -46,14 +55,37 @@ const CreativeContentPage = () => {
     },
     {
       title: "Video & Motion Content",
-      desc: "Professionally produced video editing and motion graphics designed to increase engagement, communicate value, and build audience trust.",
+      desc: (
+        <>
+          Professionally produced video editing and motion{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/will-ai-replace-graphic-designers-in-2026-2/"
+            className="text-[#B54418] font-bold"
+          >
+            graphics designed
+          </Link>{" "}
+          to increase engagement, communicate value, and build audience trust.
+        </>
+      ),
       icon: <Video className="w-8 h-8" />,
       bgColor: "bg-purple-100",
       hoverBg: "group-hover:bg-[#B54118]",
     },
     {
       title: "Content Strategy",
-      desc: "Insight-led content frameworks developed using data and audience analysis to drive reach, relevance, and sustainable organic growth.",
+      desc: (
+        <>
+          Insight-led{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/what-role-does-creative-content-play-in-seo-performance/"
+            className="text-[#B54418] font-bold"
+          >
+            content
+          </Link>{" "}
+          frameworks developed using data and audience analysis to drive reach,
+          relevance, and sustainable organic growth.
+        </>
+      ),
       icon: <Target className="w-8 h-8" />,
       bgColor: "bg-green-100",
       hoverBg: "group-hover:bg-[#B54118]",
@@ -124,9 +156,16 @@ const CreativeContentPage = () => {
             <FadeIn direction="up" delay={0.4}>
               <div className="flex justify-center">
                 <p className="text-gray-600 dark:text-gray-400 text-lg md:text-[16px] max-w-4xl leading-relaxed font-medium mt-4">
-                  Your content is your brand’s first impression. We ensure every
-                  word, visual, and interaction is strategically designed to
-                  support your business objectives and drive meaningful results.
+                  Your{" "}
+                  <Link
+                    href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
+                    className="text-[#B54118] font-bold"
+                  >
+                    content
+                  </Link>{" "}
+                  is your brand’s first impression. We ensure every word,
+                  visual, and interaction is strategically designed to support
+                  your business objectives and drive meaningful results.
                 </p>
               </div>
             </FadeIn>
@@ -180,7 +219,7 @@ const CreativeContentPage = () => {
                 <div className="relative h-[450px] md:h-[600px] w-full rounded-[3.5rem] overflow-hidden shadow-2xl">
                   <Image
                     src="/professional-content.jpg" // Suggestion: High-quality image of a writer or digital designer
-                    alt="Professional Content Creation UK"
+                    alt="Professional content creation UK | BizGrow Digital"
                     fill
                     className="object-cover"
                   />
@@ -223,8 +262,15 @@ const CreativeContentPage = () => {
 
                 <div className="space-y-6 mt-8">
                   <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium">
-                    At BizGrow Digital, we create content that not only speaks
-                    to your audience but also
+                    At{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/about-us/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      BizGrow Digital
+                    </Link>
+                    , we create content that not only speaks to your audience
+                    but also
                     <span className="text-slate-900 dark:text-white font-bold ml-1">
                       drives measurable results.
                     </span>{" "}
@@ -236,8 +282,14 @@ const CreativeContentPage = () => {
                     Our focus is on clarity, creativity, and conversions,
                     helping your brand connect with potential customers and
                     stand out in competitive markets. Whether it’s blog posts,
-                    email campaigns, or ad copy, every piece is designed to
-                    boost your online presence.
+                    <Link
+                      href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      email
+                    </Link>{" "}
+                    campaigns, or ad copy, every piece is designed to boost your
+                    online presence.
                   </p>
 
                   <p className="text-gray-700 dark:text-gray-300 font-semibold text-lg">
@@ -259,7 +311,12 @@ const CreativeContentPage = () => {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-[#B54118] rounded-full" />
                     <span className="text-sm font-bold dark:text-gray-200">
-                      Email Marketing
+                      <Link
+                        href="https://bizgrow-digital.co.uk/email-marketing/"
+                        className="text-[#B54118] font-bold"
+                      >
+                        Email Marketing
+                      </Link>
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -281,14 +338,12 @@ const CreativeContentPage = () => {
         </div>
       </section>
 
-
-    {/* 🚀 NEW SECTION: WHY CREATIVE CONTENT MATTERS (Centered Version) */}
+      {/* 🚀 NEW SECTION: WHY CREATIVE CONTENT MATTERS (Centered Version) */}
       <section className="py-24 bg-gray-50 dark:bg-[#020817] relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(#B54118_0.5px,transparent_0.5px)] [background-size:24px_24px] opacity-[0.05] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          
           {/* Centered Heading Section */}
           <div className="text-center mb-20">
             <FadeIn direction="up">
@@ -297,13 +352,15 @@ const CreativeContentPage = () => {
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white leading-tight uppercase tracking-tighter">
                 Why Creative Content <br />
-                <span className="text-orange-500">Matters For Your Business</span>
+                <span className="text-orange-500">
+                  Matters For Your Business
+                </span>
               </h2>
               <div className="w-24 h-1.5 bg-[#B54118] mx-auto mt-6 rounded-full" />
               <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium max-w-3xl mx-auto">
-                Creative content is more than just writing; it’s the voice of your brand. 
-                In the UK's competitive digital landscape, it’s the bridge between being 
-                seen and being remembered.
+                Creative content is more than just writing; it’s the voice of
+                your brand. In the UK's competitive digital landscape, it’s the
+                bridge between being seen and being remembered.
               </p>
             </FadeIn>
           </div>
@@ -318,7 +375,19 @@ const CreativeContentPage = () => {
               },
               {
                 title: "Attract the Right Audience",
-                desc: "Targeted content attracts visitors who are genuinely interested in your specific services and industry.",
+                desc: (
+                  <>
+                    Targeted content attracts visitors who are genuinely
+                    interested in your specific{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/our-digital-services/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      services
+                    </Link>{" "}
+                    and industry.
+                  </>
+                ),
                 icon: <Target className="w-6 h-6" />,
               },
               {
@@ -328,7 +397,7 @@ const CreativeContentPage = () => {
               },
               {
                 title: "Boost SEO & Visibility",
-                desc: "Well-crafted, keyword-optimised content improves search rankings and drives sustainable organic traffic.",
+                desc: <>Well-crafted, <Link href="https://bizgrow-digital.co.uk/how-to-search-multiple-keywords-on-google/" className="text-[#B54118] font-bold">keyword-optimised</Link> content improves search rankings and drives sustainable organic traffic.</>,
                 icon: <LineChart className="w-6 h-6" />,
               },
               {
@@ -343,7 +412,7 @@ const CreativeContentPage = () => {
                   <div className="flex-shrink-0 w-16 h-16 bg-orange-50 dark:bg-orange-500/10 rounded-2xl flex items-center justify-center text-[#B54118] group-hover:bg-[#B54118] group-hover:text-white transition-all duration-500 mb-6 shadow-inner">
                     {item.icon}
                   </div>
-                  
+
                   {/* Content */}
                   <h3 className="text-xl font-black text-slate-900 dark:text-white uppercase tracking-tight mb-4 transition-colors group-hover:text-[#B54118]">
                     {item.title}
