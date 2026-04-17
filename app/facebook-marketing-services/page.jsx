@@ -26,7 +26,7 @@ export const metadata = {
 const FacebookMarketingPage = () => {
   return (
     <section className="w-full bg-white">
-      {/* --- HERO SECTION --- */}
+      {/* --- 1 HERO SECTION --- */}
       <div className="relative h-[80vh] md:h-screen w-full flex items-center justify-center overflow-hidden">
         <Image
           src="/fb.jpg"
@@ -71,7 +71,7 @@ const FacebookMarketingPage = () => {
         </div>
       </div>
 
-      {/* --- NEW SECTION: WHY FACEBOOK MARKETING MATTERS (Replacing Features) --- */}
+      {/* --- 2 NEW SECTION: WHY FACEBOOK MARKETING MATTERS (Replacing Features) --- */}
       <section className="w-full py-24 bg-white dark:bg-[#020817] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -134,7 +134,7 @@ const FacebookMarketingPage = () => {
         </div>
       </section>
 
-      {/* --- STRATEGY SECTION (Keep the same) --- */}
+      {/* --- 3 STRATEGY SECTION (Keep the same) --- */}
       <section className="dark:bg-[#020817] py-20">
         <div className="py-24 bg-slate-900 dark:border dark:border-orange-700 mx-4 md:mx-10 rounded-[4rem] mb-24 overflow-hidden relative">
           <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 blur-[100px] rounded-full" />
@@ -154,7 +154,7 @@ const FacebookMarketingPage = () => {
                       d: (
                         <>
                           A fully optimised{" "}
-                          <Link href="" className="text-[#B54118] font-bold">
+                          <Link href="https://bizgrow-digital.co.uk/how-do-i-start-marketing-on-facebook-a-complete-guide-2026/" className="text-[#B54118] font-bold">
                             Facebook
                           </Link>{" "}
                           page is the foundation of growth. From visuals to
@@ -215,7 +215,7 @@ const FacebookMarketingPage = () => {
         </div>
       </section>
 
-      {/* --- NEW SECTION: WHY CHOOSE BIZGROW --- */}
+      {/* --- 4 NEW SECTION: WHY CHOOSE BIZGROW --- */}
       <section className="w-full py-24 bg-slate-50 dark:bg-black">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <FadeIn direction="up">
@@ -288,7 +288,7 @@ const FacebookMarketingPage = () => {
         </div>
       </section>
 
-      {/* --- UPDATED SECTION: CLEAN ALIGNMENT --- */}
+      {/* --- 5 UPDATED SECTION: CLEAN ALIGNMENT --- */}
       <section className="w-full py-24 bg-white dark:bg-[#020817]">
         <div className="max-w-7xl mx-auto px-6">
           {/* 🎯 Header: Ab sab kuch line mein hai */}
@@ -388,7 +388,7 @@ const FacebookMarketingPage = () => {
         </div>
       </section>
 
-      {/* 🚀 FINAL CTA (Keep the same) */}
+      {/* 🚀 6 FINAL CTA (Keep the same) */}
       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-10">
           <div
