@@ -50,8 +50,21 @@ export default function AboutPage() {
             {/* 🔹 FIX: 'mx-auto' add kiya taake max-width ke sath text center mein hi rahe */}
             <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
               We are committed to helping businesses grow online in the UK with
-              innovative digital solutions, creative design, and data-driven
-              marketing strategies.
+              innovative digital solutions, creative{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
+                className="text-[#B54118] font-bold"
+              >
+                design
+              </Link>
+              , and data-driven{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/top-3-marketing-challenges-killing-uk-small-businesses/"
+                className="text-[#B54118] font-bold"
+              >
+                marketing
+              </Link>{" "}
+              strategies.
             </p>
           </FadeIn>
 
@@ -109,7 +122,7 @@ export default function AboutPage() {
                 <FadeIn key={i} direction="up" delay={0.5 + i * 0.1}>
                   <div className="flex items-center gap-3">
                     <CheckCircle2 className="text-[#B54118]" size={20} />
-                    <span className="font-semibold dark:text-white text-slate-800 underline hover:text-[#B54118]">
+                    <span className="font-semibold dark:text-white  underline text-[#B54118]">
                       {item}
                     </span>
                   </div>
@@ -132,7 +145,7 @@ export default function AboutPage() {
                 />
 
                 {/* Floating Badge - Ye "Weird" feel khatam karega */}
-                <div className="absolute -bottom-6 left-6 md:left-1 bg-[#B54118] p-6 rounded-2xl shadow-xl text-white z-20 animate-bounce-slow">
+                <div className="absolute -bottom-6 left-8 md:left-5 bg-[#B54118] p-6 rounded-2xl shadow-xl text-white z-20 animate-bounce-slow">
                   <p className="text-3xl font-black">100%</p>
                   <p className="text-xs uppercase tracking-tighter">
                     Client Satisfaction
@@ -180,12 +193,18 @@ export default function AboutPage() {
                   </h3>
 
                   <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed flex-grow">
-                    BizGrow Digital helps UK businesses grow online with
-                    strategies that increase visibility, connect their business
-                    to potential customers, and build their brand presence. We
-                    provide results-driven digital solutions so that businesses
-                    can be distinguishable from others in their industry and
-                    achieve measurable success.
+                    <Link
+                      href="https://bizgrow-digital.co.uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      BizGrow Digital
+                    </Link>{" "}
+                    helps UK businesses grow online with strategies that
+                    increase visibility, connect their business to potential
+                    customers, and build their brand presence. We provide
+                    results-driven digital solutions so that businesses can be
+                    distinguishable from others in their industry and achieve
+                    measurable success.
                   </p>
 
                   {/* Subtle Branding Footnote */}
@@ -214,10 +233,16 @@ export default function AboutPage() {
                   <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed flex-grow">
                     We aim to be the trusted digital partner for UK brands,
                     helping them succeed online, establish credibility, and
-                    reach more customers. By crafting professional digital
-                    strategies and providing innovative solutions, we will help
-                    businesses to achieve long-term growth and a strong,
-                    recognisable online presence.
+                    reach more customers. By crafting professional{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      digital strategies
+                    </Link>{" "}
+                    and providing innovative solutions, we will help businesses
+                    to achieve long-term growth and a strong, recognisable
+                    online presence.
                   </p>
 
                   {/* Subtle Branding Footnote */}
@@ -306,7 +331,10 @@ export default function AboutPage() {
 
               <p className="text-2xl md:text-2xl font-bold text-slate-800 dark:text-white italic leading-tight relative z-10">
                 "At{" "}
-                <Link href="/" className="text-[#B54118] font-bold underline">
+                <Link
+                  href="https://bizgrow-digital.co.uk/our-digital-services/"
+                  className="text-[#B54118] font-bold underline"
+                >
                   BizGrow Digital
                 </Link>{" "}
                 , we don’t just develop websites; we build powerful digital
@@ -353,7 +381,19 @@ export default function AboutPage() {
               {
                 icon: <FaLightbulb />,
                 title: "Quality and Clarity",
-                desc: "All of our strategies, messages & designs are created with intention, precision, and clear intent to maximise the value of and make an extraordinary impact with.",
+                desc: (
+                  <>
+                    All of our strategies, messages &{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      designs
+                    </Link>{" "}
+                    are created with intention, precision, and clear intent to
+                    maximise the value of and make an extraordinary impact with.
+                  </>
+                ),
                 dir: "up",
               },
               {

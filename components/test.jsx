@@ -42,7 +42,7 @@ export default function ShapeChangeSection() {
           <br />
 
           <motion.span
-            className="inline-block pt-5 text-3xl md:text-6xl mt-6 leading-normal text-[#B54118]" // Dusri line ko bhi animate karein
+            className="inline-block pt-5 text-3xl md:text-6xl mt-6 leading-normal " // Dusri line ko bhi animate karein
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
            

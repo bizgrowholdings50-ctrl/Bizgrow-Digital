@@ -11,7 +11,6 @@ export default function CustomCursor() {
     const dot = dotRef.current;
     const ring = ringRef.current;
 
-    // 🔹 QuickSetter for Performance (Better than gsap.to in mousemove)
     const xDotSetter = gsap.quickSetter(dot, "x", "px");
     const yDotSetter = gsap.quickSetter(dot, "y", "px");
     const xRingSetter = gsap.quickSetter(ring, "x", "px");
@@ -19,29 +18,30 @@ export default function CustomCursor() {
 
     const moveCursor = (e) => {
       const { clientX, clientY } = e;
-      
-      // Dot - Instant follow
       xDotSetter(clientX);
       yDotSetter(clientY);
 
-      // Ring - Smooth follow with Lag
       gsap.to(ring, {
         x: clientX,
         y: clientY,
-        duration: 0.5,
+        duration: 0.6,
         ease: "power3.out",
+        overwrite: "auto",
       });
     };
 
     const onMouseEnter = () => {
       setIsHovering(true);
       gsap.to(ring, { 
-        scale: 2.5, 
-        backgroundColor: "rgba(153, 120, 25, 0.1)", // Light Gold tint
-        borderColor: "transparent",
-        duration: 0.3 
+        scale: 2, // 🔹 Sirf halka sa expand hoga (Elegant)
+        backgroundColor: "rgba(181, 65, 24, 0.02)", 
+        borderColor: "#B54118",
+        borderWidth: "1px",
+        duration: 0.4,
+        ease: "expo.out",
+        overwrite: true 
       });
-      gsap.to(dot, { scale: 0, duration: 0.2 }); // Dot chupa dein
+      gsap.to(dot, { scale: 0, opacity: 0, duration: 0.2, overwrite: true });
     };
 
     const onMouseLeave = () => {
@@ -49,47 +49,54 @@ export default function CustomCursor() {
       gsap.to(ring, { 
         scale: 1, 
         backgroundColor: "transparent", 
-        borderColor: "#997819", 
-        duration: 0.3 
+        borderColor: "#B54118", 
+        borderWidth: "1.5px",
+        duration: 0.4,
+        ease: "power2.out",
+        overwrite: true 
       });
-      gsap.to(dot, { scale: 1, duration: 0.2 });
+      gsap.to(dot, { scale: 1, opacity: 1, duration: 0.3, overwrite: true });
     };
 
     window.addEventListener("mousemove", moveCursor);
 
-    // Target links, buttons and our custom 'View' areas
-    const interactiveElements = document.querySelectorAll('a, button, .cursor-pointer, .project-card');
-    interactiveElements.forEach((el) => {
-      el.addEventListener("mouseenter", onMouseEnter);
-      el.addEventListener("mouseleave", onMouseLeave);
-    });
+    const refreshElements = () => {
+      const interactive = document.querySelectorAll('a, button, .cursor-pointer, input, select');
+      interactive.forEach((el) => {
+        el.addEventListener("mouseenter", onMouseEnter);
+        el.addEventListener("mouseleave", onMouseLeave);
+      });
+    };
+
+    refreshElements();
+    const observer = new MutationObserver(refreshElements);
+    observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
-      interactiveElements.forEach((el) => {
-        el.removeEventListener("mouseenter", onMouseEnter);
-        el.removeEventListener("mouseleave", onMouseLeave);
-      });
+      observer.disconnect();
     };
   }, []);
 
   return (
     <>
-      {/* Small Core Dot */}
+      {/* 🔹 Precision Core */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-2 h-2 bg-[#B54118] rounded-full pointer-events-none z-[10000] "
+        className="fixed top-0 left-0 w-1 h-1 bg-[#B54118] rounded-full pointer-events-none z-[10001]"
         style={{ transform: "translate(-50%, -50%)" }}
       />
-      {/* Main Interactive Ring */}
+      
+      {/* 🔹 Floating Ring (Slightly smaller base size: w-6 h-6) */}
       <div
         ref={ringRef}
-        className="fixed top-0 left-0 w-7 h-7 border-2 bg-[#B54118] rounded-full pointer-events-none z-[9999] flex items-center justify-center "
+        className="fixed top-0 left-0 w-6 h-6 border-[1.5px] border-[#B54118] bg-transparent rounded-full pointer-events-none z-[10000] flex items-center justify-center"
         style={{ transform: "translate(-50%, -50%)" }}
       >
-        {/* Ring ke andar agar text dikhana ho (e.g. View) */}
         {isHovering && (
-           <span className="text-[4px] font-black text-white uppercase tracking-tighter">View</span>
+          <span className="text-[4px] font-black text-white uppercase tracking-tighter leading-none mix-blend-difference">
+            View
+          </span>
         )}
       </div>
     </>
