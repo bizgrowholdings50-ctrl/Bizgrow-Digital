@@ -32,7 +32,7 @@ const HomePage = () => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
         />
         <div className="absolute inset-0 w-full bg-black/60 flex flex-col items-center justify-center text-center px-4">
-          <FadeIn direction="up" delay={0.2}>
+          <FadeIn direction="up" delay={0}>
             <h1 className="text-white text-3xl md:text-5xl mt-20   md:mx-28 font-bold md:leading-[4rem]">
               Smart Digital Marketing Solutions for UK Business Growth
             </h1>
