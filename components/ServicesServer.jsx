@@ -14,42 +14,44 @@ export default function ServicesSection() {
   });
 
   const visibleCards = [
-    { 
-      title: "Website Development", 
-      img: "/web-development2.jpg", 
+    {
+      title: "Website Development",
+      img: "/web-development2.jpg",
       alt: "Website Development - BizGrowDigital",
-      desc: "High-performance websites designed to attract, engage, and convert." 
+      desc: "High-performance websites designed to attract, engage, and convert.",
     },
-    { 
-      title: "Search Engine Optimisation", 
-      img: "/SEO.jpg", 
+    {
+      title: "Search Engine Optimisation",
+      img: "/SEO.jpg",
       alt: "Search Engine Optimisation - BizGrowDigital",
-      desc: "Data-driven SEO strategies that increase visibility and drive qualified traffic." 
+      desc: "Data-driven SEO strategies that increase visibility and drive qualified traffic.",
     },
-    { 
-      title: "Digital Marketing", 
-      img: "/Social media.jpg", 
+    {
+      title: "Digital Marketing",
+      img: "/Social media.jpg",
       alt: "Digital Marketing - BizGrowDigital",
-      desc: "Integrated digital marketing strategies designed to grow reach, leads, and revenue." 
+      desc: "Integrated digital marketing strategies designed to grow reach, leads, and revenue.",
     },
-    { 
-      title: "Creative Content", 
-      img: "/creative.jpg", 
+    {
+      title: "Creative Content",
+      img: "/creative.webp",
       alt: "Creative Content - BizGrowDigital",
-      desc: "Compelling content crafted to engage audiences and strengthen your brand." 
+      desc: "Compelling content crafted to engage audiences and strengthen your brand.",
     },
-    { 
-      title: "Graphic Design", 
-      img: "/graphic-design.jpg", 
+    {
+      title: "Graphic Design",
+      img: "/graphic-design.jpg",
       alt: "Graphic Design - BizGrowDigital",
-      desc: "Professional graphic design that communicates your brand with clarity." 
+      desc: "Professional graphic design that communicates your brand with clarity.",
     },
   ];
 
   return (
-    <section ref={container} className="relative w-full h-[300vh] md:h-[400vh] bg-[#F2E8D5] dark:bg-black dark:border-b-2 dark:border-orange-700">
+    <section
+      ref={container}
+      className="relative w-full h-[300vh] md:h-[400vh] bg-[#F2E8D5] dark:bg-black dark:border-b-2 dark:border-orange-700"
+    >
       <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center overflow-hidden">
-        
         {/* --- Heading: Optimized Spacing --- */}
         <div className="text-center z-10 w-full px-6 flex flex-col items-center mb-4 md:mb-8">
           <FadeIn direction="up">
@@ -60,7 +62,8 @@ export default function ServicesSection() {
 
           <FadeIn direction="up" delay={0.2}>
             <p className="text-black dark:text-white mt-4 text-sm md:text-[16px] font-medium max-w-xl mx-auto opacity-90">
-              Empowering your business to thrive online with tailored digital solutions.
+              Empowering your business to thrive online with tailored digital
+              solutions.
             </p>
           </FadeIn>
         </div>
@@ -86,10 +89,19 @@ export default function ServicesSection() {
 
         {/* --- Footer Button: Always Visible --- */}
         <div className="mt-8 md:mt-12 z-20 w-full px-4 flex justify-center">
-          <Link href="/our-digital-services" className="group" aria-label="View all of our digital services"> 
-            <button className="relative z-30 group/btn overflow-hidden px-8 py-4 md:px-14 md:py-4 my-4 bg-[#B54118] text-white text-base md:text-lg font-black rounded-2xl hover:scale-110 active:scale-95 transition-all duration-500 shadow-[0_20px_50px_rgba(181,65,24,0.3)] uppercase tracking-widest">
-              <span className="relative z-20 group-hover/btn:text-[#B54118]">Explore All Services →</span>
-           <div className="absolute inset-0 bg-white z-10 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500"></div>
+          <Link
+            href="/our-digital-services"
+            className="group"
+            aria-label="View all of our digital services"
+          >
+            <button
+              className="relative z-30 group/btn overflow-hidden px-10 py-5 md:px-14 md:py-4 my-6 bg-[#B54118] text-white text-base md:text-lg font-black rounded-2xl hover:scale-110 active:scale-95 transition-all duration-500 shadow-[0_20px_50px_rgba(181,65,24,0.3)] uppercase tracking-widest min-h-[48px]"
+              aria-label="Explore all of our digital services"
+            >
+              <span className="relative z-20 group-hover/btn:text-[#B54118]">
+                Explore All Services →
+              </span>
+              <div className="absolute inset-0 bg-white z-10 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500"></div>
             </button>
           </Link>
         </div>
@@ -100,14 +112,26 @@ export default function ServicesSection() {
 
 function Card({ title, img, desc, alt, i, progress, range, isFirst, isLast }) {
   const [start, end] = range;
-  
+
   // Logic remains same, but we use percentages that adapt to parent width
-  const xTranslate = isFirst ? "0%" : "150%"; 
+  const xTranslate = isFirst ? "0%" : "150%";
   const xExit = isLast ? "0%" : "-150%";
 
-  const x = useTransform(progress, [start, start + 0.1, end - 0.1, end], [xTranslate, "0%", "0%", xExit]);
-  const opacity = useTransform(progress, [start, start + 0.05, end - 0.05, end], [isFirst ? 1 : 0, 1, 1, isLast ? 1 : 0]);
-  const scale = useTransform(progress, [start, start + 0.1, end - 0.1, end], [isFirst ? 1 : 0.85, 1, 1, isLast ? 1 : 0.85]);
+  const x = useTransform(
+    progress,
+    [start, start + 0.1, end - 0.1, end],
+    [xTranslate, "0%", "0%", xExit],
+  );
+  const opacity = useTransform(
+    progress,
+    [start, start + 0.05, end - 0.05, end],
+    [isFirst ? 1 : 0, 1, 1, isLast ? 1 : 0],
+  );
+  const scale = useTransform(
+    progress,
+    [start, start + 0.1, end - 0.1, end],
+    [isFirst ? 1 : 0.85, 1, 1, isLast ? 1 : 0.85],
+  );
 
   return (
     <motion.div
@@ -116,29 +140,29 @@ function Card({ title, img, desc, alt, i, progress, range, isFirst, isLast }) {
     >
       {/* Image Container: Fixed Ratios */}
       <div className="w-full md:w-1/2 aspect-video md:aspect-square lg:aspect-video overflow-hidden rounded-[1.5rem] shrink-0 border dark:border-white/10">
-        <Image 
-          src={img} 
-          width={600} 
-          height={400} 
+        <Image
+          src={img}
+          width={600}
+          height={400}
           // sizes attribute added to solve Performance issue
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-          alt={alt} 
-          className="object-cover w-full h-full transition-transform duration-700 hover:scale-110" 
-          priority={i === 0} 
+          alt={alt}
+          className="object-cover w-full h-full transition-transform duration-700 hover:scale-110"
+          priority={i === 0}
         />
       </div>
 
       {/* Content Container */}
       <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center">
         <div className="flex flex-col items-center md:items-start mb-2">
-           <span className="px-4 py-1 rounded-full bg-orange-500/10 text-[#B54118] font-black text-[10px] md:text-xs uppercase tracking-[0.2em] mb-3">
-             Strategy 0{i + 1}
-           </span>
-           <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#B54118] dark:text-orange-500 font-black leading-[1.1] uppercase tracking-tighter">
-             {title}
-           </h3>
+          <span className="px-4 py-1 rounded-full bg-orange-500/10 text-[#B54118] font-black text-[10px] md:text-xs uppercase tracking-[0.2em] mb-3">
+            Strategy 0{i + 1}
+          </span>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl text-[#B54118] dark:text-orange-500 font-black leading-[1.1] uppercase tracking-tighter">
+            {title}
+          </h3>
         </div>
-        
+
         <p className="text-gray-700 dark:text-gray-300 text-sm md:text-base lg:text-lg mt-3 font-medium leading-relaxed">
           {desc}
         </p>

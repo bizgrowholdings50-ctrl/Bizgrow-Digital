@@ -12,7 +12,7 @@ function SmoothScroll({ children }) {
       }}
     >
       {children}
-    </ReactLenis>
+    </ReactLenis> 
   );
 }
 
