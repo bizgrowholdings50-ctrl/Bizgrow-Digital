@@ -17,7 +17,10 @@ import {
 } from "lucide-react";
 import FadeIn from "@components/MotionWrapper";
 import Link from "next/link";
-
+export const metadata = {
+  title:"Social Media Marketing Services UK | BizGrow Digital",
+  description:"Not getting results from social media in the UK? BizGrow Digital helps you reach the right audience, boost engagement, and grow your business ",
+}
 const SocialMediaMarketingPage = () => {
   const smmServices = [
     {
@@ -91,9 +94,21 @@ const SocialMediaMarketingPage = () => {
               Growth Channel
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mb-10 mx-auto font-light">
-              BizGrow Digital helps UK businesses grow their audience, increase
-              engagement, and generate meaningful leads through strategic social
-              media marketing.
+              <Link
+                href="https://bizgrow-digital.co.uk/about-us/"
+                className="text-[#B54118] font-bold"
+              >
+                BizGrow Digital
+              </Link>{" "}
+              helps UK businesses grow their audience, increase engagement, and
+              generate meaningful leads through strategic{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/social-media-marketing-advantages-and-disadvantages/"
+                className="text-[#B54118] font-bold"
+              >
+                social media marketing
+              </Link>
+              .
             </p>
             <Link href="/contact-us">
               <button className="bg-[#B54118] text-white px-10 py-5 rounded-full font-bold hover:scale-105 transition-all uppercase tracking-widest shadow-2xl">
@@ -120,17 +135,51 @@ const SocialMediaMarketingPage = () => {
             {[
               {
                 p: "Facebook",
-                d: "Connect with customers, build communities, and promote services through targeted Facebook strategies.",
+                d: (
+                  <>
+                    Connect with customers, build communities, and promote
+                    services through targeted{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/facebook-marketing-services/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      Facebook
+                    </Link>{" "}
+                    strategies.
+                  </>
+                ),
                 icon: <Facebook />,
               },
               {
                 p: "Instagram",
-                d: "Showcase your brand visually and engage audiences through creative content and storytelling.",
+                d: (
+                  <>
+                    Showcase your brand visually and engage audiences through{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/creative-content/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      creative content
+                    </Link>{" "}
+                    and storytelling.
+                  </>
+                ),
                 icon: <Instagram />,
               },
               {
                 p: "LinkedIn",
-                d: "Reach professionals, decision-makers, and B2B audiences through strategic LinkedIn marketing.",
+                d: (
+                  <>
+                    Reach professionals, decision-makers, and{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      B2B
+                    </Link>{" "}
+                    audiences through strategic LinkedIn marketing.
+                  </>
+                ),
                 icon: <Linkedin />,
               },
               {
@@ -170,15 +219,28 @@ const SocialMediaMarketingPage = () => {
               Built for Long-Term Growth, Not Temporary Spikes
             </h3>
             <p className="text-blue-100/70 text-lg mb-6 leading-relaxed">
-              At BizGrow Digital, we believe sustainable digital growth comes
-              from building real audience trust and consistent brand visibility.
+              At{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/our-digital-services/"
+                className="text-[#B54118] font-bold"
+              >
+                BizGrow Digital
+              </Link>
+              , we believe sustainable digital growth comes from building real
+              audience trust and consistent brand visibility.
             </p>
             <p className="text-blue-100/60 mb-10 leading-relaxed">
               While paid advertising can deliver quick results, those results
               often disappear once the campaign stops. That’s why our primary
-              focus is on organic social media growth strategies designed to
-              create long-lasting brand presence and meaningful audience
-              engagement.
+              focus is on organic{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/social-media-for-uk-consultants/"
+                className="text-[#B54118] font-bold"
+              >
+                social media
+              </Link>{" "}
+              growth strategies designed to create long-lasting brand presence
+              and meaningful audience engagement.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
@@ -199,7 +261,7 @@ const SocialMediaMarketingPage = () => {
           <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-6 border-orange-600">
             <Image
               src="/social-media-strategy.jpg"
-              alt="Sustainable Organic Growth"
+              alt="Social Media Strategy - BizGrow Digital"
               width={600}
               height={500}
               className="object-cover h-[500px]"
@@ -229,7 +291,19 @@ const SocialMediaMarketingPage = () => {
               },
               {
                 t: "Content & Positioning",
-                d: "Developing a content strategy that reflects your brand voice and communicates your value clearly.",
+                d: (
+                  <>
+                    Developing a{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/what-is-content-marketing-types-benefits-of-content-marketing/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      content
+                    </Link>{" "}
+                    strategy that reflects your brand voice and communicates
+                    your value clearly.
+                  </>
+                ),
                 icon: <Zap />,
               },
               {
@@ -272,8 +346,14 @@ const SocialMediaMarketingPage = () => {
                 <span className="text-white">Authority.</span>
               </h2>
               <p className="text-white/90 text-lg mb-8 font-medium">
-                Social media is no longer just about posting; it’s about
-                positioning your brand as a trusted voice within your industry.
+                <Link
+                  href="https://bizgrow-digital.co.uk/what-are-the-4-stages-of-social-media-marketing/"
+                  className="text-[#B54118] font-bold"
+                >
+                  Social media
+                </Link>{" "}
+                is no longer just about posting; it’s about positioning your
+                brand as a trusted voice within your industry.
               </p>
               <p className="text-white/80 mb-10 leading-relaxed">
                 BizGrow Digital develops strategic content that reflects your
@@ -299,7 +379,7 @@ const SocialMediaMarketingPage = () => {
             <div className="lg:w-1/2 relative w-full aspect-square md:aspect-video lg:aspect-square">
               <Image
                 src="/Content Creation.jpg"
-                alt="Build Authority"
+                alt="Content creation strategy - BizGrow Digital "
                 fill
                 className="object-cover rounded-[2.5rem]"
               />
@@ -317,7 +397,7 @@ const SocialMediaMarketingPage = () => {
               <div className="relative aspect-square md:aspect-[4/3] lg:aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
                 <Image
                   src="/smm-strategy.jpg" // Image path updated to match your screenshot visual
-                  alt="Engagement into Results"
+                  alt="Turning engagement into growth - BizGrow Digital "
                   fill
                   className="object-cover"
                 />
@@ -349,7 +429,19 @@ const SocialMediaMarketingPage = () => {
                   },
                   {
                     t: "High-Value Content Strategy",
-                    d: "Our team develops content designed to capture attention, encourage interaction, and strengthen your brand presence.",
+                    d: (
+                      <>
+                        Our team develops{" "}
+                        <Link
+                          href="https://bizgrow-digital.co.uk/10-creative-content-techniques-to-improve-seo-results/"
+                          className="text-[#B54118] font-bold"
+                        >
+                          content
+                        </Link>{" "}
+                        designed to capture attention, encourage interaction,
+                        and strengthen your brand presence.
+                      </>
+                    ),
                   },
                   {
                     t: "Market & Competitor Analysis",
@@ -419,9 +511,15 @@ const SocialMediaMarketingPage = () => {
                 className="flex flex-col items-center"
               >
                 <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
-                  "At BizGrow Digital, we create strategic social media
-                  marketing that helps UK businesses increase visibility, build
-                  trust, and turn engagement into real growth."
+                  "At BizGrow Digital, we create strategic{" "}
+                  <Link
+                    href="https://bizgrow-digital.co.uk/experts-guide-to-social-media-marketing-for-business/"
+                    className="text-[#B54118] font-bold"
+                  >
+                    social media marketing
+                  </Link>{" "}
+                  that helps UK businesses increase visibility, build trust, and
+                  turn engagement into real growth."
                 </p>
               </FadeIn>
 
@@ -436,7 +534,7 @@ const SocialMediaMarketingPage = () => {
                     {/* Shine Animation */}
                     <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent group-hover:animate-shine" />
                     <span className="relative z-10 text-lg uppercase tracking-[0.2em]">
-                      START GROWING YOUR SOCIAL PRESENCE  →
+                      START GROWING YOUR SOCIAL PRESENCE →
                     </span>
                   </button>
                 </Link>
