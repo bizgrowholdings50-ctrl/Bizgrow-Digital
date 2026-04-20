@@ -63,7 +63,19 @@ const DigitalMarketingPage = () => {
     },
     {
       title: "Creative Content Services",
-      desc: "Create attention-grabbing blog posts, website articles, and design graphics to attract new audiences and build credibility for your brand.",
+      desc: (
+        <>
+          Create attention-grabbing{" "}
+          <Link
+            href="https://bizgrow-digital.co.uk/how-to-write-an-seo-optimised-blog-in-2026/"
+            className="text-[#B54118] font-bold"
+          >
+            blog
+          </Link>{" "}
+          posts, website articles, and design graphics to attract new audiences
+          and build credibility for your brand.
+        </>
+      ),
       // PenTool ya FileText content creation aur graphics ko show karta hai
       icon: <PenTool className="w-8 h-8" />,
     },
@@ -73,7 +85,7 @@ const DigitalMarketingPage = () => {
         <>
           We{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
+            href="https://bizgrow-digital.co.uk/website-design-and-development/"
             className="text-[#B54118] font-bold underline"
           >
             design and develop
@@ -113,9 +125,21 @@ const DigitalMarketingPage = () => {
               Marketing Services
             </h1>
             <p className="text-gray-300 text-base md:text-lg lg:text-lg max-w-3xl mb-10 mx-auto px-4 font-light">
-              BizGrow Digital offers UK businesses focused and results-driven
-              digital marketing services to help them become more visible,
-              generate qualified leads, and maximise their online growth
+              <Link
+                href="https://bizgrow-digital.co.uk/about-us/"
+                className="text-[#B54118] font-bold"
+              >
+                BizGrow Digital
+              </Link>{" "}
+              offers UK businesses focused and results-driven
+              <Link
+                href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
+                className="text-[#B54118] font-bold"
+              >
+                digital marketing
+              </Link>{" "}
+              services to help them become more visible, generate qualified
+              leads, and maximise their online growth
             </p>
             <Link href="/contact-us">
               <button className="bg-[#B54118] text-white px-8 md:px-12 py-4 rounded-full font-bold hover:scale-105 transition-all text-sm md:text-base uppercase tracking-widest shadow-xl">
@@ -239,8 +263,14 @@ const DigitalMarketingPage = () => {
             </h2>
             <p className="text-gray-500 dark:text-gray-400 font-medium leading-relaxed max-w-3xl italic text-lg px-4">
               We follow a structured process designed to help UK businesses
-              improve online visibility and generate consistent leads through
-              digital marketing.
+              improve online visibility and generate consistent{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+                className="text-[#B54118] font-bold"
+              >
+                leads through digital marketing
+              </Link>
+              .
             </p>
             <div className="w-24 h-1 bg-orange-500 mt-10 rounded-full opacity-50" />
           </div>
@@ -256,12 +286,45 @@ const DigitalMarketingPage = () => {
               {
                 step: "02",
                 title: "Digital Strategy Development",
-                desc: "Based on research and market insights, we develop a tailored digital marketing strategy for UK businesses that focuses on search visibility, customer engagement, and lead generation.",
+                desc: (
+                  <>
+                    Based on research and market insights, we develop a tailored
+                    digital marketing strategy for UK businesses that focuses on
+                    search visibility, customer engagement, and{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      lead generation
+                    </Link>
+                    .
+                  </>
+                ),
               },
               {
                 step: "03",
                 title: "Implementation & Optimisation",
-                desc: "Our team implements key digital marketing activities, including SEO, content marketing, website optimisation, and social media strategies, to attract targeted visitors.",
+                desc: (
+                  <>
+                    Our team implements key digital marketing activities,
+                    including{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/affordable-seo-services-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      SEO
+                    </Link>
+                    ,{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      content marketing
+                    </Link>
+                    , website optimisation, and social media strategies, to
+                    attract targeted visitors.
+                  </>
+                ),
               },
               {
                 step: "04",
@@ -389,7 +452,13 @@ const DigitalMarketingPage = () => {
                 Many marketing agencies focus only on impressions and traffic.{" "}
                 <br />
                 <span className="text-[#000d26] dark:text-white font-bold italic border-b-2 border-orange-500 pb-1">
-                  BizGrow Digital focuses on measurable business outcomes.
+                  <Link
+                    href="https://bizgrow-digital.co.uk/our-digital-services/"
+                    className="text-[#B54118] font-bold"
+                  >
+                    BizGrow Digital
+                  </Link>{" "}
+                  focuses on measurable business outcomes.
                 </span>
               </p>
 
@@ -397,7 +466,7 @@ const DigitalMarketingPage = () => {
               <div className="relative h-72 w-full rounded-[3rem] overflow-hidden shadow-2xl group">
                 <Image
                   src="/growth-strategy.jpg"
-                  alt="Data driven marketing strategy"
+                  alt="Data Driven Marketing strategies | BizGrow Digital "
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-[1.5s]"
                 />
@@ -415,7 +484,19 @@ const DigitalMarketingPage = () => {
               {[
                 {
                   title: "UK Market Focus",
-                  desc: "Our strategies are designed specifically for businesses operating in the UK, ensuring your marketing reaches the right audience.",
+                  desc: (
+                    <>
+                      Our strategies are designed specifically for businesses
+                      operating in the UK, ensuring your{" "}
+                      <Link
+                        href="https://bizgrow-digital.co.uk/top-3-marketing-challenges-killing-uk-small-businesses/"
+                        className="text-[#B54118] font-bold"
+                      >
+                        marketing
+                      </Link>{" "}
+                      reaches the right audience.
+                    </>
+                  ),
                   icon: <MapPin className="w-6 h-6" />,
                 },
                 {
@@ -425,7 +506,18 @@ const DigitalMarketingPage = () => {
                 },
                 {
                   title: "Focus on Lead Generation",
-                  desc: "Our goal is to help businesses generate qualified leads and real sales opportunities, not just website visits.",
+                  desc: (
+                    <>
+                      Our goal is to help businesses generate qualified{" "}
+                      <Link
+                        href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                        className="text-[#B54118] font-bold"
+                      >
+                        leads
+                      </Link>{" "}
+                      and real sales opportunities, not just website visits.
+                    </>
+                  ),
                   icon: <Target className="w-6 h-6" />,
                 },
                 {
