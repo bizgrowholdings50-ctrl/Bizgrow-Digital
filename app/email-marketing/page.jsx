@@ -16,9 +16,9 @@ import Link from "next/link";
 import FadeIn from "@components/MotionWrapper";
 
 export const metadata = {
-  title: "Email Marketing Services UK | Grow Sales with Automation",
+  title: "Email Marketing Services UK | BizGrow Digital",
   description:
-    "Grow your UK business with Email Marketing Services: targeted, automated emails that boost engagement and customer loyalty.",
+    "Want to turn your emails into a revenue engine? Get data-driven email automation and strategy from BizGrow Digital. Grow your UK sales today ",
   alternates: {
     canonical: "https://bizgrow-digital.co.uk/email-marketing/",
   },
@@ -30,12 +30,12 @@ const EmailMarketingPage = () => {
       title: "Email Growth Strategy",
       desc: (
         <>
-          We design{" "}
+          We design data-driven{" "}
           <Link
             href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/"
             className="text-[#B54118] font-bold underline"
           >
-            data-driven email marketing strategy
+            email marketing strategy
           </Link>{" "}
           tailored to UK audiences, targeting the right segments with precision
           and purpose.
@@ -50,13 +50,13 @@ const EmailMarketingPage = () => {
       desc: (
         <>
           Set your growth on autopilot with advanced triggers and drip sequences
-          that{" "}
+          thatnurture
           <Link
-            href="https://bizgrow-digital.co.uk/lead-generation-solutions/"
+            href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/"
             className="text-[#B54118] font-bold underline"
           >
-            nurture leads and build long-term customer relationships{" "}
-          </Link>{" "}
+           {" "}  leads{" "}
+          </Link>  and build long-term customer relationships{" "}
         </>
       ),
       icon: <Zap className="w-8 h-8" />,
@@ -116,9 +116,15 @@ const EmailMarketingPage = () => {
             <div className="w-full flex justify-center">
               <p className="text-gray-300 text-xl md:text-xl text-center max-w-3xl mt-8">
                 Stop sending emails that get ignored. We help UK businesses grow
-                with data-driven, automated email marketing that builds strong
-                customer relationships, increases engagement, and drives
-                consistent sales..
+                with data-driven, automated{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/top-email-marketing-platforms-for-small-businesses-in-the-uk/"
+                  className="text-[#B54118] font-bold"
+                >
+                  email marketing
+                </Link>{" "}
+                that builds strong customer relationships, increases engagement,
+                and drives consistent sales..
               </p>
             </div>
           </FadeIn>
@@ -228,7 +234,7 @@ const EmailMarketingPage = () => {
               {
                 num: "03",
                 title: "Content & Email Design",
-                desc: "We craft compelling subject lines and engaging email content that encourage opens, clicks, and interaction.",
+                desc: <>We craft compelling subject lines and engaging email <Link href="https://bizgrow-digital.co.uk/10-creative-content-techniques-to-improve-seo-results/" className="text-[#B54118] font-bold">content</Link> that encourage opens, clicks, and interaction.</>,
               },
               {
                 num: "04",
