@@ -292,7 +292,7 @@ const DigitalMarketingPage = () => {
                     digital marketing strategy for UK businesses that focuses on
                     search visibility, customer engagement, and{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+                      href="https://bizgrow-digital.co.uk/lead-generation-solutions/"
                       className="text-[#B54118] font-bold"
                     >
                       lead generation

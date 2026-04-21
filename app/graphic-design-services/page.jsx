@@ -74,7 +74,7 @@ const GraphicDesignPage = () => {
           <div className="text-center mb-24">
             <FadeIn direction="up">
               <span className="text-[#B54118] font-black uppercase tracking-[0.3em] text-[10px] mb-4 block">
-                Expertise & Specializations
+                Expertise & Specialisations
               </span>
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight dark:text-white mb-6 italic">
                 What Our Graphic Design <br />
@@ -128,7 +128,7 @@ const GraphicDesignPage = () => {
               {
                 num: "04",
                 title: "Website & UI Graphics",
-                desc: "Clean and user-friendly visuals optimized to convert visitors into customers. Aligned with your brand and optimized for performance.",
+                desc: "Clean and user-friendly visuals optimised to convert visitors into customers. Aligned with your brand and optimised for performance.",
               },
               {
                 num: "05",
