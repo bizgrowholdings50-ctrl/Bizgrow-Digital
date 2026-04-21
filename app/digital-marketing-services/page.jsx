@@ -134,7 +134,7 @@ const DigitalMarketingPage = () => {
               offers UK businesses focused and results-driven
               <Link
                 href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
-                className="text-[#B54118] font-bold"
+                className="text-[#B54118] font-bold ml-1"
               >
                 digital marketing
               </Link>{" "}
