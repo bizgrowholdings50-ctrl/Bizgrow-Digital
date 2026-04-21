@@ -12,6 +12,10 @@ import {
 import FadeIn from "@components/MotionWrapper";
 import Link from "next/link";
 
+export const metadata = {
+  title:"Graphic Design Services in the UK | BizGrow Digital",
+  description: "Need graphic design services in the UK? BizGrow Digital designs logos, branding, and visuals to make your business look professional and strong."
+}
 const GraphicDesignPage = () => {
   return (
     <section className="w-full bg-white  overflow-hidden">
@@ -37,9 +41,22 @@ const GraphicDesignPage = () => {
               <span className="text-orange-500">TRUST IN SECONDS</span>
             </h1>
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
-              BizGrow Digital creates high-quality, professional designs that
-              help UK businesses stand out, build credibility, and convert more
-              customers from social media graphics to a complete brand identity.
+              <Link
+                href="https://bizgrow-digital.co.uk/about-us/"
+                className="text-[#B54118] font-bold"
+              >
+                BizGrow Digital
+              </Link>{" "}
+              creates high-quality, professional designs that help UK businesses
+              stand out, build credibility, and convert more customers from
+              social media{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/will-ai-replace-graphic-designers-in-2026-2/"
+                className="text-[#B54118] font-bold"
+              >
+                graphics
+              </Link>{" "}
+              to a complete brand identity.
             </p>
             <Link href="/contact-us">
               <button className="bg-[#B54118] text-white px-10 py-5 rounded-full font-bold hover:scale-105 transition-all uppercase tracking-widest shadow-2xl">
@@ -50,10 +67,9 @@ const GraphicDesignPage = () => {
         </div>
       </div>
 
-{/* 🔹 REFINED EDITORIAL SECTION: CLEAN & CENTERED */}
+      {/* 🔹 REFINED EDITORIAL SECTION: CLEAN & CENTERED */}
       <section className="py-24 bg-white dark:bg-[#020817] font-sans border-y border-slate-100 dark:border-slate-900">
         <div className="max-w-6xl mx-auto px-6">
-          
           {/* 1. Centered Header Section */}
           <div className="text-center mb-24">
             <FadeIn direction="up">
@@ -65,7 +81,16 @@ const GraphicDesignPage = () => {
                 <span className="text-[#B54118]">Services Include?</span>
               </h2>
               <p className="text-gray-500 dark:text-gray-400 text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto italic">
-                Our services are tailored to help UK businesses build a strong, professional, and consistent brand presence. We design visuals that attract attention and drive real results.
+                Our{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/our-digital-services/"
+                  className="text-[#B54118] font-bold"
+                >
+                  services
+                </Link>{" "}
+                are tailored to help UK businesses build a strong, professional,
+                and consistent brand presence. We design visuals that attract
+                attention and drive real results.
               </p>
             </FadeIn>
           </div>
@@ -76,35 +101,58 @@ const GraphicDesignPage = () => {
               {
                 num: "01",
                 title: "Social Media Design",
-                desc: "We create engaging and scroll-stopping designs for Facebook, Instagram, LinkedIn, and more. Built to increase engagement and generate leads."
+                desc: (
+                  <>
+                    We create engaging and scroll-stopping designs for{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/facebook-marketing-services/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      Facebook
+                    </Link>
+                    , Instagram, LinkedIn, and more. Built to increase
+                    engagement and generate leads.
+                  </>
+                ),
               },
               {
                 num: "02",
                 title: "Logo & Branding Design",
-                desc: "Professional identities that reflect your business values. Our UK branding solutions ensure your business looks consistent and credible."
+                desc: "Professional identities that reflect your business values. Our UK branding solutions ensure your business looks consistent and credible.",
               },
               {
                 num: "03",
                 title: "Marketing Materials Design",
-                desc: "High-quality flyers, brochures, and banners that clearly communicate your message and enhance your brand image both online and offline."
+                desc: "High-quality flyers, brochures, and banners that clearly communicate your message and enhance your brand image both online and offline.",
               },
               {
                 num: "04",
                 title: "Website & UI Graphics",
-                desc: "Clean and user-friendly visuals optimized to convert visitors into customers. Aligned with your brand and optimized for performance."
+                desc: "Clean and user-friendly visuals optimized to convert visitors into customers. Aligned with your brand and optimized for performance.",
               },
               {
                 num: "05",
                 title: "Custom Creative Content",
-                desc: "Tailored design solutions for your specific goals. Whether you need unique visuals or branded content, we deliver designs that stand out."
-              }
+                desc: (
+                  <>
+                    Tailored design solutions for your specific goals. Whether
+                    you need unique visuals or branded{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      content
+                    </Link>
+                    , we deliver designs that stand out.
+                  </>
+                ),
+              },
             ].map((service, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="group border-b border-slate-100 dark:border-slate-800 py-10 transition-all duration-300 hover:bg-slate-50/50 dark:hover:bg-white/[0.02] px-4"
               >
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-16">
-                  
                   {/* Small ID & Title */}
                   <div className="flex items-center gap-6 md:w-[40%]">
                     <span className="text-sm font-bold text-[#B54118] opacity-50">
@@ -130,7 +178,6 @@ const GraphicDesignPage = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -153,8 +200,13 @@ const GraphicDesignPage = () => {
               <p className="text-gray-500 dark:text-gray-400 text-md md:text-xl font-medium leading-relaxed max-w-2xl mx-auto tracking-tight">
                 Your design is often the first impression your UK business
                 makes. Poor design can lose customers instantly, while
-                professional design builds trust, attracts attention, and drives
-                conversions.
+                <Link
+                  href="https://bizgrow-digital.co.uk/what-are-the-5-elements-of-a-good-website-design/"
+                  className="text-[#B54118] font-bold ml-1"
+                >
+                  professional design
+                </Link>{" "}
+                builds trust, attracts attention, and drives conversions.
               </p>
             </div>
           </FadeIn>
@@ -234,7 +286,12 @@ const GraphicDesignPage = () => {
                   High-Quality Vector Design for Professional Brands
                 </h3>
                 <p className="text-gray-500 dark:text-white ">
-                  From logos to marketing visuals, our vector graphics deliver
+                  From logos to <Link
+                  href="https://bizgrow-digital.co.uk/top-3-marketing-challenges-killing-uk-small-businesses/"
+                  className="text-[#B54118] font-bold underline"
+                >
+                  marketing
+                </Link>{" "} visuals, our vector graphics deliver
                   precise detail, scalability, and a professional finish across
                   all platforms and resolutions.
                 </p>
@@ -244,7 +301,6 @@ const GraphicDesignPage = () => {
           </div>
         </div>
       </section>
-
 
       {/* --- CONTENT SECTION: Unique Visual Philosophy --- */}
       <div className="py-14 bg-white dark:bg-[#020817] dark:border-t-2 dark:border-orange-700">
@@ -312,7 +368,12 @@ const GraphicDesignPage = () => {
               {
                 id: "01",
                 title: "Understanding Your Brand",
-                desc: "We begin by gaining a clear understanding of your business, goals, and target audience. This allows us to create designs that truly reflect your brand identity and speak directly to your customers.",
+                desc: <>We begin by gaining a clear understanding of your business, goals, and target audience. This allows us to create <Link
+                  href="https://bizgrow-digital.co.uk/web-design-without-coding/"
+                  className="text-[#B54118] font-bold underline"
+                >
+                  designs
+                </Link>{" "} that truly reflect your brand identity and speak directly to your customers.</>,
               },
               {
                 id: "02",
