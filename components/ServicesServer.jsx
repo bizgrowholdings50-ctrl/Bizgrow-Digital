@@ -61,7 +61,7 @@ export default function ServicesSection() {
           </FadeIn>
 
           <FadeIn direction="up" delay={0.2}>
-            <p className="text-black dark:text-white mt-4 text-sm md:text-[16px] font-medium max-w-xl mx-auto opacity-90">
+            <p className="text-black dark:text-white mt-2 text-sm md:text-[16px] font-medium max-w-xl mx-auto opacity-90">
               Empowering your business to thrive online with tailored digital
               solutions.
             </p>
@@ -69,7 +69,7 @@ export default function ServicesSection() {
         </div>
 
         {/* --- Cards Wrapper: Fully Responsive Container --- */}
-        <div className="relative w-full max-w-6xl px-4 h-[55vh] md:h-[50vh] flex items-center justify-center">
+        <div className="relative w-full mt-7 max-w-6xl px-4 h-[55vh] md:h-[50vh] flex items-center justify-center">
           {visibleCards.map((card, idx) => {
             const start = idx * 0.18;
             const end = start + 0.25;
