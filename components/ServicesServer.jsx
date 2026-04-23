@@ -101,7 +101,7 @@ export default function ServicesSection() {
               <span className="relative z-20 group-hover/btn:text-[#B54118]">
                 Explore All Services →
               </span>
-              <div className="absolute inset-0 bg-white z-10 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500"></div>
+              <div className="absolute inset-0 bg-white z-10 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500"></div>
             </button>
           </Link>
         </div>

@@ -53,13 +53,21 @@ const WordPressPage = () => {
             </h1>
             <p className="text-gray-300 text-lg md:text-lg max-w-2xl mb-10 mx-auto">
               Generic themes limit your potential. We create high-performance,
-              scalable, and secure WordPress websites tailored for UK brands
-              that drive engagement and results.
+              scalable, and secure{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/how-to-start-a-blog-on-wordpress/"
+                className="text-[#B54118] font-bold"
+              >
+                WordPress
+              </Link>{" "}
+              websites tailored for UK brands that drive engagement and results.
             </p>
             <div className="flex justify-center gap-4">
-              <button className="bg-[#B54118] text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-all">
-                Build Your WordPress Platform →
-              </button>
+              <Link href="https://bizgrow-digital.co.uk/contact-us/">
+                <button className="bg-[#B54118] text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-all">
+                  Build Your WordPress Platform →
+                </button>
+              </Link>
             </div>
           </FadeIn>
         </div>
@@ -76,19 +84,45 @@ const WordPressPage = () => {
                 Design UK
               </h2>
               <p className="text-gray-500 dark:text-gray-400 text-lg mb-8">
-                At BizGrow Digital, we build WordPress websites that combine stunning design with powerful functionality. Whether you are a small business or a growing enterprise, our results grow your revenue.
+                At{" "}
+                <Link href="/about-us" className="text-[#B54118] font-bold">
+                  BizGrow Digital
+                </Link>
+                , we build WordPress websites that combine stunning{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
+                  className="text-[#B54118] font-bold"
+                >
+                  design
+                </Link>{" "}
+                with powerful functionality. Whether you are a small business or
+                a growing enterprise, our results grow your revenue.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { title: "Fully Responsive", desc: "Flawless on all devices, desktops to mobiles." },
-                  { title: "SEO-Optimised", desc: "Built to rank higher and attract UK audience." },
-                  { title: "Customised", desc: "Tailored layouts to reflect your unique offerings." },
-                  { title: "Conversion-Focused", desc: "Designed to turn visitors into enquiries." }
+                  {
+                    title: "Fully Responsive",
+                    desc: "Flawless on all devices, desktops to mobiles.",
+                  },
+                  {
+                    title: "SEO-Optimised",
+                    desc: "Built to rank higher and attract UK audience.",
+                  },
+                  {
+                    title: "Customised",
+                    desc: "Tailored layouts to reflect your unique offerings.",
+                  },
+                  {
+                    title: "Conversion-Focused",
+                    desc: "Designed to turn visitors into enquiries.",
+                  },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <Check className="text-[#B54118] shrink-0" size={24} />
                     <div>
-                      <h3 className="font-bold dark:text-white text-sm uppercase tracking-wide">{item.title}</h3>
+                      <h3 className="font-bold dark:text-white text-sm uppercase tracking-wide">
+                        {item.title}
+                      </h3>
                       <p className="text-xs text-gray-500">{item.desc}</p>
                     </div>
                   </div>
@@ -96,10 +130,16 @@ const WordPressPage = () => {
               </div>
             </FadeIn>
             <FadeIn direction="right" className="relative">
-               <div className="relative z-10 rounded-[3rem] overflow-hidden border-2 border-[#B54118]/20 shadow-2xl">
-                  <Image src="/wp-design-uk.jpg" width={600} height={400} alt="Design Excellence" className="w-full h-125 object-cover" />
-               </div>
-               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#B54118]/10 blur-3xl -z-10" />
+              <div className="relative z-10 rounded-[3rem] overflow-hidden border-2 border-[#B54118]/20 shadow-2xl">
+                <Image
+                  src="/wp-design-uk.jpg"
+                  width={600}
+                  height={400}
+                  alt="Professional WordPress Website | BizGrow Digital"
+                  className="w-full h-125 object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#B54118]/10 blur-3xl -z-10" />
             </FadeIn>
           </div>
         </div>
@@ -108,32 +148,63 @@ const WordPressPage = () => {
       {/* --- SECTION 2: What We Deliver (Your existing grid) --- */}
       <section className="w-full dark:bg-black dark:border-t-2 dark:border-orange-700 ">
         <div className="py-14 max-w-7xl mx-auto px-6 ">
-           {/* ... existing 'What We Deliver' code ... */}
-           {/* (No changes needed here unless you want to swap icons) */}
-           <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+          {/* ... existing 'What We Deliver' code ... */}
+          {/* (No changes needed here unless you want to swap icons) */}
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
             <div className="lg:col-span-1">
               <h2 className="text-5xl font-black text-center dark:text-white mb-6 uppercase tracking-tighter">
                 What We Deliver
               </h2>
               <p className="text-gray-500 text-center dark:text-gray-400 max-w-3xl mx-auto">
-                We build performance-focused <Link href="#" className="text-[#B54118] font-bold underline">WordPress websites</Link> without bloated page builders, ensuring fast load times and long-term scalability.
+                We build performance-focused{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/custom-wordpress-development-services-in-the-uk/"
+                  className="text-[#B54118] font-bold underline"
+                >
+                  WordPress websites
+                </Link>{" "}
+                without bloated page builders, ensuring fast load times and
+                long-term scalability.
               </p>
             </div>
             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-               {/* Your existing mapping for Code2, LayoutDashboard, etc. */}
-               {[
-                { title: "Headless WordPress", icon: <Code2 />, desc: "Next.js frontend with WordPress backend for superior speed." },
-                { title: "Custom Admin", icon: <LayoutDashboard />, desc: "Tailored dashboards for easy content management." },
-                { title: "Security", icon: <ShieldCheck />, desc: "Advanced server-side hardening to protect your data." },
-                { title: "Core Web Vitals", icon: <Rocket />, desc: "Built to meet Google’s highest performance standards." }
-               ].map((box, i) => (
-                 <div key={i} className="group relative p-10 bg-white dark:bg-[#001235]/40 backdrop-blur-md rounded-[2.5rem] border-2 border-slate-100 dark:border-white/5 shadow-xl hover:-translate-y-2 transition-all duration-500">
-                    <div className="text-[#B54118] mb-6">{box.icon}</div>
-                    <h3 className="text-2xl font-black dark:text-white mb-3 tracking-tight group-hover:text-[#B54118] transition-colors uppercase">{box.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{box.desc}</p>
-                    <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#B54118] group-hover:w-full transition-all duration-500" />
-                 </div>
-               ))}
+              {/* Your existing mapping for Code2, LayoutDashboard, etc. */}
+              {[
+                {
+                  title: "Headless WordPress",
+                  icon: <Code2 />,
+                  desc: "Next.js frontend with WordPress backend for superior speed.",
+                },
+                {
+                  title: "Custom Admin",
+                  icon: <LayoutDashboard />,
+                  desc: "Tailored dashboards for easy content management.",
+                },
+                {
+                  title: "Security",
+                  icon: <ShieldCheck />,
+                  desc: "Advanced server-side hardening to protect your data.",
+                },
+                {
+                  title: "Core Web Vitals",
+                  icon: <Rocket />,
+                  desc: "Built to meet Google’s highest performance standards.",
+                },
+              ].map((box, i) => (
+                <div
+                  key={i}
+                  className="group relative p-10 bg-white dark:bg-[#001235]/40 backdrop-blur-md rounded-[2.5rem] border-2 border-slate-100 dark:border-white/5 shadow-xl hover:-translate-y-2 transition-all duration-500"
+                >
+                  <div className="text-[#B54118] mb-6">{box.icon}</div>
+                  <h3 className="text-2xl font-black dark:text-white mb-3 tracking-tight group-hover:text-[#B54118] transition-colors uppercase">
+                    {box.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                    {box.desc}
+                  </p>
+                  <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#B54118] group-hover:w-full transition-all duration-500" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -144,25 +215,75 @@ const WordPressPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black dark:text-white uppercase tracking-tighter">
-              Benefits for Your <span className="text-[#B54118]">UK Business</span>
+              Benefits for Your{" "}
+              <span className="text-[#B54118]">UK Business</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "User-Friendly", icon: <Settings />, desc: "Quickly update content and images without technical expertise." },
-              { title: "SEO-Friendly", icon: <Search />, desc: "Built-in features to improve rankings for local UK searches." },
-              { title: "Responsive", icon: <Monitor />, desc: "Mobile-optimised to ensure site looks great on any device." },
-              { title: "Secure & Reliable", icon: <ShieldCheck />, desc: "Regular updates and robust measures to protect visitors." },
-              { title: "Scalable", icon: <TrendingUp />, desc: "Adapt your site easily as your business grows in the UK." },
-              { title: "Marketing Support", icon: <Zap />, desc: "Seamless integration with email, social, and analytics." }
+              {
+                title: "User-Friendly",
+                icon: <Settings />,
+                desc: (
+                  <>
+                    Quickly update{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      content
+                    </Link>{" "}
+                    and images without technical expertise.
+                  </>
+                ),
+              },
+              {
+                title: "SEO-Friendly",
+                icon: <Search />,
+                desc: "Built-in features to improve rankings for local UK searches.",
+              },
+              {
+                title: "Responsive",
+                icon: <Monitor />,
+                desc: (
+                  <>
+                    <Link
+                      href="https://bizgrow-digital.co.uk/how-good-ux-can-keep-visitors-on-your-website-longer/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      Mobile-optimised
+                    </Link>{" "}
+                    to ensure site looks great on any device.
+                  </>
+                ),
+              },
+              {
+                title: "Secure & Reliable",
+                icon: <ShieldCheck />,
+                desc: "Regular updates and robust measures to protect visitors.",
+              },
+              {
+                title: "Scalable",
+                icon: <TrendingUp />,
+                desc: "Adapt your site easily as your business grows in the UK.",
+              },
+              {
+                title: "Marketing Support",
+                icon: <Zap />,
+                desc: <>Seamless integration with <Link href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/" className="text-[#B54118] font-bold">email</Link>, social, and analytics.</>,
+              },
             ].map((benefit, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
                 <div className="p-8 bg-white dark:bg-white/5 rounded-[2rem] border border-zinc-200 dark:border-white/10 hover:border-[#B54118] transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-[#B54118]/10 text-[#B54118] flex items-center justify-center mb-6 group-hover:bg-[#B54118] group-hover:text-white transition-all">
                     {benefit.icon}
                   </div>
-                  <h3 className="text-xl font-black dark:text-white mb-3 uppercase tracking-tight">{benefit.title}</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">{benefit.desc}</p>
+                  <h3 className="text-xl font-black dark:text-white mb-3 uppercase tracking-tight">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">
+                    {benefit.desc}
+                  </p>
                 </div>
               </FadeIn>
             ))}
@@ -170,7 +291,6 @@ const WordPressPage = () => {
         </div>
       </section>
 
-      
       {/* 🚀 4 PREMIUM COMPARISON: Standard vs BizGrow */}
       <section className="dark:bg-black py-24 relative overflow-hidden dark:border-t-2 dark:border-orange-700">
         {/* Background Glow Effect */}
@@ -236,7 +356,15 @@ const WordPressPage = () => {
                       "Performance-engineered architecture",
                       "Lightweight, custom-built code",
                       "Zero-bloat development approach",
-                      <><Link href="https://bizgrow-digital.co.uk/search-engine-optimisation/" className="text-[#B54118] underline">SEO</Link>and Core Web Vitals optimised</>,
+                      <>
+                        <Link
+                          href="https://bizgrow-digital.co.uk/search-engine-optimisation/"
+                          className="text-[#B54118] underline"
+                        >
+                          SEO
+                        </Link>
+                        and Core Web Vitals optimised
+                      </>,
                       "Enterprise-level security standards",
                     ].map((item, i) => (
                       <li
@@ -264,19 +392,23 @@ const WordPressPage = () => {
       <section className="dark:bg-black py-24 dark:border-y-2 dark:border-orange-700 overflow-hidden">
         {/* ... existing CTA code ... */}
         <div className="max-w-7xl mx-auto px-4 md:px-10 text-center">
-            <div className="relative py-24 rounded-[3.5rem] overflow-hidden bg-fixed bg-cover bg-center" style={{backgroundImage: "url('/wp-cta.jpg')"}}>
-               <div className="absolute inset-0 bg-black/80" />
-               <div className="relative z-10">
-                  <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-8">
-                     Let's Build Your <br /> <span className="text-[#B54118]">WordPress Masterpiece</span>
-                  </h2>
-                  <Link href="/contact-us">
-                    <button className="px-10 py-5 bg-[#B54118] text-white font-black rounded-2xl uppercase tracking-widest hover:scale-110 transition-all">
-                      Start Your Project →
-                    </button>
-                  </Link>
-               </div>
+          <div
+            className="relative py-24 rounded-[3.5rem] overflow-hidden bg-fixed bg-cover bg-center"
+            style={{ backgroundImage: "url('/wp-cta.jpg')" }}
+          >
+            <div className="absolute inset-0 bg-black/80" />
+            <div className="relative z-10">
+              <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mb-8">
+                Let's Build Your <br />{" "}
+                <span className="text-[#B54118]">WordPress Masterpiece</span>
+              </h2>
+              <Link href="/contact-us">
+                <button className="px-10 py-5 bg-[#B54118] text-white font-black rounded-2xl uppercase tracking-widest hover:scale-110 transition-all">
+                  Start Your Project →
+                </button>
+              </Link>
             </div>
+          </div>
         </div>
       </section>
     </section>

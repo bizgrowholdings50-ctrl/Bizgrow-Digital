@@ -141,9 +141,10 @@ const HomePage = () => {
               <FadeIn direction="up" delay={0.4}>
                 <div className="mt-12">
                   <Link href="/our-digital-services">
-                    <button className="group relative px-8 py-5 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_40px_rgba(181,65,24,0.3)]">
+                    <button className="group relative  px-8 py-5 bg-[#B54118] text-white font-black rounded-2xl overflow-hidden transition-all duration-300  hover:shadow-[0_20px_40px_rgba(181,65,24,0.3)]">
                       <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shine" />
-                      <span className="relative z-10 flex items-center gap-3">
+                      <div className="absolute inset-0 bg-white z-10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 "></div>
+                      <span className="relative z-30 group-hover:text-[#B54118] flex items-center gap-3">
                         Learn More About Our Services
                         <span className="transition-transform group-hover:translate-x-2">
                           →
