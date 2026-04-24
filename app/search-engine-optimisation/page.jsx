@@ -50,12 +50,32 @@ const SEOPage = () => {
               RANK ON <span className="text-orange-500">TOP</span>
             </h1>
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
-              At BizGrow Digital, we help UK businesses rank higher in Google
-              organically. Our SEO strategies attract the right visitors
-              actively searching for your products or services without paying
-              per click. Grow your online visibility and generate quality leads.
+              At{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/about-us/"
+                className="text-[#B54118] font-bold"
+              >
+                BizGrow Digital
+              </Link>
+              , we help UK businesses rank higher in Google organically. Our{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/how-to-write-an-seo-optimised-blog-in-2026/"
+                className="text-[#B54118] font-bold"
+              >
+                SEO
+              </Link>
+              strategies attract the right visitors actively searching for your
+              products or services without paying per click. Grow your online
+              visibility and generate quality{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                className="text-[#B54118] font-bold"
+              >
+                leads
+              </Link>
+              .
             </p>
-            <Link href="/cosearch-engine-optimisation">
+            <Link href="/contact-us">
               <button className="bg-[#B54118] text-white px-10 py-5 rounded-full font-bold hover:scale-105 transition-all uppercase tracking-widest shadow-2xl">
                 Audit My Site
               </button>
@@ -104,7 +124,7 @@ const SEOPage = () => {
                   <p className="text-slate-600 dark:text-gray-400 text-lg leading-relaxed border-l-4 border-orange-600/60 pl-6">
                     Effective SEO involves{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/how-can-expert-seo-techniques-boost-your-business-visibility/"
+                      href="https://bizgrow-digital.co.uk/why-on-page-seo-matters-for-small-businesses"
                       className="text-[#B54118] font-bold underline"
                     >
                       on-page techniques
@@ -186,7 +206,7 @@ const SEOPage = () => {
             <div className="md:col-span-2 md:row-span-2 rounded-[3rem] dark:border dark:border-[#B54118] relative overflow-hidden group shadow-2xl">
               <Image
                 src="/analytics.png"
-                alt="Data-driven SEO results"
+                alt="Data-driven SEO results - BizGrow Digital"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -269,9 +289,15 @@ const SEOPage = () => {
                 for UK Businesses
               </h2>
               <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-                At BizGrow Digital, we follow a proven, step-by-step SEO
-                approach designed to deliver long-term growth and consistent
-                results.
+                At{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/our-digital-services/"
+                  className="text-[#B54118] font-bold"
+                >
+                  BizGrow Digital
+                </Link>
+                , we follow a proven, step-by-step SEO approach designed to
+                deliver long-term growth and consistent results.
               </p>
             </div>
           </FadeIn>
@@ -290,13 +316,37 @@ const SEOPage = () => {
               {
                 num: "02",
                 title: "Keyword Research & Strategy",
-                desc: "We find high-intent keywords based on UK search behaviour to target the right audience and maximise visibility.",
+                desc: (
+                  <>
+                    We find high-intent{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/10-steps-keyword-research-checklist-2026/"
+                      className="text-[#B54118] mr-1 font-bold"
+                    >
+                      keywords
+                    </Link>
+                    based on UK search behaviour to target the right audience
+                    and maximise visibility.
+                  </>
+                ),
                 icon: <Search className="w-6 h-6" />,
               },
               {
                 num: "03",
                 title: "On-Page SEO Optimisation",
-                desc: "We optimise your website content, meta tags, headings, and structure to improve rankings and user experience.",
+                desc: (
+                  <>
+                    We optimise your website{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      content
+                    </Link>
+                    , meta tags, headings, and structure to improve rankings and
+                    user experience.
+                  </>
+                ),
                 icon: <Target className="w-6 h-6" />,
               },
               {
@@ -308,13 +358,35 @@ const SEOPage = () => {
               {
                 num: "05",
                 title: "Content Creation & Optimisation",
-                desc: "We develop high-quality, SEO-driven content that matches user intent and builds topical authority.",
+                desc: (
+                  <>
+                    We develop high-quality,{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      SEO-driven content
+                    </Link>{" "}
+                    that matches user intent and builds topical authority.
+                  </>
+                ),
                 icon: <FileText className="w-6 h-6" />, // Changed to FileText
               },
               {
                 num: "06",
                 title: "Link Building & Authority Growth",
-                desc: "We build high-quality backlinks from relevant UK websites to increase your domain authority.",
+                desc: (
+                  <>
+                    We build high-quality{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/off-page-seo-services-in-2026/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      backlinks
+                    </Link>{" "}
+                    from relevant UK websites to increase your domain authority.
+                  </>
+                ),
                 icon: <Link2 className="w-6 h-6" />, // Changed to Link2
               },
               {
@@ -417,7 +489,8 @@ const SEOPage = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row-reverse gap-20 items-center">
           <div className="w-full lg:w-1/2 space-y-8">
             <h2 className="text-5xl md:text-6xl font-black dark:text-white leading-none uppercase">
-              SEO  <span className="text-orange-500">Strategies </span> for UK Businesses 
+              SEO <span className="text-orange-500">Strategies </span> for UK
+              Businesses
             </h2>
             <p className="text-gray-700 font-semibold">
               Producing{" "}
@@ -452,7 +525,7 @@ const SEOPage = () => {
           <div className="w-full lg:w-1/2 relative h-[500px] rounded-[4rem] overflow-hidden border-[8px] border-slate-30 dark:border-orange-700 shadow-2xl group">
             <Image
               src="/data-over.png"
-              alt="SEO strategy driving UK business growth"
+              alt="SEO Strategies for UK Businesses - BizGrow Digital"
               fill
               className="object-cover transition-all duration-1000"
             />
@@ -502,7 +575,7 @@ const SEOPage = () => {
                 <p className="mx-auto mb-12 text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
                   "Our SEO strategies are designed to deliver long‑term growth,
                   help your site rank for relevant terms, and convert visitors
-                  into loyal customers. Contact BizGrow Digital today for a
+                  into loyal customers. Contact <Link href="/" className="text-[#B54118] font-bold">BizGrow Digital</Link> today for a
                   tailored SEO plan that aligns with your business goals and UK
                   market needs."
                 </p>
