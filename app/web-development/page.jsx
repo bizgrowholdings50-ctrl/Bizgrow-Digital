@@ -43,11 +43,12 @@ const WebDevelopmentPage = () => {
       title: "Tailwind CSS",
       desc: (
         <>
+          Delivering clean, responsive
           <Link
             href="https://bizgrow-digital.co.uk/graphic-design-services/"
-            className="text-[#B54118] font-bold underline"
+            className="text-[#B54118] font-bold underline ml-1"
           >
-            Delivering clean, responsive designs
+            designs
           </Link>{" "}
           with a utility-first framework for consistent styling and fast,
           scalable development.
@@ -93,7 +94,19 @@ const WebDevelopmentPage = () => {
             </h1>
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
               Your Digital Growth Starts With a Website That Performs. At
-              BizGrow Digital, we create fast, responsive, and SEO-optimised
+              <Link
+                href="https://bizgrow-digital.co.uk/about-us/"
+                className="text-[#B54118] font-bold ml-1"
+              >
+                BizGrow Digital
+              </Link>
+              , we create fast, responsive, and{" "}
+              <Link
+                href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/"
+                className="text-[#B54118] font-bold"
+              >
+                SEO-optimised
+              </Link>{" "}
               websites designed to attract, engage, and convert your ideal
               customers.
             </p>
@@ -148,18 +161,28 @@ const WebDevelopmentPage = () => {
       {/* --- PREMIUM Z-PATTERN SECTION: WHY YOUR BUSINESS NEEDS A WEBSITE --- */}
       <section className="w-full py-24 bg-white dark:bg-[#020817]">
         <div className="max-w-7xl mx-auto px-6">
-          
           {/* 🎯 Header Section: Exact Content */}
           <div className="text-center mb-24">
             <FadeIn direction="up">
               <h2 className="text-4xl md:text-6xl font-black text-gray-800 dark:text-white uppercase leading-tight mb-8">
                 Why Your Business <br />
-                <span className="text-orange-500">Needs a Professional</span> <br />
+                <span className="text-orange-500">
+                  Needs a Professional
+                </span>{" "}
+                <br />
                 Website?
               </h2>
               <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Your website is often the first impression your customers have of your business. 
-                A poorly designed or slow website can drive potential clients away before they even engage.
+                Your{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/website-design-and-development/"
+                  className="text-[#B54118] font-bold"
+                >
+                  website
+                </Link>{" "}
+                is often the first impression your customers have of your
+                business. A poorly designed or slow website can drive potential
+                clients away before they even engage.
               </p>
             </FadeIn>
           </div>
@@ -167,30 +190,34 @@ const WebDevelopmentPage = () => {
           {/* 🎯 Content: Zig-Zag Layout with Exact Points */}
           <div className="space-y-32">
             {[
-              { 
-                t: "Build trust and credibility with your audience", 
+              {
+                t: "Build trust and credibility with your audience",
                 icon: <ShieldCheck className="w-16 h-16" />,
-                align: "left"
+                align: "left",
               },
-              { 
-                t: "Showcase your products and services effectively", 
+              {
+                t: "Showcase your products and services effectively",
                 icon: <Layout className="w-16 h-16" />,
-                align: "right"
+                align: "right",
               },
-              { 
-                t: "Convert visitors into enquiries and customers", 
+              {
+                t: "Convert visitors into enquiries and customers",
                 icon: <Target className="w-16 h-16" />,
-                align: "left"
+                align: "left",
               },
-              { 
-                t: "Reach users across all devices with a responsive design", 
+              {
+                t: "Reach users across all devices with a responsive design",
                 icon: <Smartphone className="w-16 h-16" />,
-                align: "right"
-              }
+                align: "right",
+              },
             ].map((item, idx) => (
-              <FadeIn key={idx} direction={item.align === "left" ? "right" : "left"}>
-                <div className={`flex flex-col ${item.align === "left" ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-12 lg:gap-24`}>
-                  
+              <FadeIn
+                key={idx}
+                direction={item.align === "left" ? "right" : "left"}
+              >
+                <div
+                  className={`flex flex-col ${item.align === "left" ? "md:flex-row" : "md:flex-row-reverse"} items-center gap-12 lg:gap-24`}
+                >
                   {/* Visual Side */}
                   <div className="w-full md:w-1/2 flex justify-center">
                     <div className="relative group">
@@ -211,16 +238,15 @@ const WebDevelopmentPage = () => {
                     </h3>
                     <div className="w-12 h-1 bg-orange-500/30 rounded-full" />
                   </div>
-
                 </div>
               </FadeIn>
             ))}
           </div>
 
           <FadeIn direction="up" className="mt-24 text-center">
-             <p className="text-gray-400 italic text-lg">
-                A professionally developed website helps you stand out.
-             </p>
+            <p className="text-gray-400 italic text-lg">
+              A professionally developed website helps you stand out.
+            </p>
           </FadeIn>
         </div>
       </section>
@@ -237,8 +263,14 @@ const WebDevelopmentPage = () => {
               </h2>
               <div className="max-w-2xl mx-auto">
                 <p className="text-gray-500 text-center dark:text-gray-400 text-lg md:text-xl font-medium">
-                  We offer a complete range of web development solutions
-                  tailored to your UK business needs:
+                  We offer a complete range of{" "}
+                  <Link
+                    href="https://bizgrow-digital.co.uk/what-is-b2b-web-development-in-the-uk/"
+                    className="text-[#B54118] font-bold"
+                  >
+                    web development
+                  </Link>{" "}
+                  solutions tailored to your UK business needs:
                 </p>
               </div>
             </FadeIn>
@@ -264,7 +296,18 @@ const WebDevelopmentPage = () => {
               },
               {
                 t: "Landing Pages",
-                d: "High-converting pages focused on generating leads.",
+                d: (
+                  <>
+                    High-converting pages focused on generating{" "}
+                    <Link
+                      href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                      className="text-[#B54118] font-bold"
+                    >
+                      leads
+                    </Link>
+                    .
+                  </>
+                ),
                 icon: <MousePointerClick className="w-6 h-6" />,
               },
               {
@@ -313,7 +356,14 @@ const WebDevelopmentPage = () => {
               <p className="text-gray-400 text-lg leading-relaxed">
                 No more slow themes or generic templates. We build bespoke React
                 applications that deliver exceptional speed, smooth
-                interactions, and a premium user experience.
+                interactions, and a premium{" "}
+                <Link
+                  href="https://bizgrow-digital.co.uk/how-good-ux-can-keep-visitors-on-your-website-longer/"
+                  className="text-[#B54118] font-bold"
+                >
+                  user experience
+                </Link>
+                .
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -341,7 +391,7 @@ const WebDevelopmentPage = () => {
             <div className="relative h-[400px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-2xl">
               <Image
                 src="/web-strategy.jpg"
-                alt="Custom code for fast, scalable websites"
+                alt="Custom web development services by BizGrow Digital "
                 fill
                 className="object-cover transition-all duration-1000"
               />
@@ -359,8 +409,14 @@ const WebDevelopmentPage = () => {
               Our <span className="text-orange-500">Process</span>
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              BizGrow follows a structured and transparent process to ensure
-              your UK website delivers real results:
+              <Link
+                href="https://bizgrow-digital.co.uk/our-digital-services/"
+                className="text-[#B54118] font-bold"
+              >
+                BizGrow
+              </Link>{" "}
+              follows a structured and transparent process to ensure your UK
+              website delivers real results:
             </p>
           </FadeIn>
 
