@@ -95,9 +95,9 @@ const CreativeContentPage = () => {
   return (
     <section className="relative w-full">
       {/* --- HERO SECTION --- */}
-      <div className="relative  h-[85vh] md:h-screen w-full">
+      <div className="relative h-[85vh] md:h-screen w-full">
         <Image
-          src="/creative.jpg"
+          src="/creative.webp"
           alt="Creative Content Services - BizGrow Digital"
           fill
           fetchPriority="high"
