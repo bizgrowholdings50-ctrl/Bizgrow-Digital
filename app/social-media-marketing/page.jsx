@@ -29,7 +29,7 @@ const SocialMediaMarketingPage = () => {
         <>
           Professionally crafted content and high-end{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
+            href="/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
             className="text-[#B54118] font-bold underline"
           >
             web designs
@@ -46,7 +46,7 @@ const SocialMediaMarketingPage = () => {
         <>
           Tailored{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/what-are-the-4-stages-of-social-media-marketing/"
+            href="/what-are-the-4-stages-of-social-media-marketing/"
             className="text-[#B54118] font-bold underline"
           >
             social media management
@@ -95,7 +95,7 @@ const SocialMediaMarketingPage = () => {
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mb-10 mx-auto font-light">
               <Link
-                href="https://bizgrow-digital.co.uk/about-us/"
+                href="/about-us/"
                 className="text-[#B54118] font-bold"
               >
                 BizGrow Digital
@@ -103,7 +103,7 @@ const SocialMediaMarketingPage = () => {
               helps UK businesses grow their audience, increase engagement, and
               generate meaningful leads through strategic{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/social-media-marketing-advantages-and-disadvantages/"
+                href="/social-media-marketing-advantages-and-disadvantages/"
                 className="text-[#B54118] font-bold"
               >
                 social media marketing
@@ -140,7 +140,7 @@ const SocialMediaMarketingPage = () => {
                     Connect with customers, build communities, and promote
                     services through targeted{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/facebook-marketing-services/"
+                      href="/facebook-marketing-services/"
                       className="text-[#B54118] font-bold"
                     >
                       Facebook
@@ -156,7 +156,7 @@ const SocialMediaMarketingPage = () => {
                   <>
                     Showcase your brand visually and engage audiences through{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/creative-content/"
+                      href="/creative-content/"
                       className="text-[#B54118] font-bold"
                     >
                       creative content
@@ -172,7 +172,7 @@ const SocialMediaMarketingPage = () => {
                   <>
                     Reach professionals, decision-makers, and{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      href="/b2b-content-marketing-agency-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       B2B
@@ -221,7 +221,7 @@ const SocialMediaMarketingPage = () => {
             <p className="text-blue-100/70 text-lg mb-6 leading-relaxed">
               At{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/our-digital-services/"
+                href="/our-digital-services/"
                 className="text-[#B54118] font-bold"
               >
                 BizGrow Digital
@@ -234,7 +234,7 @@ const SocialMediaMarketingPage = () => {
               often disappear once the campaign stops. That’s why our primary
               focus is on organic{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/social-media-for-uk-consultants/"
+                href="/social-media-for-uk-consultants/"
                 className="text-[#B54118] font-bold"
               >
                 social media
@@ -295,7 +295,7 @@ const SocialMediaMarketingPage = () => {
                   <>
                     Developing a{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/what-is-content-marketing-types-benefits-of-content-marketing/"
+                      href="/what-is-content-marketing-types-benefits-of-content-marketing/"
                       className="text-[#B54118] font-bold"
                     >
                       content
@@ -347,7 +347,7 @@ const SocialMediaMarketingPage = () => {
               </h2>
               <p className="text-white/90 text-lg mb-8 font-medium">
                 <Link
-                  href="https://bizgrow-digital.co.uk/what-are-the-4-stages-of-social-media-marketing/"
+                  href="/what-are-the-4-stages-of-social-media-marketing/"
                   className="text-[#B54118] font-bold"
                 >
                   Social media
@@ -433,7 +433,7 @@ const SocialMediaMarketingPage = () => {
                       <>
                         Our team develops{" "}
                         <Link
-                          href="https://bizgrow-digital.co.uk/10-creative-content-techniques-to-improve-seo-results/"
+                          href="/10-creative-content-techniques-to-improve-seo-results/"
                           className="text-[#B54118] font-bold"
                         >
                           content
@@ -513,7 +513,7 @@ const SocialMediaMarketingPage = () => {
                 <p className="mx-auto mb-12 text-lg md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl italic">
                   "At BizGrow Digital, we create strategic{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/experts-guide-to-social-media-marketing-for-business/"
+                    href="/experts-guide-to-social-media-marketing-for-business/"
                     className="text-[#B54118] font-bold"
                   >
                     social media marketing

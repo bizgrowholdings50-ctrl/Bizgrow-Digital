@@ -40,7 +40,7 @@ const CreativeContentPage = () => {
         <>
           High-impact{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
+            href="/how-digital-marketing-drives-faster-growth-for-businesses/"
             className="text-[#B54118] font-bold underline"
           >
             digital visuals and marketing
@@ -59,7 +59,7 @@ const CreativeContentPage = () => {
         <>
           Professionally produced video editing and motion{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/will-ai-replace-graphic-designers-in-2026-2/"
+            href="/will-ai-replace-graphic-designers-in-2026-2/"
             className="text-[#B54418] font-bold"
           >
             graphics designed
@@ -77,7 +77,7 @@ const CreativeContentPage = () => {
         <>
           Insight-led{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/what-role-does-creative-content-play-in-seo-performance/"
+            href="/what-role-does-creative-content-play-in-seo-performance/"
             className="text-[#B54418] font-bold"
           >
             content
@@ -158,7 +158,7 @@ const CreativeContentPage = () => {
                 <p className="text-gray-600 dark:text-gray-400 text-lg md:text-[16px] max-w-4xl leading-relaxed font-medium mt-4">
                   Your{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
+                    href="/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
                     className="text-[#B54118] font-bold"
                   >
                     content
@@ -264,7 +264,7 @@ const CreativeContentPage = () => {
                   <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium">
                     At{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/about-us/"
+                      href="/about-us/"
                       className="text-[#B54118] font-bold"
                     >
                       BizGrow Digital
@@ -283,7 +283,7 @@ const CreativeContentPage = () => {
                     helping your brand connect with potential customers and
                     stand out in competitive markets. Whether it’s blog posts,
                     <Link
-                      href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/"
+                      href="/a-beginners-guide-to-email-marketing-that-actually-works/"
                       className="text-[#B54118] font-bold"
                     >
                       email
@@ -312,7 +312,7 @@ const CreativeContentPage = () => {
                     <div className="w-2 h-2 bg-[#B54118] rounded-full" />
                     <span className="text-sm font-bold dark:text-gray-200">
                       <Link
-                        href="https://bizgrow-digital.co.uk/email-marketing/"
+                        href="/email-marketing/"
                         className="text-[#B54118] font-bold"
                       >
                         Email Marketing
@@ -380,7 +380,7 @@ const CreativeContentPage = () => {
                     Targeted content attracts visitors who are genuinely
                     interested in your specific{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/our-digital-services/"
+                      href="/our-digital-services/"
                       className="text-[#B54118] font-bold"
                     >
                       services
@@ -397,7 +397,7 @@ const CreativeContentPage = () => {
               },
               {
                 title: "Boost SEO & Visibility",
-                desc: <>Well-crafted, <Link href="https://bizgrow-digital.co.uk/how-to-search-multiple-keywords-on-google/" className="text-[#B54118] font-bold">keyword-optimised</Link> content improves search rankings and drives sustainable organic traffic.</>,
+                desc: <>Well-crafted, <Link href="/how-to-search-multiple-keywords-on-google/" className="text-[#B54118] font-bold">keyword-optimised</Link> content improves search rankings and drives sustainable organic traffic.</>,
                 icon: <LineChart className="w-6 h-6" />,
               },
               {
@@ -454,7 +454,7 @@ const CreativeContentPage = () => {
                 <>
                   Audience-Focused{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/what-is-content-marketing-types-benefits-of-content-marketing/"
+                    href="/what-is-content-marketing-types-benefits-of-content-marketing/"
                     className="text-[#B54118] font-bold underline"
                   >
                     Content Development

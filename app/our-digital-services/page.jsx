@@ -36,7 +36,7 @@ const page = () => {
         <>
           Designing high-performance, secure, and{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/how-to-write-an-seo-optimised-blog-in-2026/"
+            href="/how-to-write-an-seo-optimised-blog-in-2026/"
             className="text-[#B54118] font-bold"
           >
             SEO-optimised
@@ -57,7 +57,7 @@ const page = () => {
         <>
           Creating visually compelling, user-focused{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/"
+            href="/how-can-web-graphic-design-elevate-your-digital-presence/"
             className="text-[#B54118] font-bold"
           >
             designs
@@ -90,7 +90,7 @@ const page = () => {
           through strategic social media management and search engine-led growth
           strategies.
           <Link
-            href="https://bizgrow-digital.co.uk/social-media-for-uk-consultants/"
+            href="/social-media-for-uk-consultants/"
             className="text-[#B54118] font-bold"
           >
             social media
@@ -109,7 +109,7 @@ const page = () => {
         <>
           Building brand awareness and meaningful engagement through strategic{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/10-creative-content-techniques-to-improve-seo-results/"
+            href="/10-creative-content-techniques-to-improve-seo-results/"
             className="text-[#B54118] font-bold"
           >
             content
@@ -138,7 +138,7 @@ const page = () => {
         <>
           Grow your brand organically on{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/facebook-marketing-services/"
+            href="/facebook-marketing-services/"
             className="text-[#B54118] font-bold"
           >
             Facebook
@@ -159,7 +159,7 @@ const page = () => {
         <>
           Create fast, secure, and SEO-friendly{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/custom-wordpress-development-services-in-the-uk/"
+            href="/custom-wordpress-development-services-in-the-uk/"
             className="text-[#B54118] font-bold"
           >
             WordPress websites
@@ -180,7 +180,7 @@ const page = () => {
         <>
           Attract and convert high-quality UK{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/"
+            href="/8-effective-lead-generation-strategies/"
             className="text-[#B54118] font-bold"
           >
             leads
@@ -201,7 +201,7 @@ const page = () => {
         <>
           Engage your UK audience with personalised, relevant{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/"
+            href="/a-beginners-guide-to-email-marketing-that-actually-works/"
             className="text-[#B54118] font-bold"
           >
             emails
@@ -255,7 +255,7 @@ const page = () => {
               We deliver end-to-end digital services that empower UK brands to
               increase visibility, attract qualified{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                href="/lead-generation-agency-uk-in-2026/"
                 className="text-[#B54118] font-bold"
               >
                 leads

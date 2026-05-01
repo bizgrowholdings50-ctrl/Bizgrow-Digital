@@ -45,7 +45,7 @@ const WebDevelopmentPage = () => {
         <>
           Delivering clean, responsive
           <Link
-            href="https://bizgrow-digital.co.uk/graphic-design-services/"
+            href="/graphic-design-services/"
             className="text-[#B54118] font-bold underline ml-1"
           >
             designs
@@ -95,14 +95,14 @@ const WebDevelopmentPage = () => {
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
               Your Digital Growth Starts With a Website That Performs. At
               <Link
-                href="https://bizgrow-digital.co.uk/about-us/"
+                href="/about-us/"
                 className="text-[#B54118] font-bold ml-1"
               >
                 BizGrow Digital
               </Link>
               , we create fast, responsive, and{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/"
+                href="/write-better-content-with-these-e-e-a-t-seo-techniques/"
                 className="text-[#B54118] font-bold"
               >
                 SEO-optimised
@@ -175,7 +175,7 @@ const WebDevelopmentPage = () => {
               <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 Your{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/website-design-and-development/"
+                  href="/website-design-and-development/"
                   className="text-[#B54118] font-bold"
                 >
                   website
@@ -265,7 +265,7 @@ const WebDevelopmentPage = () => {
                 <p className="text-gray-500 text-center dark:text-gray-400 text-lg md:text-xl font-medium">
                   We offer a complete range of{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/what-is-b2b-web-development-in-the-uk/"
+                    href="/what-is-b2b-web-development-in-the-uk/"
                     className="text-[#B54118] font-bold"
                   >
                     web development
@@ -300,7 +300,7 @@ const WebDevelopmentPage = () => {
                   <>
                     High-converting pages focused on generating{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                      href="/lead-generation-agency-uk-in-2026/"
                       className="text-[#B54118] font-bold"
                     >
                       leads
@@ -358,7 +358,7 @@ const WebDevelopmentPage = () => {
                 applications that deliver exceptional speed, smooth
                 interactions, and a premium{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/how-good-ux-can-keep-visitors-on-your-website-longer/"
+                  href="/how-good-ux-can-keep-visitors-on-your-website-longer/"
                   className="text-[#B54118] font-bold"
                 >
                   user experience
@@ -369,7 +369,7 @@ const WebDevelopmentPage = () => {
                 {[
                   "Fast loading Performance",
                   <Link
-                    href="https://bizgrow-digital.co.uk/how-can-expert-seo-techniques-boost-your-business-visibility/"
+                    href="/how-can-expert-seo-techniques-boost-your-business-visibility/"
                     className="underline font-bold decoration-[#B54118]"
                   >
                     SEO-Optimised Structure
@@ -410,7 +410,7 @@ const WebDevelopmentPage = () => {
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               <Link
-                href="https://bizgrow-digital.co.uk/our-digital-services/"
+                href="/our-digital-services/"
                 className="text-[#B54118] font-bold"
               >
                 BizGrow

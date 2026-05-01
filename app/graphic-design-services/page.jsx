@@ -42,7 +42,7 @@ const GraphicDesignPage = () => {
             </h1>
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
               <Link
-                href="https://bizgrow-digital.co.uk/about-us/"
+                href="/about-us/"
                 className="text-[#B54118] font-bold"
               >
                 BizGrow Digital
@@ -51,7 +51,7 @@ const GraphicDesignPage = () => {
               stand out, build credibility, and convert more customers from
               social media{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/will-ai-replace-graphic-designers-in-2026-2/"
+                href="/will-ai-replace-graphic-designers-in-2026-2/"
                 className="text-[#B54118] font-bold"
               >
                 graphics
@@ -83,7 +83,7 @@ const GraphicDesignPage = () => {
               <p className="text-gray-500 dark:text-gray-400 text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto italic">
                 Our{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/our-digital-services/"
+                  href="/our-digital-services/"
                   className="text-[#B54118] font-bold"
                 >
                   services
@@ -105,7 +105,7 @@ const GraphicDesignPage = () => {
                   <>
                     We create engaging and scroll-stopping designs for{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/facebook-marketing-services/"
+                      href="/facebook-marketing-services/"
                       className="text-[#B54118] font-bold"
                     >
                       Facebook
@@ -138,7 +138,7 @@ const GraphicDesignPage = () => {
                     Tailored design solutions for your specific goals. Whether
                     you need unique visuals or branded{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      href="/b2b-content-marketing-agency-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       content
@@ -201,7 +201,7 @@ const GraphicDesignPage = () => {
                 Your design is often the first impression your UK business
                 makes. Poor design can lose customers instantly, while
                 <Link
-                  href="https://bizgrow-digital.co.uk/what-are-the-5-elements-of-a-good-website-design/"
+                  href="/what-are-the-5-elements-of-a-good-website-design/"
                   className="text-[#B54118] font-bold ml-1"
                 >
                   professional design
@@ -269,7 +269,7 @@ const GraphicDesignPage = () => {
               <p className="text-slate-500 dark:text-gray-400 text-sm font-medium leading-relaxed mt-4 max-w-[250px]">
                 High-impact social media{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/ "
+                  href="/how-can-web-graphic-design-elevate-your-digital-presence/ "
                   className="text-[#B54118] font-bold underline"
                 >
                   graphics designed
@@ -287,7 +287,7 @@ const GraphicDesignPage = () => {
                 </h3>
                 <p className="text-gray-500 dark:text-white ">
                   From logos to <Link
-                  href="https://bizgrow-digital.co.uk/top-3-marketing-challenges-killing-uk-small-businesses/"
+                  href="/top-3-marketing-challenges-killing-uk-small-businesses/"
                   className="text-[#B54118] font-bold underline"
                 >
                   marketing
@@ -369,7 +369,7 @@ const GraphicDesignPage = () => {
                 id: "01",
                 title: "Understanding Your Brand",
                 desc: <>We begin by gaining a clear understanding of your business, goals, and target audience. This allows us to create <Link
-                  href="https://bizgrow-digital.co.uk/web-design-without-coding/"
+                  href="/web-design-without-coding/"
                   className="text-[#B54118] font-bold underline"
                 >
                   designs

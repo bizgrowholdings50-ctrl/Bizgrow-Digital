@@ -55,7 +55,7 @@ const WordPressPage = () => {
               Generic themes limit your potential. We create high-performance,
               scalable, and secure{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/how-to-start-a-blog-on-wordpress/"
+                href="/how-to-start-a-blog-on-wordpress/"
                 className="text-[#B54118] font-bold"
               >
                 WordPress
@@ -63,7 +63,7 @@ const WordPressPage = () => {
               websites tailored for UK brands that drive engagement and results.
             </p>
             <div className="flex justify-center gap-4">
-              <Link href="https://bizgrow-digital.co.uk/contact-us/">
+              <Link href="/contact-us/">
                 <button className="bg-[#B54118] text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-all">
                   Build Your WordPress Platform →
                 </button>
@@ -90,7 +90,7 @@ const WordPressPage = () => {
                 </Link>
                 , we build WordPress websites that combine stunning{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
+                  href="/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
                   className="text-[#B54118] font-bold"
                 >
                   design
@@ -158,7 +158,7 @@ const WordPressPage = () => {
               <p className="text-gray-500 text-center dark:text-gray-400 max-w-3xl mx-auto">
                 We build performance-focused{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/custom-wordpress-development-services-in-the-uk/"
+                  href="/custom-wordpress-development-services-in-the-uk/"
                   className="text-[#B54118] font-bold underline"
                 >
                   WordPress websites
@@ -228,7 +228,7 @@ const WordPressPage = () => {
                   <>
                     Quickly update{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
+                      href="/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       content
@@ -248,7 +248,7 @@ const WordPressPage = () => {
                 desc: (
                   <>
                     <Link
-                      href="https://bizgrow-digital.co.uk/how-good-ux-can-keep-visitors-on-your-website-longer/"
+                      href="/how-good-ux-can-keep-visitors-on-your-website-longer/"
                       className="text-[#B54118] font-bold"
                     >
                       Mobile-optimised
@@ -270,7 +270,7 @@ const WordPressPage = () => {
               {
                 title: "Marketing Support",
                 icon: <Zap />,
-                desc: <>Seamless integration with <Link href="https://bizgrow-digital.co.uk/a-beginners-guide-to-email-marketing-that-actually-works/" className="text-[#B54118] font-bold">email</Link>, social, and analytics.</>,
+                desc: <>Seamless integration with <Link href="/a-beginners-guide-to-email-marketing-that-actually-works/" className="text-[#B54118] font-bold">email</Link>, social, and analytics.</>,
               },
             ].map((benefit, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
@@ -358,7 +358,7 @@ const WordPressPage = () => {
                       "Zero-bloat development approach",
                       <>
                         <Link
-                          href="https://bizgrow-digital.co.uk/search-engine-optimisation/"
+                          href="/search-engine-optimisation/"
                           className="text-[#B54118] underline"
                         >
                           SEO

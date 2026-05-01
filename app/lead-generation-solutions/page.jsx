@@ -44,7 +44,7 @@ const LeadGenerationPage = () => {
         <>
           Designing multi-step funnels that turn cold traffic into{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+            href="/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
             className="text-[#B54118] font-bold"
           >
             high-quality leads
@@ -109,7 +109,7 @@ const LeadGenerationPage = () => {
                 </Link>{" "}
                 provides advanced{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                  href="/lead-generation-agency-uk-in-2026/"
                   className="text-[#B54118] font-bold"
                 >
                   lead generation
@@ -152,7 +152,7 @@ const LeadGenerationPage = () => {
                 <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg md:text-lg max-w-3xl leading-relaxed font-medium">
                   At{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/about-us/"
+                    href="/about-us/"
                     className="text-[#B54118] font-bold underline"
                   >
                     BizGrow Digital,
@@ -244,14 +244,14 @@ const LeadGenerationPage = () => {
                 desc: (
                   <>
                     <Link
-                      href="https://bizgrow-digital.co.uk/how-can-expert-seo-techniques-boost-your-business-visibility/"
+                      href="/how-can-expert-seo-techniques-boost-your-business-visibility/"
                       className="text-[#B54118] font-bold"
                     >
                       SEO
                     </Link>{" "}
                     and{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      href="/b2b-content-marketing-agency-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       content
@@ -325,7 +325,7 @@ const LeadGenerationPage = () => {
                 </h2>
                 <p className="mt-8 text-gray-600 dark:text-gray-400 text-lg leading-relaxed font-medium">
                   <Link
-                    href="https://bizgrow-digital.co.uk/our-digital-services/"
+                    href="/our-digital-services/"
                     className="text-[#B54118] font-bold"
                   >
                     BizGrow Digital
@@ -361,7 +361,7 @@ const LeadGenerationPage = () => {
                       Attracting customers who are actively searching for your
                       services through{" "}
                       <Link
-                        href="https://bizgrow-digital.co.uk/affordable-seo-services-uk/"
+                        href="/affordable-seo-services-uk/"
                         className="text-[#B54118] font-bold"
                       >
                         SEO
@@ -380,7 +380,7 @@ const LeadGenerationPage = () => {
                       Generating enquiries from customers in your local UK areas
                       through targeted{" "}
                       <Link
-                        href="https://bizgrow-digital.co.uk/digital-marketing-services/"
+                        href="/digital-marketing-services/"
                         className="text-[#B54118] font-bold"
                       >
                         digital marketing
@@ -454,7 +454,7 @@ const LeadGenerationPage = () => {
                 Stop wasting time on unqualified traffic. BizGrow Digital
                 delivers{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/ "
+                  href="/8-effective-lead-generation-strategies/ "
                   className="text-[#B54118] font-bold underline"
                 >
                   high-quality leads{" "}

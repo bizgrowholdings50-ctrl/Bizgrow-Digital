@@ -54,7 +54,7 @@ const FacebookMarketingPage = () => {
             <p className="text-gray-300 text-base md:text-xl max-w-2xl mb-10 mx-auto px-4 font-light">
               Posting content alone won’t bring results. Our expert{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/ultimate-guide-to-using-facebook-for-marketing/"
+                href="/ultimate-guide-to-using-facebook-for-marketing/"
                 className="text-[#B54118]"
               >
                 Facebook strategies
@@ -89,7 +89,7 @@ const FacebookMarketingPage = () => {
                   true power lies in building authentic connections, sharing
                   valuable{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/creative-content/"
+                    href="/creative-content/"
                     className="text-[#B54118] font-bold"
                   >
                     content
@@ -154,7 +154,7 @@ const FacebookMarketingPage = () => {
                       d: (
                         <>
                           A fully optimised{" "}
-                          <Link href="https://bizgrow-digital.co.uk/how-do-i-start-marketing-on-facebook-a-complete-guide-2026/" className="text-[#B54118] font-bold">
+                          <Link href="/how-do-i-start-marketing-on-facebook-a-complete-guide-2026/" className="text-[#B54118] font-bold">
                             Facebook
                           </Link>{" "}
                           page is the foundation of growth. From visuals to
@@ -172,7 +172,7 @@ const FacebookMarketingPage = () => {
                           Growth happens when you post with purpose and
                           consistency. By sharing relevant,{" "}
                           <Link
-                            href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
+                            href="/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/"
                             className="text-[#B54118] font-bold"
                           >
                             high-quality content
@@ -185,7 +185,7 @@ const FacebookMarketingPage = () => {
                     {
                       step: "03",
                       t: "Be Discovered Organically",
-                      d: <>Using relevant <Link href="https://bizgrow-digital.co.uk/10-steps-keyword-research-checklist-2026/" className="text-[#B54118] font-bold ">keywords</Link> and hashtags strategically ensures your content reaches the right audience naturally, increasing visibility and helping your business grow without paid ads</>,
+                      d: <>Using relevant <Link href="/10-steps-keyword-research-checklist-2026/" className="text-[#B54118] font-bold ">keywords</Link> and hashtags strategically ensures your content reaches the right audience naturally, increasing visibility and helping your business grow without paid ads</>,
                     },
                   ].map((s, i) => (
                     <div key={i} className="flex gap-6 items-start group">
@@ -258,7 +258,7 @@ const FacebookMarketingPage = () => {
               },
               {
                 title: "UK Business Focus",
-                desc: <>At <Link href="https://bizgrow-digital.co.uk/about-us/" className="text-[#B54118] font-bold">BizGrow Digital</Link>, we help UK businesses grow with measurable, real-world results.</>,
+                desc: <>At <Link href="/about-us/" className="text-[#B54118] font-bold">BizGrow Digital</Link>, we help UK businesses grow with measurable, real-world results.</>,
                 icon: <ShieldCheck className="w-8 h-8" />,
               },
             ].map((item, i) => (
@@ -301,7 +301,7 @@ const FacebookMarketingPage = () => {
 
             <div className="max-w-2xl border-l-4 border-orange-500 pl-6 py-2">
               <p className="text-gray-500 dark:text-gray-400 text-lg  font-medium leading-relaxed">
-                Partnering with a professional agency like <Link href="https://bizgrow-digital.co.uk/our-digital-services/" className="text-[#B54118] font-bold">BizGrow Digital</Link> gives
+                Partnering with a professional agency like <Link href="/our-digital-services/" className="text-[#B54118] font-bold">BizGrow Digital</Link> gives
                 your business step-by-step guidance, expert support, and
                 measurable growth on Facebook. Here’s how UK businesses benefit:
               </p>
@@ -321,7 +321,7 @@ const FacebookMarketingPage = () => {
               },
               {
                 t: "Content Strategy Planning",
-                d: <>Data-driven <Link href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk" className="text-[#B54118] font-bold">content</Link> calendars that ensure consistent and high-quality posting.</>,
+                d: <>Data-driven <Link href="/b2b-content-marketing-agency-uk" className="text-[#B54118] font-bold">content</Link> calendars that ensure consistent and high-quality posting.</>,
               },
               {
                 t: "Organic Growth Optimisation",

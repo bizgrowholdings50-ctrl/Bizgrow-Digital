@@ -52,14 +52,14 @@ export default function AboutPage() {
               We are committed to helping businesses grow online in the UK with
               innovative digital solutions, creative{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
+                href="/what-is-web-design-the-ultimate-guide-to-designing-a-website/"
                 className="text-[#B54118] font-bold"
               >
                 design
               </Link>
               , and data-driven{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/top-3-marketing-challenges-killing-uk-small-businesses/"
+                href="/top-3-marketing-challenges-killing-uk-small-businesses/"
                 className="text-[#B54118] font-bold"
               >
                 marketing
@@ -106,16 +106,16 @@ export default function AboutPage() {
             {/* Bullet Points for better Scannability */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               {[
-                <Link href="https://bizgrow-digital.co.uk/search-engine-optimisation/">
+                <Link href="/search-engine-optimisation/">
                   Advanced SEO Experts
                 </Link>,
-                <Link href="https://bizgrow-digital.co.uk/what-are-the-top-7-types-of-digital-marketing-you-must-know/ ">
+                <Link href="/what-are-the-top-7-types-of-digital-marketing-you-must-know/ ">
                   Results-Driven Marketing
                 </Link>,
-                <Link href="https://bizgrow-digital.co.uk/web-development/">
+                <Link href="/web-development/">
                   Custom Web Development
                 </Link>,
-                <Link href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/">
+                <Link href="/8-effective-lead-generation-strategies/">
                   Lead Generation Focus
                 </Link>,
               ].map((item, i) => (
@@ -194,7 +194,7 @@ export default function AboutPage() {
 
                   <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed flex-grow">
                     <Link
-                      href="https://bizgrow-digital.co.uk/"
+                      href="/"
                       className="text-[#B54118] font-bold"
                     >
                       BizGrow Digital
@@ -235,7 +235,7 @@ export default function AboutPage() {
                     helping them succeed online, establish credibility, and
                     reach more customers. By crafting professional{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
+                      href="/how-digital-marketing-drives-faster-growth-for-businesses/"
                       className="text-[#B54118] font-bold"
                     >
                       digital strategies
@@ -332,7 +332,7 @@ export default function AboutPage() {
               <p className="text-2xl md:text-2xl font-bold text-slate-800 dark:text-white italic leading-tight relative z-10">
                 "At{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/our-digital-services/"
+                  href="/our-digital-services/"
                   className="text-[#B54118] font-bold underline"
                 >
                   BizGrow Digital
@@ -385,7 +385,7 @@ export default function AboutPage() {
                   <>
                     All of our strategies, messages &{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/how-can-web-graphic-design-elevate-your-digital-presence/"
+                      href="/how-can-web-graphic-design-elevate-your-digital-presence/"
                       className="text-[#B54118] font-bold"
                     >
                       designs

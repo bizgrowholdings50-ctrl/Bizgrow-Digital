@@ -31,7 +31,7 @@ const DigitalMarketingPage = () => {
         <>
           Drives more visitors to your website through increasing visibility in{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/how-can-expert-seo-techniques-boost-your-business-visibility/ "
+            href="/how-can-expert-seo-techniques-boost-your-business-visibility/ "
             className="text-[#B54118] font-bold underline"
           >
             search engines
@@ -50,7 +50,7 @@ const DigitalMarketingPage = () => {
           Create Brand Awareness, interact with your audience, and develop a
           social community across multiple{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/what-are-the-4-stages-of-social-media-marketing/ "
+            href="/what-are-the-4-stages-of-social-media-marketing/ "
             className="text-[#B54118] font-bold underline"
           >
             Social Media
@@ -67,7 +67,7 @@ const DigitalMarketingPage = () => {
         <>
           Create attention-grabbing{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/how-to-write-an-seo-optimised-blog-in-2026/"
+            href="/how-to-write-an-seo-optimised-blog-in-2026/"
             className="text-[#B54118] font-bold"
           >
             blog
@@ -85,7 +85,7 @@ const DigitalMarketingPage = () => {
         <>
           We{" "}
           <Link
-            href="https://bizgrow-digital.co.uk/website-design-and-development/"
+            href="/website-design-and-development/"
             className="text-[#B54118] font-bold underline"
           >
             design and develop
@@ -126,14 +126,14 @@ const DigitalMarketingPage = () => {
             </h1>
             <p className="text-gray-300 text-base md:text-lg lg:text-lg max-w-3xl mb-10 mx-auto px-4 font-light">
               <Link
-                href="https://bizgrow-digital.co.uk/about-us/"
+                href="/about-us/"
                 className="text-[#B54118] font-bold"
               >
                 BizGrow Digital
               </Link>{" "}
               offers UK businesses focused and results-driven
               <Link
-                href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
+                href="/how-digital-marketing-drives-faster-growth-for-businesses/"
                 className="text-[#B54118] font-bold ml-1"
               >
                 digital marketing
@@ -265,7 +265,7 @@ const DigitalMarketingPage = () => {
               We follow a structured process designed to help UK businesses
               improve online visibility and generate consistent{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+                href="/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
                 className="text-[#B54118] font-bold"
               >
                 leads through digital marketing
@@ -292,7 +292,7 @@ const DigitalMarketingPage = () => {
                     digital marketing strategy for UK businesses that focuses on
                     search visibility, customer engagement, and{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/lead-generation-solutions/"
+                      href="/lead-generation-solutions/"
                       className="text-[#B54118] font-bold"
                     >
                       lead generation
@@ -309,14 +309,14 @@ const DigitalMarketingPage = () => {
                     Our team implements key digital marketing activities,
                     including{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/affordable-seo-services-uk/"
+                      href="/affordable-seo-services-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       SEO
                     </Link>
                     ,{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      href="/b2b-content-marketing-agency-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       content marketing
@@ -453,7 +453,7 @@ const DigitalMarketingPage = () => {
                 <br />
                 <span className="text-[#000d26] dark:text-white font-bold italic border-b-2 border-orange-500 pb-1">
                   <Link
-                    href="https://bizgrow-digital.co.uk/our-digital-services/"
+                    href="/our-digital-services/"
                     className="text-[#B54118] font-bold"
                   >
                     BizGrow Digital
@@ -489,7 +489,7 @@ const DigitalMarketingPage = () => {
                       Our strategies are designed specifically for businesses
                       operating in the UK, ensuring your{" "}
                       <Link
-                        href="https://bizgrow-digital.co.uk/top-3-marketing-challenges-killing-uk-small-businesses/"
+                        href="/top-3-marketing-challenges-killing-uk-small-businesses/"
                         className="text-[#B54118] font-bold"
                       >
                         marketing
@@ -510,7 +510,7 @@ const DigitalMarketingPage = () => {
                     <>
                       Our goal is to help businesses generate qualified{" "}
                       <Link
-                        href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                        href="/lead-generation-agency-uk-in-2026/"
                         className="text-[#B54118] font-bold"
                       >
                         leads

@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "BizGrow Digital’s UK digital marketing agency helps businesses grow with SEO, social media, web development, and lead generation strategies.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/",
+    canonical: "https://bizgrow-digital.co.uk",
   },
 };
 
@@ -42,21 +42,21 @@ const HomePage = () => {
               We help UK businesses increase online visibility, attract
               qualified leads, and grow faster through{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/"
+                href="/write-better-content-with-these-e-e-a-t-seo-techniques/"
                 className="text-[#B54118] font-bold"
               >
                 SEO
               </Link>
               ,{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/what-is-b2b-web-development-in-the-uk/"
+                href="/what-is-b2b-web-development-in-the-uk/"
                 className="text-[#B54118] font-bold"
               >
                 web development
               </Link>
               , and data-driven{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/how-digital-marketing-drives-faster-growth-for-businesses/"
+                href="/how-digital-marketing-drives-faster-growth-for-businesses/"
                 className="text-[#B54118] font-bold"
               >
                 digital marketing
@@ -114,7 +114,7 @@ const HomePage = () => {
                     results-driven
                     <span className="text-[#B54118] dark:text-orange-500 font-bold underline">
                       <Link
-                        href="https://bizgrow-digital.co.uk/digital-marketing-services/ "
+                        href="/digital-marketing-services/ "
                         className="ml-1"
                       >
                         digital marketing
@@ -127,7 +127,7 @@ const HomePage = () => {
                     Our team builds high-performing websites, improves Google
                     rankings through SEO, and creates targeted{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/social-media-marketing/"
+                      href="/social-media-marketing/"
                       className="text-[#B54118] font-bold"
                     >
                       social media marketing
@@ -330,7 +330,7 @@ const HomePage = () => {
                     increased traffic, higher search rankings, and more
                     qualified{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                      href="/lead-generation-agency-uk-in-2026/"
                       className="text-[#B54118] font-bold"
                     >
                       leads
@@ -354,7 +354,7 @@ const HomePage = () => {
                     Clear analytics and regular reporting keep you informed
                     about the performance of your{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
+                      href="/the-ultimate-guide-to-digital-marketing-lead-generation-for-the-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       digital marketing

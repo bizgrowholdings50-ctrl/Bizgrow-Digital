@@ -52,14 +52,14 @@ const SEOPage = () => {
             <p className="text-gray-300 text-base md:text-xl max-w-3xl mb-10 mx-auto px-4 font-light leading-relaxed">
               At{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/about-us/"
+                href="/about-us/"
                 className="text-[#B54118] font-bold"
               >
                 BizGrow Digital
               </Link>
               , we help UK businesses rank higher in Google organically. Our{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/how-to-write-an-seo-optimised-blog-in-2026/"
+                href="/how-to-write-an-seo-optimised-blog-in-2026/"
                 className="text-[#B54118] font-bold"
               >
                 SEO
@@ -68,7 +68,7 @@ const SEOPage = () => {
               products or services without paying per click. Grow your online
               visibility and generate quality{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/lead-generation-agency-uk-in-2026/"
+                href="/lead-generation-agency-uk-in-2026/"
                 className="text-[#B54118] font-bold"
               >
                 leads
@@ -124,7 +124,7 @@ const SEOPage = () => {
                   <p className="text-slate-600 dark:text-gray-400 text-lg leading-relaxed border-l-4 border-orange-600/60 pl-6">
                     Effective SEO involves{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/why-on-page-seo-matters-for-small-businesses"
+                      href="/why-on-page-seo-matters-for-small-businesses"
                       className="text-[#B54118] font-bold underline"
                     >
                       on-page techniques
@@ -262,7 +262,7 @@ const SEOPage = () => {
                 <p className="text-gray-500 dark:text-gray-400">
                   Higher rankings{" "}
                   <Link
-                    href="https://bizgrow-digital.co.uk/8-effective-lead-generation-strategies/"
+                    href="/8-effective-lead-generation-strategies/"
                     className="text-[#B54118] font-bold underline"
                   >
                     lead to more leads
@@ -291,7 +291,7 @@ const SEOPage = () => {
               <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg">
                 At{" "}
                 <Link
-                  href="https://bizgrow-digital.co.uk/our-digital-services/"
+                  href="/our-digital-services/"
                   className="text-[#B54118] font-bold"
                 >
                   BizGrow Digital
@@ -320,7 +320,7 @@ const SEOPage = () => {
                   <>
                     We find high-intent{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/10-steps-keyword-research-checklist-2026/"
+                      href="/10-steps-keyword-research-checklist-2026/"
                       className="text-[#B54118] mr-1 font-bold"
                     >
                       keywords
@@ -338,7 +338,7 @@ const SEOPage = () => {
                   <>
                     We optimise your website{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/b2b-content-marketing-agency-uk/"
+                      href="/b2b-content-marketing-agency-uk/"
                       className="text-[#B54118] font-bold"
                     >
                       content
@@ -362,7 +362,7 @@ const SEOPage = () => {
                   <>
                     We develop high-quality,{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/write-better-content-with-these-e-e-a-t-seo-techniques/"
+                      href="/write-better-content-with-these-e-e-a-t-seo-techniques/"
                       className="text-[#B54118] font-bold"
                     >
                       SEO-driven content
@@ -379,7 +379,7 @@ const SEOPage = () => {
                   <>
                     We build high-quality{" "}
                     <Link
-                      href="https://bizgrow-digital.co.uk/off-page-seo-services-in-2026/"
+                      href="/off-page-seo-services-in-2026/"
                       className="text-[#B54118] font-bold"
                     >
                       backlinks
@@ -495,7 +495,7 @@ const SEOPage = () => {
             <p className="text-gray-700 font-semibold">
               Producing{" "}
               <Link
-                href="https://bizgrow-digital.co.uk/10-creative-content-techniques-to-improve-seo-results/"
+                href="/10-creative-content-techniques-to-improve-seo-results/"
                 className="text-[#B54118] underline"
               >
                 high-quality content
