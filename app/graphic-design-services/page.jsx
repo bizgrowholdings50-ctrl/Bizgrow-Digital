@@ -269,7 +269,7 @@ const GraphicDesignPage = () => {
               <p className="text-slate-500 dark:text-gray-400 text-sm font-medium leading-relaxed mt-4 max-w-[250px]">
                 High-impact social media{" "}
                 <Link
-                  href="/how-can-web-graphic-design-elevate-your-digital-presence/ "
+                  href="/how-can-web-graphic-design-elevate-your-digital-presence/"
                   className="text-[#B54118] font-bold underline"
                 >
                   graphics designed
