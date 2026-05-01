@@ -1,27 +1,35 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Purani site ke SEO links aur structure ko maintain rakhne ke liye
   trailingSlash: true,
+  
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'bizgrow-digital.co.uk',
+        hostname: 'bizgrowmedia.co.uk', // Naya domain
         pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: 'cms.bizgrow-digital.co.uk',
+        hostname: 'bizgrow-digital.co.uk', // Purana domain images support ke liye
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cms.bizgrow-digital.co.uk', // CMS images support
         pathname: '/**',
       },
     ],
   },
-  // --- Yahan se redirects add kiye hain ---
+
   async redirects() {
     return [
+      // Important SEO Slugs Migration
       {
         source: '/web-design-services/',
         destination: '/web-development/',
-        permanent: true,
+        permanent: true, // 301 Redirect for SEO
       },
       {
         source: '/on-page-seo-audit-services-improve-uk-googleankings/',
@@ -46,5 +54,8 @@ const nextConfig = {
     ];
   },
 };
+
+
+
 
 export default nextConfig;

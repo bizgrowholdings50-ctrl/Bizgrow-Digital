@@ -114,7 +114,7 @@ const HomePage = () => {
                     results-driven
                     <span className="text-[#B54118] dark:text-orange-500 font-bold underline">
                       <Link
-                        href="/digital-marketing-services/ "
+                        href="/digital-marketing-services/"
                         className="ml-1"
                       >
                         digital marketing

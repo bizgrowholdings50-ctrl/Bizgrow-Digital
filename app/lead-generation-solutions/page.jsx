@@ -454,7 +454,7 @@ const LeadGenerationPage = () => {
                 Stop wasting time on unqualified traffic. BizGrow Digital
                 delivers{" "}
                 <Link
-                  href="/8-effective-lead-generation-strategies/ "
+                  href="/8-effective-lead-generation-strategies/"
                   className="text-[#B54118] font-bold underline"
                 >
                   high-quality leads{" "}

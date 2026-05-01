@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <Link href="/search-engine-optimisation/">
                   Advanced SEO Experts
                 </Link>,
-                <Link href="/what-are-the-top-7-types-of-digital-marketing-you-must-know/ ">
+                <Link href="/what-are-the-top-7-types-of-digital-marketing-you-must-know/">
                   Results-Driven Marketing
                 </Link>,
                 <Link href="/web-development/">

@@ -31,7 +31,7 @@ const DigitalMarketingPage = () => {
         <>
           Drives more visitors to your website through increasing visibility in{" "}
           <Link
-            href="/how-can-expert-seo-techniques-boost-your-business-visibility/ "
+            href="/how-can-expert-seo-techniques-boost-your-business-visibility/"
             className="text-[#B54118] font-bold underline"
           >
             search engines
@@ -50,7 +50,7 @@ const DigitalMarketingPage = () => {
           Create Brand Awareness, interact with your audience, and develop a
           social community across multiple{" "}
           <Link
-            href="/what-are-the-4-stages-of-social-media-marketing/ "
+            href="/what-are-the-4-stages-of-social-media-marketing/"
             className="text-[#B54118] font-bold underline"
           >
             Social Media
