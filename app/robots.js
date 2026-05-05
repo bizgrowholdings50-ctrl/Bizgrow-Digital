@@ -8,6 +8,7 @@ export default function robots() {
         '/wp-content/uploads/wpo/wpo-plugins-tables-list.json',
       ],
     },
-    sitemap: 'https://bizgrow-digital.co.uk/sitemap.xml',
+    // YAHAN NAYA DOMAIN ADD KAREIN
+    sitemap: 'https://bizgrowmedia.co.uk/sitemap.xml',
   }
 }
