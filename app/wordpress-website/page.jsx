@@ -22,7 +22,7 @@ export const metadata = {
   description:
     "Build a UK WordPress website with BizGrow Digital. Engage visitors, drive growth, and showcase your brand professionally online.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/wordpress-website/",
+    canonical: "https://bizgrowmedia.co.uk/wordpress-website/",
   },
 };
 

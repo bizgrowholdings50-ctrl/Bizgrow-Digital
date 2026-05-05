@@ -21,7 +21,7 @@ export const metadata = {
   description:
     "BizGrow Digital offers expert creative content services to enhance engagement, brand visibility, and online business growth across the UK.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/creative-content/",
+    canonical: "https://bizgrowmedia.co.uk/creative-content/",
   },
 };
 

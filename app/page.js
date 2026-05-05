@@ -10,7 +10,7 @@ export const metadata = {
   description:
     "BizGrow Digital’s UK digital marketing agency helps businesses grow with SEO, social media, web development, and lead generation strategies.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk",
+    canonical: "https://bizgrowmedia.co.uk",
   },
 };
 

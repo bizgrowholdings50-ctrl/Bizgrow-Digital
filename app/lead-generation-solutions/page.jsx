@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "Maximise engagement and qualified leads with BizGrow Digital’s professional lead generation solutions for UK businesses.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/lead-generation-solutions/",
+    canonical: "https://bizgrowmedia.co.uk/lead-generation-solutions/",
   },
 };
 

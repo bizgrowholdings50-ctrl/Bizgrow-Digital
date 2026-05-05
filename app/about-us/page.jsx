@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "BizGrow Digital delivers expert digital marketing solutions across the UK, helping businesses grow, engage, and succeed online.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/about-us/",
+    canonical: "https://bizgrowmedia.co.uk/about-us/",
   },
 };
 

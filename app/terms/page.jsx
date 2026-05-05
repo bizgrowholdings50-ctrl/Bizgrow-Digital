@@ -6,7 +6,7 @@ export const metadata = {
   title: "Terms & Conditions | BizGrow Digital",
   description: "Read the Terms & Conditions for BizGrow Digital. Learn about service use, client responsibilities, intellectual property, and legal guidelines.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/terms/",
+    canonical: "https://bizgrowmedia.co.uk/terms/",
   },
 };
 

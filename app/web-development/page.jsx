@@ -28,7 +28,7 @@ export const metadata = {
   description:
     "Get a modern, responsive website that converts. Built by BizGrow Digital using Next.js for speed, performance, and growth.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/web-development/",
+    canonical: "https://bizgrowmedia.co.uk/web-development/",
   },
 };
 

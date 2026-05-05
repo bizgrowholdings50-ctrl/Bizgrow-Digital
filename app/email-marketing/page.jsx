@@ -20,7 +20,7 @@ export const metadata = {
   description:
     "Want to turn your emails into a revenue engine? Get data-driven email automation and strategy from BizGrow Digital. Grow your UK sales today ",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/email-marketing/",
+    canonical: "https://bizgrowmedia.co.uk/email-marketing/",
   },
 };
 

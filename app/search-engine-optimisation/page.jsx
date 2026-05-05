@@ -22,7 +22,7 @@ export const metadata = {
   description:
     "Improve your UK rankings with expert SEO services from BizGrow Digital. Drive traffic, leads & long-term growth organically",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/search-engine-optimisation/",
+    canonical: "https://bizgrowmedia.co.uk/search-engine-optimisation/",
   },
 };
 

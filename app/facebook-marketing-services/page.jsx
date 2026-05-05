@@ -19,7 +19,7 @@ export const metadata = {
   description:
     "BizGrow Digital delivers Facebook marketing that boosts brand visibility, engagement, and leads with strategy-driven, measurable results.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/facebook-marketing-services/",
+    canonical: "https://bizgrowmedia.co.uk/facebook-marketing-services/",
   },
 };
 

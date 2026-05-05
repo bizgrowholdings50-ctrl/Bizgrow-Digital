@@ -19,7 +19,7 @@ export const metadata = {
   description:
     "Want more UK customers? BizGrow Digital offers digital marketing services to improve Google rankings and generate qualified leads.",
   alternates: {
-    canonical: "https://bizgrow-digital.co.uk/digital-marketing-services/",
+    canonical: "https://bizgrowmedia.co.uk/digital-marketing-services/",
   },
 };
 
