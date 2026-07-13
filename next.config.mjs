@@ -114,6 +114,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/top-5-b2b-podcasting-companies/",
+        destination: "/business-podcast-strategy/",
+        permanent: true,
+      },
+      {
         source: "/blogs/how-to-search-multiple-keywords-on-google/",
         destination: "/how-to-search-multiple-keywords-on-google/",
         permanent: true,
