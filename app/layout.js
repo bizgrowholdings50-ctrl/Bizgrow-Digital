@@ -32,12 +32,12 @@ export const metadata = {
   description: "BizGrow Media creates authority-driven podcasts, studio production, and strategic content that builds trust, visibility, and growth.",
   icons: {
     icon: [
-      { url: "/site-logo.png", href: "/site-logo.png" },
-      { url: "/site-logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/site-logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/site-logo-rounded.png", href: "/site-logo-rounded.png" },
+      { url: "/site-logo-rounded.png", sizes: "32x32", type: "image/png" },
+      { url: "/site-logo-rounded.png", sizes: "192x192", type: "image/png" },
     ],
     apple: [
-      { url: "/site-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/site-logo-rounded.png", sizes: "180x180", type: "image/png" },
     ],
   },
   alternates: {
