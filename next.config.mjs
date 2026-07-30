@@ -19,6 +19,7 @@ const nextConfig = {
       // ==========================================
       // 1. GENUINE PAGES & BLOGS (Top Priority)
       // ==========================================
+
       {
         source: "/web-design-services/",
         destination: "/studio-production/",
@@ -29,12 +30,12 @@ const nextConfig = {
         destination: "/our-media-services/",
         permanent: true,
       },
-       {
+      {
         source: "/our-services/",
         destination: "/our-media-services/",
         permanent: true,
       },
-     
+
       {
         source: "/lead-generation-solutions/",
         destination: "/studio-production/",
@@ -134,7 +135,7 @@ const nextConfig = {
         destination: "/on-page-seo-audit-services-improve-uk-google-rankings/",
         permanent: true,
       },
-        {
+      {
         source: "/video-production-guides/",
         destination: "/video-production-tips-guides/",
         permanent: true,
@@ -276,42 +277,43 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
-       {
-        source: "/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/",
+      {
+        source:
+          "/the-ultimate-guide-to-creating-scroll-stopping-content-in-the-uk/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/how-do-i-start-marketing-on-facebook-a-complete-guide-2026/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/wordpress-on-page-seo-checklist/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/15-of-the-most-important-on-page-seo-tactics-in-the-uk/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/10-creative-content-techniques-to-improve-seo-results/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/social-media-marketing-advantages-and-disadvantages/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/local-seo-for-small-businesses-in-the-uk/",
         destination: "/",
         permanent: true,
       },
-       {
+      {
         source: "/will-ai-replace-graphic-designers-in-2026/ ",
         destination: "/",
         permanent: true,
