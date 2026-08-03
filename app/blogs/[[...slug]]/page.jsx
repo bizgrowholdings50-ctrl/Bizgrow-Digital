@@ -25,6 +25,18 @@ export const metadata = {
     "Explore real business insights, branding ideas, podcasts, and content strategies designed to help businesses build trust and grow.",
 };
 
+function decodeHtmlEntities(text) {
+  if (!text) return "";
+  return text
+    .replace(/&#8217;/g, "'")
+    .replace(/&#8216;/g, "'")
+    .replace(/&#8220;/g, '"')
+    .replace(/&#8221;/g, '"')
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#038;/g, "&");
+}
+
 async function getData(page = 1, catSlug = null) {
   let catId = null;
   const baseUrl = "https://cms.bizgrow-digital.co.uk/wp-json/wp/v2";
@@ -138,7 +150,9 @@ export default async function BlogPage({ params }) {
                       post.yoast_head_json?.og_image?.[0]?.url ||
                       "/placeholder.jpg"
                     }
-                    alt="blog"
+                    alt={decodeHtmlEntities(
+                      post.title.rendered.replace(/(<([^>]+)>)/gi, ""),
+                    )}
                     fill
                     unoptimized
                     className="object-cover group-hover:scale-110 transition-transform duration-700"

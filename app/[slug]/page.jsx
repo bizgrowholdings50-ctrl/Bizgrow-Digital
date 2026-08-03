@@ -1,6 +1,38 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import styles from "./BlogContent.module.css"; 
+import styles from "./BlogContent.module.css";
+
+function decodeHtmlEntities(text) {
+  if (!text) return "";
+
+  return String(text)
+    .replace(/&#8217;/g, "’")
+    .replace(/&#8216;/g, "‘")
+    .replace(/&#8220;/g, "“")
+    .replace(/&#8221;/g, "”")
+    .replace(/&#039;/g, "'")
+    .replace(/&#038;/g, "&")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+function normalizeAltTextInHtml(html) {
+  if (!html) return "";
+
+  return String(html).replace(/alt="([^"]*)"/gi, (match, value) => {
+    const decodedValue = decodeHtmlEntities(value).trim();
+    return `alt="${decodedValue.replace(/"/g, "&quot;")}"`;
+  });
+}
+
+function getFeaturedImageAlt(post) {
+  const yoastImage = post?.yoast_head_json?.og_image?.[0];
+  const rawAlt = yoastImage?.alt_text || yoastImage?.title || post?.title?.rendered;
+
+  return decodeHtmlEntities(rawAlt || "BizGrow Media featured image");
+}
 
 // 1. Fetch Post Function
 async function getPost(slug) {
@@ -79,7 +111,7 @@ export default async function SingleBlogPost({ params }) {
           <div className="relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white">
             <img
               src={post.yoast_head_json.og_image[0].url}
-              alt={post.title.rendered}
+              alt={getFeaturedImageAlt(post)}
               className="w-full h-full object-cover"
             />
           </div>
@@ -89,8 +121,8 @@ export default async function SingleBlogPost({ params }) {
       {/* 🚀 Professional Typography & Spacing Section */}
       <article className="max-w-3xl mx-auto px-6 pb-24">
         <div
-          className={`${styles.blogContentFlow} max-w-none`} 
-          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+          className={`${styles.blogContentFlow} max-w-none`}
+          dangerouslySetInnerHTML={{ __html: normalizeAltTextInHtml(post.content.rendered) }}
         />
       </article>
     </div>
